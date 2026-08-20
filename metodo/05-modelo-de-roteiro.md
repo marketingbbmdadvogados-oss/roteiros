@@ -13,10 +13,10 @@ Formato padrão de entrega. Quem grava lê a coluna **Fala**; o resto é direç�
 | **Duração alvo** | 45–60s |
 | **Objetivo primário** *(um só)* | compartilhamento · salvamento · comentário · seguidor |
 | **Lente** | liderança · trabalho · negócios · IA e futuro · comportamento |
-| **Locação** | escritório, fundo levemente desfocado |
-| **Figurino** | social discreto, cor lisa, sem estampa |
-| **Enquadramento** | plano médio, câmera na altura dos olhos |
-| **Iluminação** | frontal suave, sem sombra dura |
+| **Identidade da série** | manter a identidade visual reconhecível dos vídeos da mesma série *(`CUR-021`)* |
+
+> Padrão de figurino, enquadramento e iluminação é decisão de produção do time — está em
+> `analises/praticas-do-time.md`, fora do método.
 
 ---
 
@@ -38,8 +38,8 @@ Formato padrão de entrega. Quem grava lê a coluna **Fala**; o resto é direç�
 |---|---|
 | **Fala** | |
 | **Técnica** | por que essa abertura trava o dedo |
-| **Expressão** | |
-| **Tom** | |
+| **Tom** | *(`CUR-005` — a entonação pode valer mais que o texto)* |
+| **Expressão** | *(`CUR-019` — não verbal alinhado à fala)* |
 
 ### 2. Promessa aberta
 | | |
@@ -80,7 +80,7 @@ Formato padrão de entrega. Quem grava lê a coluna **Fala**; o resto é direç�
 | **Tela** | |
 | **Técnica** | âncora de autoridade: dado, lei, decisão, caso — **com fonte** |
 | **Expressão** | |
-| **Tom** | mais pausado nos números; micro-pausa antes e depois de cada um |
+| **Tom** | |
 
 ### 7. Ponta solta 2 — obrigatória
 | | |
@@ -134,7 +134,6 @@ Formato padrão de entrega. Quem grava lê a coluna **Fala**; o resto é direç�
 - [ ] Toda afirmação factual com link guardado
 - [ ] Presunção de inocência onde houver investigação ou processo
 - [ ] Sem generalização absoluta · sem promessa de resultado · sem CTA genérico falado
-- [ ] Gravar 2–3 tomadas do gancho isoladamente
 
 ---
 

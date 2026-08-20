@@ -312,64 +312,46 @@ princípio confirmado sobe de confiança, princípio derrubado três vezes sai d
 
 ---
 
-## 12. A camada de direção — como entregar
+## 12. A entrega — tom e expressão
 
-As seções acima decidem **o que falar e em que ordem**. Esta decide **como aquilo sai da boca e do
-corpo**. Sem ela, dois princípios da base ficam sem uso prático.
+Duas regras da base tratam de **como a fala sai**, não do que ela diz. Elas estavam na base sem uso
+prático; esta seção só as coloca no papel de roteiro.
 
-`CUR-005` — quatro pessoas podem ler o mesmo gancho e só uma viralizar: a entrega pode valer mais
-que o texto.
-`CUR-019` — não verbal desalinhado com a fala derruba a retenção. Corpo parado com fala indignada
-não convence.
+`CUR-005` — *"quatro pessoas podem usar exatamente o mesmo gancho, mas só um viraliza. Porque a
+forma como você fala o gancho pode ser mais importante que o gancho em si."*
 
-**Todo roteiro sai com três colunas por batida:**
+`CUR-019` — comunicação não verbal desalinhada com a fala derruba a retenção.
 
-| Coluna | O que registra |
-|---|---|
-| **Técnica** | por que essa batida existe e o que ela faz na retenção |
-| **Expressão facial** | o que o rosto e o corpo fazem — é o que se lê em tela pequena |
-| **Tom de voz** | ritmo, ênfase, onde acelera, onde pausa |
+**Consequência prática:** onde a entrega importa, o roteiro registra **como falar** e **o que o
+rosto faz**, e não só o texto. Duas colunas por batida:
 
-Exemplo de preenchimento, de um roteiro real do acervo:
+| Coluna | O que registra | Vem de |
+|---|---|---|
+| **Tom de voz** | ênfase, pausa, ritmo daquela frase | `CUR-005` |
+| **Expressão** | o que o rosto e o corpo fazem naquela batida | `CUR-019` |
 
-> **Batida:** virada · **Fala:** *"Enquanto os americanos processam empresa por empresa, atrás do
-> prejuízo já feito, o Brasil legislou pra frente."*
-> **Técnica:** antítese, ápice do roteiro, é o trecho mais compartilhável.
-> **Expressão:** volta ao olhar fixo, pausa pequena antes do nome do conceito, gesto de abrir as
-> mãos em "pra todo mundo".
-> **Tom:** mais grave e mais lento que o resto — é o ápice, merece destaque vocal.
+Exemplo, na batida da virada:
 
-### Regras de direção
+> **Fala:** *"…atrás do prejuízo já feito. O Brasil legislou pra frente."*
+> **Tom:** mais grave e mais lento que o resto do vídeo.
+> **Expressão:** olhar fixo, pausa pequena antes do nome do conceito.
 
-**Contraste de ritmo.** Acelere no gancho e na promessa aberta; desacelere nos dados. Cada número
-precisa de uma micro-pausa antes e depois para ser absorvido. O contraste marca a mudança de tom
-melhor que qualquer corte.
+### Consistência visual entre vídeos
 
-**Grave 2 a 3 tomadas do gancho isoladamente.** É `CUR-005` virando prática: dá para testar
-entonações diferentes na edição sem regravar o vídeo inteiro. **Regra da casa.**
+`CUR-021` — um dos três fatores que fazem alguém decidir seguir um perfil é **reconhecer um
+padrão**: *"repetição de cores, de formato, de fonte… as pessoas seguem aquilo que parece
+previsível e não aleatório."*
 
-**Um ou dois gestos pontuais por vídeo, não mais.** Excesso de movimento tira a atenção do rosto,
-que é onde ela precisa estar em tela pequena.
+Aplicado aqui: os vídeos de uma mesma série mantêm identidade visual reconhecível entre si — o que
+inclui manter o mesmo figurino dentro de uma série.
 
-### Ficha técnica — a parte que ninguém lembra e que constrói o perfil
+⚠️ **Sobre gravação, a base dela vai na direção oposta da intuição comum.** `CUR-017` e `CUR-018`
+dizem que **variar** — mudar cenário, forma de filmar, enquadramento — renova a atenção. Ou seja:
+consistência é entre vídeos; dentro de um vídeo, ela prega variação. Não confundir as duas coisas.
 
-`CUR-021` — consistência é um dos três fatores que fazem alguém decidir seguir um perfil: o cérebro
-do público precisa **reconhecer um padrão**. Isso não é só sobre tema; é sobre o que se vê.
-
-Todo roteiro abre com:
-
-| Campo | Padrão deste perfil |
-|---|---|
-| **Locação** | escritório, fundo levemente desfocado |
-| **Figurino** | social discreto, cor lisa. **Sem estampa** — compete com o texto na tela |
-| **Continuidade** | manter a mesma peça dentro de uma mesma série de vídeos |
-| **Enquadramento** | plano médio, câmera na altura dos olhos |
-| **Iluminação** | frontal e suave, sem sombra dura — a expressão precisa ser legível em tela pequena |
-
-> **Decisão em aberto:** um roteiro do acervo pede *"plano único, cortando só nas viradas, pra
-> simular conversa real"*. Isso colide com a regra de que corte e mudança de enquadramento renovam
-> a atenção. As duas posições têm argumento. **Teste barato:** mesmo roteiro, duas edições, compara
-> a curva. Até lá, não há regra da casa sobre isso.
+**O que não está aqui:** padrão de figurino, enquadramento e iluminação, ritmo de fala e número de
+gestos. São decisões de produção legítimas do time, mas **não saem do acervo dela** — estão em
+`analises/praticas-do-time.md`, fora do método, aguardando corroboração ou teste.
 
 ---
 
@@ -383,8 +365,7 @@ uma apostila comprada pronta.
 | Estrutura de 9 batidas (§2) | **fonte única.** Os dois vídeos que a corroborariam não foram capturados |
 | Diagnóstico pela curva (§11) | **fonte única** — um vídeo de ~50 segundos |
 | Mapa de CTA por tipo (§7) | uma frase, um vídeo. A lógica *"um CTA, vindo do objetivo"* tem duas fontes; o **mapa específico**, não |
-| Camada de direção (§12) | vem da prática do próprio time, não do acervo dela — funciona, mas nunca foi medida |
-| Plano único × cortes (§12) | duas posições defensáveis, nenhuma testada |
+| Entrega: tom e expressão (§12) | os princípios são dela; **a forma de registrar em roteiro é escolha nossa** |
 | Tudo neste documento | **zero ciclos de validação fechados.** Nenhum roteiro foi publicado ainda seguindo o método |
 
 **Consequência prática:** os primeiros 5 a 10 roteiros são teste. Cada um sai com previsão de curva
@@ -409,5 +390,5 @@ documento deixa de ser hipótese organizada e vira método com lastro próprio.
 6. **Uma virada** em antítese. Sem ela, não grava.
 7. **Um CTA**, escolhido pelo tipo do vídeo. Nunca genérico, nunca dois.
 8. Confira fonte, presunção de inocência e as regras de marca.
-9. Dirija a entrega: expressão e tom por batida, e 2–3 tomadas do gancho.
+9. Registre tom e expressão onde a entrega importa.
 10. Uma hora depois, leia a curva. Sete dias depois, feche a ficha.

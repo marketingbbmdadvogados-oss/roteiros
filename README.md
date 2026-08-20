@@ -16,6 +16,10 @@ Regra central do repositório:
 
 > **Nenhuma justificativa sem fonte nomeada. "Ainda não sei" é uma resposta válida — e visível.**
 
+E uma regra de fronteira: **o método só aceita regra que saia do acervo da Luíza Cureau ou de
+número real do perfil.** Prática boa sem lastro vai para `analises/praticas-do-time.md` e espera
+corroboração ou teste. É isso que impede o método de virar colcha de retalhos de opinião.
+
 Isso é o que separa embasamento de achismo bem escrito. Um roteiro pode ir ao ar com uma decisão
 marcada como hipótese; o que não pode é a hipótese se disfarçar de certeza.
 

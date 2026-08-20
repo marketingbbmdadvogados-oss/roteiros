@@ -147,24 +147,34 @@ que a família falando por ela.
 
 ---
 
-## 5. Vale incorporar ao método? Sim — e preenche um buraco
+## 5. O que entra no método e o que não entra
 
-O nosso método diz **o que falar e em que ordem**. Não diz **como entregar**. Este documento diz — e
-sem isso, dois princípios que já estavam na base eram letra morta:
+A regra do repositório é dura: **o método só aceita regra que sai do acervo da Luíza ou de número
+real do perfil.** Passei o documento por esse filtro, item por item.
 
-| Princípio que já tínhamos | O que este documento faz com ele |
+### ✅ Corrobora — entra
+
+| Prática do documento | Princípio que ela corrobora |
 |---|---|
-| `CUR-005` — a entonação pode valer mais que o texto do gancho | vira coluna **"tom de voz"** por batida, e a prática de **gravar 2–3 tomadas do gancho isoladamente** |
-| `CUR-019` — não verbal desalinhado derruba a retenção | vira coluna **"expressão facial"** por batida |
-| `CUR-021` — consistência: o público precisa reconhecer um padrão | vira **ficha técnica** com figurino, enquadramento, luz e continuidade da série |
+| Coluna **"tom de voz"** por batida | `CUR-005` — *"a forma como você fala o gancho pode ser mais importante que o gancho em si"* |
+| Coluna **"expressão facial"** por batida | `CUR-019` — não verbal desalinhado derruba a retenção |
+| Manter o figurino dentro de uma mesma série | `CUR-021` — o público precisa reconhecer um padrão |
 
-A ficha técnica é o achado mais subestimado aqui. *"Manter a mesma peça usada nos últimos vídeos da
-série"* é consistência aplicada onde ninguém tinha aplicado ainda — e consistência, na base dela,
-é um dos três fatores que fazem alguém decidir seguir um perfil.
+Esses três não mudam o método: **colocam no papel duas regras que já estavam na base e não tinham
+forma de uso.** Estão em `metodo/01-o-metodo.md` §12.
 
-**O que muda no método:** entra uma camada de direção, e o modelo de roteiro passa a ter as três
-colunas por batida. Está em `metodo/01-o-metodo.md` §12 e no modelo em
-`metodo/05-modelo-de-roteiro.md`.
+### ❌ Não corrobora — fica fora
 
-**O que não copiamos:** os nomes das batidas. Continuam sendo as 9 do método, para o diagnóstico
-pela curva continuar apontando para a seção certa.
+| Prática | Por quê |
+|---|---|
+| Contraste de ritmo (acelerar/desacelerar) | não aparece em nenhuma das 23 transcrições |
+| Gravar 2–3 tomadas do gancho | dedução razoável de `CUR-005`, mas ela não diz |
+| "Um ou dois gestos, não mais" | **tensiona com `CUR-017`/`CUR-018`**, que dizem que movimento renova atenção |
+| Figurino, enquadramento e luz específicos | decisão de marca legítima, sem lastro no acervo |
+| Plano único, cortando só nas viradas | **contradiz `CUR-018`** diretamente |
+
+Foram para `analises/praticas-do-time.md` — quarentena. Podem ser usadas na produção; **não podem
+ser citadas como "o método diz"**. Saem de lá por corroboração numa transcrição nova, ou por teste
+no perfil.
+
+A última é a candidata número um a teste: mesmo roteiro, duas edições, compara a curva.
