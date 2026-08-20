@@ -11,7 +11,8 @@ Setup:
     export GEMINI_API_KEY="..."          # https://aistudio.google.com/apikey
 
 Uso:
-    python3 2-transcrever.py                          # tudo que estiver em videos/
+    python3 2-transcrever.py --listar                 # mostra o que faria, sem enviar nada
+    python3 2-transcrever.py                          # transcreve só o que ainda falta
     python3 2-transcrever.py videos/DW2Pp_tgFsO.mp4   # só um
     WORKERS=5 python3 2-transcrever.py                # mais paralelismo
 
@@ -220,13 +221,31 @@ def main():
     conferir_modelo(client)
     DIR_SAIDA.mkdir(parents=True, exist_ok=True)
 
-    videos = (
-        [pathlib.Path(a) for a in sys.argv[1:]]
-        if len(sys.argv) > 1
-        else config.videos_existentes()
-    )
+    listar = "--listar" in sys.argv
+    alvos = [a for a in sys.argv[1:] if not a.startswith("--")]
+    videos = [pathlib.Path(a) for a in alvos] if alvos else config.videos_existentes()
+
     if not videos:
         sys.exit(f"Nenhum vídeo em {DIR_VIDEOS}. Rode: python 1-baixar.py")
+
+    novos = [v for v in videos if not (DIR_SAIDA / f"{v.stem}.md").exists()]
+    ja_feitos = [v for v in videos if v not in novos]
+
+    if listar:
+        print(config.resumo() + "\n")
+        print(f"JÁ TRANSCRITOS — serão pulados ({len(ja_feitos)}):")
+        for v in ja_feitos:
+            print(f"  {v.name}")
+        print(f"\nSERÃO TRANSCRITOS AGORA ({len(novos)}):")
+        for v in novos:
+            print(f"  {v.name}")
+        print("\nNada foi enviado. Para transcrever, rode sem --listar.")
+        return
+
+    videos = novos
+    if not videos:
+        print(f"Todos os {len(ja_feitos)} vídeos já estão transcritos. Nada a fazer.")
+        return
 
     log(config.resumo())
     log(f"\n{len(videos)} vídeos, {WORKERS} em paralelo, modelo {MODELO}\n")

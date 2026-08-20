@@ -94,6 +94,15 @@ Ele mostra os 25 vídeos por lote, marcando o que está baixado, transcrito e fa
 
 ## PASSO 6 — Transcrever, mesmo com os nomes errados
 
+Antes de gastar API, dá pra ver exatamente o que ele vai fazer:
+
+```
+python 2-transcrever.py --listar
+```
+
+Isso não envia nada. Só mostra duas listas: o que já está transcrito (será pulado) e o que
+será transcrito agora. Use sempre que adicionar um lote novo de vídeos.
+
 **Não precisa renomear antes.** Se você baixou por site, os arquivos vieram com nome tipo
 `snapinsta_8823.mp4` — tudo bem. O script transcreve qualquer nome.
 
@@ -194,6 +203,7 @@ Me avise que subiu.
 | O que fazer | Comando |
 |---|---|
 | ver a situação | `python 0-conferir.py` |
+| ver o que será transcrito, sem enviar | `python 2-transcrever.py --listar` |
 | arrumar nomes depois de transcrever | `python 3-organizar.py` → confere → `--aplicar` |
 | renomear à mão (casos duvidosos) | `python 0-renomear.py` → confere → `--aplicar` |
 | baixar o que falta | `python 1-baixar.py` |
