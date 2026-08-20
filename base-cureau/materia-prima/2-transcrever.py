@@ -31,6 +31,10 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from google import genai
 from google.genai import errors as genai_errors
 
+import codigos
+
+CODIGOS_VALIDOS = {c for c, _, _ in codigos.TODOS} | set(codigos.REPOSTS)
+
 MODELO = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
 DIR_VIDEOS = pathlib.Path(os.environ.get("DIR_VIDEOS", "videos"))
 DIR_SAIDA = pathlib.Path(os.environ.get("DIR_SAIDA", "transcricoes"))
@@ -142,9 +146,15 @@ def processar(client, video: pathlib.Path):
 
     log(f"  {video.stem}: enviando…")
     corpo = transcrever(client, video)
+
+    if video.stem in CODIGOS_VALIDOS:
+        fonte = f"https://www.instagram.com/lucureau/reel/{video.stem}/"
+    else:
+        fonte = "DESCONHECIDA — arquivo com nome fora do padrão, rode 0-renomear.py"
+
     cabecalho = (
         f"# {video.stem}\n\n"
-        f"- **Fonte:** https://www.instagram.com/lucureau/reel/{video.stem}/\n"
+        f"- **Fonte:** {fonte}\n"
         f"- **Data do post:** {data_do_post(video)}\n"
         f"- **Transcrito em:** {time.strftime('%d/%m/%Y')} (Gemini {MODELO})\n\n---\n\n"
     )

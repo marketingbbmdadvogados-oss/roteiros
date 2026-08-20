@@ -1,4 +1,6 @@
 videos/
+faltantes.txt
+renomear.txt
 *.mp4
 *.info.json
 __pycache__/
