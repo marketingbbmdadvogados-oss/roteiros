@@ -418,6 +418,9 @@ acervo dela com ideia de terceiro.
 | CUR-033 | Método CICE | carrossel | ⬜ |
 | CUR-034 | Design limpo vence design produzido | carrossel | ⬜ |
 | CUR-035 | O miolo não se delega | autoridade | ⬜ |
+| CUR-036 | Não existe formato morto | formato | ⬜ |
+| CUR-037 | Os 4 formatos de carrossel | carrossel | ⬜ |
+| CUR-038 | O miolo começa no slide 3 | carrossel | ⬜ |
 
 🔴 = fonte única · ⚠️ = ressalva registrada no princípio
 
@@ -428,7 +431,8 @@ acervo dela com ideia de terceiro.
 ### CUR-030 — Pedir várias ações ao mesmo tempo não gera nenhuma ⭐
 **Enunciado:** um CTA por peça. Pedir salvar + curtir + comentar + compartilhar junto **reduz**
 a ação em vez de somar.
-**Racional dela:** paralisia de escolha — ações conflitantes competem entre si.
+**Racional dela:** paralisia de escolha — ações conflitantes competem entre si. **Ela dá nome:
+"Teoria da Netflix"** — opção demais trava a decisão.
 **Fonte:** `Db9aIvrgAMY` (12/08/2026) · **Confiança:** 🟡
 **Por que 🟡:** é a outra ponta de CUR-013 e vinda de vídeo independente. Junto com ele, forma o
 par que sustenta a lógica de CTA: **um só, e escolhido pelo objetivo.**
@@ -475,11 +479,39 @@ apoio nos dois lados; o formato específico (print de tweet) é que precisa pass
 ### CUR-035 — O miolo não se delega
 **Enunciado:** capa e estrutura podem ser sistematizadas; o conteúdo do meio tem que vir da sua
 experiência real, não de IA nem de terceiro.
+**Onde ela permite IA:** design e **legenda — a partir do roteiro já pronto**. Nunca para criar
+o miolo do zero. A linha é clara: IA acelera o que você já decidiu; não decide por você.
 **Racional dela:** autoridade e tom autêntico dependem de conhecimento prático próprio.
 **Fonte:** `Db9aIvrgAMY` (12/08/2026) · **Confiança:** ⬜
 **Tradução p/ o Isaac:** é o princípio que define o limite deste repositório inteiro. O método pode
 decidir gancho, ordem, corte e CTA — **o argumento jurídico e a opinião são dele.** Vale registrar
 porque é exatamente o risco de um processo que ficou bom demais: virar fábrica de roteiro sem dono.
+
+### CUR-036 — Não existe formato morto, existe formato certo para o objetivo
+**Enunciado:** dizer que "carrossel morreu" ou que "só Reels funciona" é falso. O formato se escolhe
+pelo **objetivo** e pela aptidão de quem grava — *"você prefere falar ou escrever?"*
+**Fonte:** aula de carrossel (ver conflito de identificação) · **Confiança:** ⬜
+**Tradução p/ o Isaac:** casa com a calibração da conta, onde cada formato entrega uma coisa
+diferente e nenhum é descartável. Reforça a regra de julgar cada formato pela métrica dele.
+
+### CUR-037 — Os quatro formatos de carrossel que funcionam
+**Enunciado:** carrossel em 2026 é limpo, não interligado nem hiperproduzido. Quatro formatos:
+1. **Tweet** — print do X, formatado em **3:4**. O preferido dela; ~15 minutos de produção.
+2. **Story** — feito nas ferramentas nativas do Stories, salvo e postado no feed. Gera humanização.
+3. **Notas** — print do app de notas do celular. Transmite simplicidade e proximidade.
+4. **Identidade própria simples** — Canva em 1080×1440, elementos mínimos, sem poluição visual.
+**Racional dela:** layout hiperproduzido parece anúncio de agência e reduz conexão.
+**Fonte:** aula de carrossel · **Confiança:** ⬜
+⚠️ **Conflito com a marca do escritório** — mesma ressalva de `CUR-034`. A direção (menos produção)
+tem apoio no dado da conta; os formatos crus específicos precisam passar pela identidade visual.
+
+### CUR-038 — O miolo começa no slide 3
+**Enunciado:** slides 1 e 2 são capa e dupla capa. O conteúdo de fato começa no **slide 3** e vai
+até o 8 ou 9.
+**Fonte:** aula de carrossel · **Confiança:** ⬜
+**Complementa `CUR-032`:** não é só "o slide 2 não pode ser texto denso" — é que ele **não é
+conteúdo**, é a segunda tentativa de capa. Quem começa a explicar no slide 2 perde a segunda
+chance de alcance que o algoritmo dá.
 
 ---
 
@@ -542,7 +574,13 @@ ela publicar vídeo novo sobre o tema.
 2. **Falta o vídeo mais valioso do acervo dela:** em `DOXJDffjASd` ela anuncia *"comenta ROTEIRO
    se você quer o passo a passo de como eu faço os meus [roteiros]"*. Esse vídeo de resposta
    existe e não está conosco. É o que corrobora ou derruba CUR-008.
-3. **Dois vídeos ficaram sem transcrição** — `DbOMz_RgGdj` ("como ela escreve um roteiro na
+3. ⚠️ **`DbOMz_RgGdj` chegou com conteúdo divergente.** A transcrição entregue nesse nome é a
+   **aula de carrossel** — a mesma de `Db9aIvrgAMY` —, não *"como ela escreve um roteiro"*, que
+   era o que a lista prometia. É uma transcrição melhor da aula (79 min, com timestamps), e por
+   isso rendeu `CUR-036` a `CUR-038`. Mas **não corrobora `CUR-008`**, que era a razão de
+   buscá-lo. Conferir o link antes de tratar como fonte independente.
+
+4. **Dois vídeos ficaram sem transcrição** — `DbOMz_RgGdj` ("como ela escreve um roteiro na
    prática") e `DTL_sqsAHbi` ("passo a passo 2026"), ambos do Lote 1, derrubados por 503
    persistente da API. São justamente os que corroborariam CUR-008. Decisão consciente de seguir
    sem eles; **CUR-008 permanece 🔴 até que apareçam.**
