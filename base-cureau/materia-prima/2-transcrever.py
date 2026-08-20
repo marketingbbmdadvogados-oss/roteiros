@@ -12,6 +12,7 @@ Setup:
 
 Uso:
     python3 2-transcrever.py --listar                 # mostra o que faria, sem enviar nada
+    python3 2-transcrever.py --prompt                 # imprime o prompt, pra colar no AI Studio
     python3 2-transcrever.py                          # transcreve só o que ainda falta
     python3 2-transcrever.py videos/DW2Pp_tgFsO.mp4   # só um
     WORKERS=5 python3 2-transcrever.py                # mais paralelismo
@@ -239,6 +240,11 @@ def main():
     client = cliente()
     conferir_modelo(client)
     DIR_SAIDA.mkdir(parents=True, exist_ok=True)
+
+    if "--prompt" in sys.argv:
+        # Para colar no Google AI Studio quando a API estiver engasgando.
+        print(PROMPT)
+        return
 
     listar = "--listar" in sys.argv
     alvos = [a for a in sys.argv[1:] if not a.startswith("--")]
