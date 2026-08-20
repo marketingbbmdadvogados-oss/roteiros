@@ -1,34 +1,49 @@
 #!/usr/bin/env python3
 """
-Transcreve os reels baixados usando o Gemini (que ASSISTE ao vídeo, não só ouve).
+Transcreve os reels baixados usando o Gemini, que ASSISTE ao vídeo (não só ouve).
 
-Por que Gemini e não Whisper: vários vídeos dela ensinam pela imagem — texto na
-tela, gráfico de retenção, mudança de entonação, corte de câmera. Whisper só
-ouve o áudio e perde exatamente a parte que é a lição.
+Por que Gemini e não Whisper/Premiere: vários vídeos dela ensinam pela imagem —
+texto na tela, gráfico de retenção, mudança de entonação, corte de câmera.
+Transcrição de áudio perde exatamente a parte que é a lição.
 
-Pré-requisitos (uma vez só):
-    pip install -U google-genai
-    export GEMINI_API_KEY="sua-chave"      # https://aistudio.google.com/apikey
+Setup:
+    pip install -r requirements.txt
+    export GEMINI_API_KEY="..."          # https://aistudio.google.com/apikey
 
 Uso:
-    python3 2-transcrever.py               # transcreve tudo em videos/
-    python3 2-transcrever.py videos/DW2Pp_tgFsO.mp4    # um só
+    python3 2-transcrever.py                          # tudo que estiver em videos/
+    python3 2-transcrever.py videos/DW2Pp_tgFsO.mp4   # só um
+    WORKERS=5 python3 2-transcrever.py                # mais paralelismo
 
-Saída: transcricoes/<id>.md  — um arquivo por vídeo, pronto pra virar princípio.
-Roda de novo sem medo: pula o que já está transcrito.
+Saída: transcricoes/<id>.md — um por vídeo. Idempotente: pula o que já existe,
+então pode interromper e rodar de novo à vontade.
 """
 
 import json
 import os
 import pathlib
+import random
 import sys
+import threading
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 from google import genai
+from google.genai import errors as genai_errors
 
 MODELO = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
 DIR_VIDEOS = pathlib.Path(os.environ.get("DIR_VIDEOS", "videos"))
 DIR_SAIDA = pathlib.Path(os.environ.get("DIR_SAIDA", "transcricoes"))
+WORKERS = int(os.environ.get("WORKERS", "3"))
+MAX_TENTATIVAS = int(os.environ.get("MAX_TENTATIVAS", "4"))
+
+_log = threading.Lock()
+
+
+def log(msg):
+    with _log:
+        print(msg, flush=True)
+
 
 PROMPT = """Você está analisando um vídeo curto (Reel) da criadora Luíza Cureau,
 que ensina método de criação de conteúdo. O objetivo é extrair TUDO que ela ensina,
@@ -38,7 +53,7 @@ Responda em português do Brasil, exatamente neste formato markdown:
 
 ## Transcrição da fala
 [transcrição literal e completa do que ela fala, do começo ao fim. Sem resumir.
-Marque pausas ou mudanças de tom relevantes entre colchetes, ex: [muda o tom, mais firme].]
+Marque mudanças de tom relevantes entre colchetes, ex: [muda o tom, mais firme].]
 
 ## Texto na tela
 [TODO texto que aparece escrito no vídeo, na ordem em que aparece: capa, legendas
@@ -64,19 +79,16 @@ Formato: "- REGRA — porque [racional dela]". Se ela não der racional, escreva
 def cliente():
     chave = os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY")
     if not chave:
-        sys.exit("Falta a variável GEMINI_API_KEY. Pegue em https://aistudio.google.com/apikey")
+        sys.exit("Falta GEMINI_API_KEY. Pegue em https://aistudio.google.com/apikey")
     return genai.Client(api_key=chave)
 
 
 def data_do_post(video: pathlib.Path) -> str:
-    """Lê a data do .info.json que o yt-dlp salvou. A data é obrigatória na base."""
-    info = video.with_suffix("").with_suffix(".info.json")
-    if not info.exists():
-        info = video.parent / f"{video.stem}.info.json"
+    """Lê a data do .info.json do yt-dlp. Data é campo obrigatório na base."""
+    info = video.parent / f"{video.stem}.info.json"
     if info.exists():
         try:
-            dados = json.loads(info.read_text(encoding="utf-8"))
-            bruto = str(dados.get("upload_date") or "")
+            bruto = str(json.loads(info.read_text(encoding="utf-8")).get("upload_date") or "")
             if len(bruto) == 8:
                 return f"{bruto[6:8]}/{bruto[4:6]}/{bruto[0:4]}"
         except Exception:
@@ -84,72 +96,96 @@ def data_do_post(video: pathlib.Path) -> str:
     return "DESCONHECIDA — preencher à mão"
 
 
-def aguardar_ativo(client, arquivo, limite=300):
-    """A Files API precisa terminar de processar o vídeo antes do uso."""
+def aguardar_ativo(client, arquivo, limite=600):
+    """A Files API precisa terminar de processar o vídeo antes de usá-lo."""
     inicio = time.time()
     while arquivo.state.name == "PROCESSING":
         if time.time() - inicio > limite:
-            raise TimeoutError("O Gemini demorou demais processando o vídeo.")
+            raise TimeoutError("Gemini demorou demais processando o vídeo")
         time.sleep(3)
         arquivo = client.files.get(name=arquivo.name)
     if arquivo.state.name == "FAILED":
-        raise RuntimeError("O Gemini falhou ao processar o vídeo.")
+        raise RuntimeError("Gemini falhou ao processar o vídeo")
     return arquivo
 
 
 def transcrever(client, video: pathlib.Path) -> str:
-    enviado = aguardar_ativo(client, client.files.upload(file=str(video)))
-    try:
-        resposta = client.models.generate_content(model=MODELO, contents=[enviado, PROMPT])
-        return resposta.text
-    finally:
+    """Sobe, pergunta, limpa. Com backoff em rate limit (429) e erro transitório."""
+    for tentativa in range(1, MAX_TENTATIVAS + 1):
+        enviado = None
         try:
-            client.files.delete(name=enviado.name)
-        except Exception:
-            pass
+            enviado = aguardar_ativo(client, client.files.upload(file=str(video)))
+            return client.models.generate_content(
+                model=MODELO, contents=[enviado, PROMPT]
+            ).text
+        except genai_errors.APIError as erro:
+            transitorio = getattr(erro, "code", None) in (429, 500, 503)
+            if not transitorio or tentativa == MAX_TENTATIVAS:
+                raise
+            espera = min(60, 2**tentativa) + random.uniform(0, 2)
+            log(f"    {video.stem}: {erro.code}, nova tentativa em {espera:.0f}s")
+            time.sleep(espera)
+        finally:
+            if enviado is not None:
+                try:
+                    client.files.delete(name=enviado.name)
+                except Exception:
+                    pass
+    raise RuntimeError("tentativas esgotadas")
+
+
+def processar(client, video: pathlib.Path):
+    saida = DIR_SAIDA / f"{video.stem}.md"
+    if saida.exists():
+        log(f"  {video.stem}: já feito")
+        return None
+
+    log(f"  {video.stem}: enviando…")
+    corpo = transcrever(client, video)
+    cabecalho = (
+        f"# {video.stem}\n\n"
+        f"- **Fonte:** https://www.instagram.com/lucureau/reel/{video.stem}/\n"
+        f"- **Data do post:** {data_do_post(video)}\n"
+        f"- **Transcrito em:** {time.strftime('%d/%m/%Y')} (Gemini {MODELO})\n\n---\n\n"
+    )
+    saida.write_text(cabecalho + corpo, encoding="utf-8")
+    log(f"  {video.stem}: ok → {saida}")
+    return saida
 
 
 def main():
     client = cliente()
     DIR_SAIDA.mkdir(exist_ok=True)
 
-    if len(sys.argv) > 1:
-        videos = [pathlib.Path(a) for a in sys.argv[1:]]
-    else:
-        videos = sorted(DIR_VIDEOS.glob("*.mp4"))
-
+    videos = (
+        [pathlib.Path(a) for a in sys.argv[1:]]
+        if len(sys.argv) > 1
+        else sorted(DIR_VIDEOS.glob("*.mp4"))
+    )
     if not videos:
-        sys.exit(f"Nenhum .mp4 encontrado em {DIR_VIDEOS}/. Rode ./1-baixar.sh antes.")
+        sys.exit(f"Nenhum .mp4 em {DIR_VIDEOS}/. Rode ./1-baixar.sh antes.")
 
+    log(f"{len(videos)} vídeos, {WORKERS} em paralelo, modelo {MODELO}\n")
+    inicio = time.time()
     falhas = []
-    for i, video in enumerate(videos, 1):
-        saida = DIR_SAIDA / f"{video.stem}.md"
-        if saida.exists():
-            print(f"[{i}/{len(videos)}] {video.stem}: já feito, pulando")
-            continue
 
-        print(f"[{i}/{len(videos)}] {video.stem}: enviando…", flush=True)
-        try:
-            corpo = transcrever(client, video)
-        except Exception as erro:
-            print(f"    ERRO: {erro}")
-            falhas.append((video.stem, str(erro)))
-            continue
+    with ThreadPoolExecutor(max_workers=WORKERS) as pool:
+        tarefas = {pool.submit(processar, client, v): v for v in videos}
+        for tarefa in as_completed(tarefas):
+            video = tarefas[tarefa]
+            try:
+                tarefa.result()
+            except Exception as erro:
+                log(f"  {video.stem}: ERRO — {erro}")
+                falhas.append((video.stem, str(erro)))
 
-        cabecalho = (
-            f"# {video.stem}\n\n"
-            f"- **Fonte:** https://www.instagram.com/lucureau/reel/{video.stem}/\n"
-            f"- **Data do post:** {data_do_post(video)}\n"
-            f"- **Transcrito em:** {time.strftime('%d/%m/%Y')} (Gemini {MODELO})\n\n---\n\n"
-        )
-        saida.write_text(cabecalho + corpo, encoding="utf-8")
-        print(f"    ok → {saida}")
-
-    print(f"\nPronto. {len(list(DIR_SAIDA.glob('*.md')))} transcrições em {DIR_SAIDA}/")
+    prontos = len(list(DIR_SAIDA.glob("*.md")))
+    log(f"\n{prontos} transcrições em {DIR_SAIDA}/ ({time.time() - inicio:.0f}s)")
     if falhas:
-        print("\nFalharam (rode de novo, ele pula o que já deu certo):")
+        log("\nFalharam (rode de novo — ele pula o que já deu certo):")
         for nome, erro in falhas:
-            print(f"  - {nome}: {erro[:120]}")
+            log(f"  - {nome}: {erro[:140]}")
+        sys.exit(1)
 
 
 if __name__ == "__main__":

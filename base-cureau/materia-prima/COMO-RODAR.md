@@ -117,3 +117,24 @@ Se não quiser mexer com chave: suba os `.mp4` direto no **Google AI Studio**
 (https://aistudio.google.com), anexe os vídeos numa conversa e cole o prompt que está dentro de
 `2-transcrever.py` (a constante `PROMPT`). Mesmo resultado, no braço. Vale para 8 vídeos;
 para 30 o script compensa.
+
+---
+
+## Alternativa 100% local, sem chave de API (Whisper)
+
+Se não quiser criar chave do Gemini, dá pra transcrever tudo offline com um comando só:
+
+```bash
+pip install -U openai-whisper
+whisper videos/*.mp4 --model small --language pt \
+        --output_format txt --output_dir transcricoes
+```
+
+Sem GPU, `--model small` roda os ~45 min de vídeo em torno de 15–25 min. Com GPU, minutos.
+Se a qualidade ficar ruim em algum, sobe pra `--model medium` só naquele arquivo.
+
+**A limitação:** Whisper só ouve. Ele não lê o texto na tela nem descreve o que ela demonstra —
+e é aí que mora metade da aula dela (o gráfico de retenção, as 4 entonações, os cortes).
+Serve como plano B, ou como complemento pro Gemini nos vídeos em que a fala é densa.
+
+Mesma limitação vale pro Premiere: áudio apenas, um arquivo por vez.
