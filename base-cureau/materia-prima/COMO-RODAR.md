@@ -46,10 +46,10 @@ Precisa estar **logado no Instagram no navegador** — o `yt-dlp` reaproveita o 
 Reel de terceiro não baixa deslogado.
 
 ```bash
-./1-baixar.sh
+python 1-baixar.py
 ```
 
-Se você não usa Chrome: `NAVEGADOR=firefox ./1-baixar.sh` (aceita firefox, brave, edge, safari).
+Se você não usa Chrome: `python 1-baixar.py --navegador firefox` (aceita firefox, brave, edge, safari).
 
 Leva uns 3–5 min para os 30. Salva em `videos/` e guarda um `.info.json` por vídeo —
 **é dele que sai a data do post**, e data é campo obrigatório na base de princípios.
@@ -91,7 +91,7 @@ Para rodar só o Tier 1:
 
 ```bash
 grep -A20 'TIER 1' urls.txt | grep '^https' > tier1.txt
-./1-baixar.sh tier1.txt
+python 1-baixar.py tier1.txt
 python3 2-transcrever.py
 ```
 

@@ -1,5 +1,9 @@
 # Passo a passo — do vídeo baixado à transcrição
 
+> 🪟 **No Windows? Abra o `WINDOWS.md`** nesta mesma pasta — tem os comandos certos
+> (`git clone`, `set`/`$env:`, barra invertida) e onde rodar. Este arquivo aqui usa
+> sintaxe de Mac/Linux.
+
 Situação de partida: os lotes 1 e 2 já estão baixados na sua máquina, os lotes 3 a 5 não.
 Você já tem a API key do Gemini.
 
@@ -40,7 +44,7 @@ transcrever` ou `⬜ falta baixar`. E avisa se tem arquivo com nome que ele não
 
 Acontece quando você baixou por site (o arquivo vem tipo `snapinsta_8823.mp4`). O script
 identifica cada vídeo pelo **nome do arquivo**, que precisa ser o código do reel
-(`DbI9QcxgcUm.mp4`). Se você baixou com o `1-baixar.sh` (yt-dlp), já veio certo — pule esta parte.
+(`DbI9QcxgcUm.mp4`). Se você baixou com o `1-baixar.py` (yt-dlp), já veio certo — pule esta parte.
 
 ```bash
 python3 0-renomear.py
@@ -90,11 +94,11 @@ Grava `faltantes.txt` com os links exatos que ainda não estão em `videos/`.
 ### 2.2 Baixar
 
 ```bash
-./1-baixar.sh faltantes.txt
+python 1-baixar.py faltantes.txt
 ```
 
 Precisa estar logado no Instagram no navegador — o yt-dlp reaproveita o cookie.
-Se você usa outro navegador: `NAVEGADOR=firefox ./1-baixar.sh faltantes.txt`.
+Se você usa outro navegador: `python 1-baixar.py --navegador firefox faltantes.txt`.
 
 Vantagem: o yt-dlp já salva com o nome certo e guarda a data do post no `.info.json`,
 então **não precisa renomear nem anotar data à mão**.
@@ -159,5 +163,5 @@ Se quiser preencher os dos lotes 1 e 2 à mão, é só abrir o link e editar a l
 | `python3 0-conferir.py --faltantes` | + grava `faltantes.txt` |
 | `python3 0-renomear.py` | propõe mapa de renomeação (não aplica) |
 | `python3 0-renomear.py --aplicar` | aplica o mapa do `renomear.txt` |
-| `./1-baixar.sh faltantes.txt` | baixa os que faltam, com nome e data corretos |
+| `python 1-baixar.py faltantes.txt` | baixa os que faltam, com nome e data corretos |
 | `python3 2-transcrever.py` | transcreve tudo que ainda não tem `.md` |

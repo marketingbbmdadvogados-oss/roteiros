@@ -139,5 +139,5 @@ Eu organizo daqui.
 
 Se tiver alguém de TI ou um dev por perto, existe a versão automática que faz os
 30 vídeos sozinha, em uns 10 minutos: está em `COMO-RODAR.md`, nesta mesma pasta,
-com os scripts prontos (`1-baixar.sh` e `2-transcrever.py`). Aí é só entregar a
+com os scripts prontos (`1-baixar.py` e `2-transcrever.py`). Aí é só entregar a
 pasta para a pessoa.
