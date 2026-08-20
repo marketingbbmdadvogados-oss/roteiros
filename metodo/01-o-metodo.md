@@ -372,6 +372,7 @@ uma apostila comprada pronta.
 | Diagnóstico pela curva (§11) | **fonte única** — um vídeo de ~50 segundos |
 | Mapa de CTA por tipo (§7) | uma frase, um vídeo. A lógica *"um CTA, vindo do objetivo"* tem duas fontes; o **mapa específico**, não |
 | Entrega: tom e expressão (§12) | os princípios são dela; **a forma de registrar em roteiro é escolha nossa** |
+| Princípios de algoritmo | `CUR-024`, `CUR-025`, `CUR-026` vêm de vídeos de **11 a 14 meses** — o tema que mais muda. Ver "Envelhecimento da base" em `base-cureau/principios.md` |
 | Tudo neste documento | **zero ciclos de validação fechados.** Nenhum roteiro foi publicado ainda seguindo o método |
 
 **Consequência prática:** os primeiros 5 a 10 roteiros são teste. Cada um sai com previsão de curva

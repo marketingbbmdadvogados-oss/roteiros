@@ -1,7 +1,7 @@
 # DLupBqrsd-z
 
 - **Fonte:** https://www.instagram.com/lucureau/reel/DLupBqrsd-z/
-- **Data do post:** DESCONHECIDA — preencher à mão
+- **Data do post:** 05/07/2025
 - **Transcrito em:** 20/08/2026 (Gemini gemini-3.6-flash)
 
 ---

@@ -1,7 +1,7 @@
 # DbI9QcxgcUm
 
 - **Fonte:** https://www.instagram.com/lucureau/reel/DbI9QcxgcUm/
-- **Data do post:** DESCONHECIDA — preencher à mão
+- **Data do post:** 23/07/2026
 - **Transcrito em:** 20/08/2026 (Gemini gemini-3.6-flash)
 
 ---

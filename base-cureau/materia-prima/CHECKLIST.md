@@ -3,23 +3,28 @@
 Vá marcando conforme fizer. A coluna **Código** é o nome que o arquivo deve ter
 quando você salvar (`DbI9QcxgcUm.mp4`, por exemplo) — é assim que a gente não se perde.
 
-## Antes de começar: 6 dos 30 são repetidos
+## Antes de começar: 5 dos 30 são o mesmo conteúdo
 
-A lista original tinha reposts. Estes **não precisam ser transcritos** — é o mesmo vídeo
-que você já vai ter feito:
+Ela reposta a mesma aula com exemplos trocados. Só precisa transcrever **um por família** — e a
+datação mostrou que **o mais recente não é o original**, é a versão mais nova de algo que ela já
+vinha ensinando.
 
-| Código | É repost de |
+| Família | Ordem real de publicação |
 |---|---|
-| `DYn0GF9MyDf` | `DcJY3KwAoZE` |
-| `DXp53zLDP0K` | `DcJY3KwAoZE` |
-| `DWsQV8rjGyL` | `DcJY3KwAoZE` |
-| `DanfRcVgw4w` | `DbBPFeXAlZ2` |
-| `DWaKLTTgLlz` | `DbRoKmfgAyN` |
-| `DbRoKmfgAyN` | vídeo-chamariz curto (só oferece a lista de ganchos) — baixe se sobrar tempo |
+| Estrutura replicável | `DWsQV8rjGyL` 03/04/26 → `DXp53zLDP0K` 27/04/26 → `DYn0GF9MyDf` 21/05/26 → **`DcJY3KwAoZE` 17/08/26** |
+| Como gravar | `DanfRcVgw4w` 10/07/26 → **`DbBPFeXAlZ2` 20/07/26** |
+| Lista de ganchos | `DWaKLTTgLlz` 27/03/26 → **`DbRoKmfgAyN` 26/07/26** |
 
-**Então são 24 vídeos de verdade, não 30.** Já economizou 20% do trabalho.
+O que está em negrito foi o transcrito. Os outros cinco não precisam.
+
+**Por que a ordem importa:** o princípio deve ser datado pelo **primeiro** vídeo da família, não pelo
+último. Se `CUR-006` for datado por `DcJY3KwAoZE`, parece coisa de agosto de 2026 — quando ela já
+ensinava aquilo desde abril. Princípio que ela sustenta há meses é mais confiável, não menos.
+
+**Então são 25 vídeos distintos**, dos quais 24 valem transcrever.
 
 ---
+
 
 ## Lote 1 — os 8 principais
 
@@ -78,37 +83,37 @@ Estes são os que envelhecem mais rápido. **Anotar a data deles é essencial.**
 
 ---
 
-## Tabela de datas
-
-Vá preenchendo enquanto baixa — a data está no post, no Instagram.
+## Datas de publicação — ✅ preenchidas
 
 ```
-DbI9QcxgcUm — __/__/____
-DW2Pp_tgFsO — __/__/____
-DbCV7PxgZT4 — __/__/____
-DbOMz_RgGdj — __/__/____
-DP4APHagIqk — __/__/____
-DTL_sqsAHbi — __/__/____
-DPH3pNygOxW — __/__/____
-DUZI63ngIuo — __/__/____
-DatVkudAUYR — __/__/____
-DaY7azbgieD — __/__/____
-DZ8mDS3gGYp — __/__/____
-DLupBqrsd-z — __/__/____
-Db9aIvrgAMY — __/__/____
-DOXJDffjASd — __/__/____
-DcJY3KwAoZE — __/__/____
-Db6AOo5g6l0 — __/__/____
-Da1RVdLAc3H — __/__/____
-DbBPFeXAlZ2 — __/__/____
-Da20LYvgl8I — __/__/____
-DZ_ITwJgNX6 — __/__/____
-DYYNqlHA_yE — __/__/____
-DLnwTEdP9zs — __/__/____
-DKxu7K_PTaA — __/__/____
-DKgD25mtage — __/__/____
-DbRoKmfgAyN — __/__/____
+DKgD25mtage — 04/06/2025
+DKxu7K_PTaA — 11/06/2025
+DLnwTEdP9zs — 02/07/2025
+DLupBqrsd-z — 05/07/2025
+DOXJDffjASd — 08/09/2025
+DPH3pNygOxW — 27/09/2025
+DP4APHagIqk — 16/10/2025
+DTL_sqsAHbi — 06/01/2026
+DUZI63ngIuo — 05/02/2026
+DW2Pp_tgFsO — 07/04/2026
+DYYNqlHA_yE — 15/05/2026
+DZ8mDS3gGYp — 23/06/2026
+DZ_ITwJgNX6 — 24/06/2026
+DaY7azbgieD — 04/07/2026
+DatVkudAUYR — 12/07/2026
+Da1RVdLAc3H — 15/07/2026
+Da20LYvgl8I — 16/07/2026
+DbBPFeXAlZ2 — 20/07/2026
+DbCV7PxgZT4 — 20/07/2026
+DbI9QcxgcUm — 23/07/2026
+DbOMz_RgGdj — 25/07/2026
+DbRoKmfgAyN — 26/07/2026
+Db6AOo5g6l0 — 11/08/2026
+Db9aIvrgAMY — 12/08/2026
+DcJY3KwAoZE — 17/08/2026
 ```
+
+Mais idade, lote e linha do tempo em `datas-dos-videos.md`.
 
 ---
 

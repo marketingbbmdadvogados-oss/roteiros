@@ -57,6 +57,7 @@ A arquitetura de como isso foi montado está em `metodo/00-arquitetura.md`.
 - [x] **O método escrito** — `metodo/01-o-metodo.md`, operacional, 9 batidas, todas as regras com fonte
 - [x] Ficha rodada num roteiro real (`analises/fichas/001-golpe…`, com PDF para envio)
 - [x] **Skill `metodo-isaac`** — o método vira executável, em `.claude/skills/`
+- [x] **Datas dos 30 vídeos** — conferidas e carimbadas; base agora envelhece à vista
 - [ ] **Primeiro ciclo de validação fechado** — nenhum roteiro publicado ainda seguindo o método
 - [ ] **Aposentar a skill `instagram-reels-script-architect`** — é a do GRAVA e conflita com esta
 

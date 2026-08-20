@@ -22,6 +22,12 @@ Ao contar fontes, três "pares" se revelaram o mesmo conteúdo reciclado:
 Ela pratica o que prega (CUR-006: reaproveitar o padrão que funciona). Mas para nós isso significa
 que **repetição no acervo não é corroboração** — é o mesmo vídeo aparecendo de novo.
 
+> **Correção feita depois da datação.** Eu tinha chamado o vídeo mais recente de "original" e os
+> antigos de "repost". É o contrário: `DcJY3KwAoZE` (17/08/26) é a versão **mais nova** de algo
+> que ela publica desde 03/04/26. Isso muda a data de origem dos princípios — e para melhor:
+> `CUR-006` não é ideia de agosto, é tese que ela sustenta há quase cinco meses. **Princípio
+> repetido ao longo do tempo é sinal de convicção, mesmo não sendo corroboração independente.**
+
 ---
 
 ## 2. Contradições encontradas

@@ -1,7 +1,7 @@
 # DZ_ITwJgNX6
 
 - **Fonte:** https://www.instagram.com/lucureau/reel/DZ_ITwJgNX6/
-- **Data do post:** DESCONHECIDA — preencher à mão
+- **Data do post:** 24/06/2026
 - **Transcrito em:** 20/08/2026 (Gemini gemini-3.6-flash)
 
 ---

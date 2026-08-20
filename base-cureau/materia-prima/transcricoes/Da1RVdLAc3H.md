@@ -1,7 +1,7 @@
 # Da1RVdLAc3H
 
 - **Fonte:** https://www.instagram.com/lucureau/reel/Da1RVdLAc3H/
-- **Data do post:** DESCONHECIDA — preencher à mão
+- **Data do post:** 15/07/2026
 - **Transcrito em:** 20/08/2026 (Gemini gemini-3.6-flash)
 
 ---

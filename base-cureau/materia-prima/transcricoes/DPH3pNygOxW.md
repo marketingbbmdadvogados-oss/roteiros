@@ -1,7 +1,7 @@
 # DPH3pNygOxW
 
 - **Fonte:** https://www.instagram.com/lucureau/reel/DPH3pNygOxW/
-- **Data do post:** DESCONHECIDA — preencher à mão
+- **Data do post:** 27/09/2025
 - **Transcrito em:** 20/08/2026 (Gemini gemini-3.6-flash)
 
 ---

@@ -1,7 +1,7 @@
 # DP4APHagIqk
 
 - **Fonte:** https://www.instagram.com/lucureau/reel/DP4APHagIqk/
-- **Data do post:** DESCONHECIDA — preencher à mão
+- **Data do post:** 16/10/2025
 - **Transcrito em:** 20/08/2026 (Gemini gemini-3.6-flash)
 
 ---

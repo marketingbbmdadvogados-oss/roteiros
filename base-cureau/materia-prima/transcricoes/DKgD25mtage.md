@@ -1,7 +1,7 @@
 # DKgD25mtage
 
 - **Fonte:** https://www.instagram.com/lucureau/reel/DKgD25mtage/
-- **Data do post:** DESCONHECIDA — preencher à mão
+- **Data do post:** 04/06/2025
 - **Transcrito em:** 20/08/2026 (Gemini gemini-3.6-flash)
 
 ---
