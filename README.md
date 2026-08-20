@@ -37,10 +37,12 @@ Comece por `metodo/00-arquitetura.md`.
 - [x] Protocolo de captura definido
 - [x] Loop de validação definido
 - [x] Engenharia reversa das referências que já estavam no Drive (`analises/`)
-- [x] **Base Cureau preenchida** — 22 vídeos transcritos, 29 princípios em `base-cureau/principios.md`
+- [x] **Base Cureau preenchida** — 23 vídeos, 35 princípios em `base-cureau/principios.md`
 - [x] **Auditoria das fontes** — `base-cureau/auditoria-das-fontes.md`
-- [ ] Ficha de justificativa reescrita com os princípios reais no lugar dos `[PROVISÓRIO]`
-- [ ] Ficha rodada num roteiro real do Isaac
+- [x] **Ficha de justificativa v2** — princípios reais no lugar dos `[PROVISÓRIO]`
+- [ ] Ficha rodada num roteiro real do Isaac (a prova de que o método se sustenta)
+- [ ] Primeiro ciclo de D+7 fechado
 
-Enquanto a camada 1 não estiver preenchida, as fichas rodam com princípios provisórios
-(marcados como `[PROVISÓRIO]`) vindos do acervo próprio e de dados reais do perfil.
+As fichas já rodam com princípios reais. Cada decisão de roteiro aponta para um `CUR-xxx` com
+fonte, e **carrega o nível de confiança do princípio** — uma decisão sustentada por 🟢 e uma
+sustentada por 🔴 não são igualmente defensáveis, e a ficha mostra a diferença.

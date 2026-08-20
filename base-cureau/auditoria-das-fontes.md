@@ -1,4 +1,4 @@
-# Auditoria das 22 transcrições
+# Auditoria das 23 transcrições
 
 Feita **antes** de usar a base para justificar qualquer roteiro. A pergunta aqui não é
 "o que ela ensina" — é **"o que ela ensina se sustenta?"**: quantas fontes independentes cada
@@ -174,6 +174,25 @@ Nem tudo enfraqueceu. Estes passaram no teste de fontes independentes:
 Repare no padrão: **os princípios mais sólidos não são os que ela repete mais — são os que batem
 com número real do perfil do Isaac.** É o que o método já dizia (dado próprio vence princípio
 externo), e a auditoria confirmou na prática.
+
+---
+
+## 4-bis. Revisão após `Db9aIvrgAMY` (transcrito depois da primeira auditoria)
+
+O carrossel viral chegou atrasado e **melhorou duas conclusões**:
+
+| Antes | Depois | Por quê |
+|---|---|---|
+| Pontas soltas: 🟡, 1 fonte dela | **🟢, 2 fontes dela** | ela ensina a mesma mecânica em carrossel — *"frases de continuidade do slide 3 ao penúltimo"* — em vídeo independente |
+| CTA (CUR-013): ⬜ 🔴 inteiro | **camada de cima 🟡** | *"CTAs alinhadas ao objetivo, nunca múltiplas conflitantes"* corrobora a lógica; o **mapa específico** (polêmico→share) segue fonte única |
+
+E rendeu seis princípios novos (CUR-030 a CUR-035), incluindo o que fecha a lógica de CTA:
+**pedir várias ações ao mesmo tempo reduz a ação em vez de somar** (paralisia de escolha).
+
+**O que não melhorou:** `DbOMz_RgGdj` e `DTL_sqsAHbi` foram derrubados por 503 persistente da API e
+ficaram de fora por decisão consciente. Eram os que corroborariam a estrutura de 9 batidas.
+**CUR-008 e CUR-015 permanecem 🔴 fonte única** — as duas peças mais usadas do método e as menos
+confirmadas. Está marcado em todo lugar onde aparecem.
 
 ---
 

@@ -115,9 +115,14 @@ batidas não tem por que estar no vídeo — e essa é a régua objetiva que fal
 dela: *"Mas essa nem é a pior parte…"*, *"E o que quase ninguém percebe é que…"*,
 *"Só que existe um erro ainda maior…"*.
 **Racional dela:** sustentam o suspense e seguram a retenção no meio.
-**Fonte:** `DbCV7PxgZT4` · **Confiança:** 🟡
-**Por que 🟡:** confirma, com nome próprio e com um mínimo numérico, o padrão que eu já tinha
-identificado nas 15 referências do Isaac — o "rehook é sempre uma frase que não informa nada"
+**Fonte:** `DbCV7PxgZT4` **+ `Db9aIvrgAMY`** · **Confiança:** 🟢
+**Promovido pela auditoria.** `Db9aIvrgAMY` traz o mesmo mecanismo **num formato diferente**:
+*"do slide 3 ao penúltimo, mantenha frases de continuidade para forçar a rolagem até o final"*.
+Duas fontes independentes dela, em Reel e em carrossel — e a mecânica é idêntica: **uma frase que
+não informa nada, colocada onde a pessoa decidiria sair.** É o princípio mais bem sustentado da
+base depois do gancho escrito.
+**Por que também vale para o Isaac:** confirma, com nome próprio e com um mínimo numérico, o
+padrão que eu já tinha identificado nas 15 referências do Isaac — o "rehook é sempre uma frase que não informa nada"
 ("aí os cientistas fizeram uma maldadezinha", "calma, valente"). Duas leituras independentes
 chegaram no mesmo lugar. O que ela acrescenta é a **quantidade mínima**.
 
@@ -155,6 +160,16 @@ de todo o acervo são de captação por palavra-chave (`4GANCHOS`, `LULU`, `PAPE
 `GANCHISMO`, `ROTEIRO` — seis palavras, o mesmo PDF), e em dois vídeos analíticos ela pede
 comentário, quando a própria regra manda pedir compartilhamento. Um caso a segue
 (`DKgD25mtage`), dois a contrariam. **Entra como hipótese a testar, não como lei.**
+
+**Resgate parcial (`Db9aIvrgAMY`):** a auditoria melhorou depois da última transcrição. O princípio
+tem duas camadas, e elas têm lastro diferente:
+
+| Camada | Fontes | Status |
+|---|---|---|
+| **CTA único, alinhado ao objetivo do post** | `DbCV7PxgZT4` + `Db9aIvrgAMY` | 🟡 **2 fontes** |
+| **O mapa específico** (polêmico→share, tutorial→save) | `DbCV7PxgZT4` | ⬜ fonte única |
+
+Ou seja: *que o CTA deve sair do objetivo* está sustentado. *Qual CTA para qual tipo* ainda não.
 **Tradução p/ o Isaac:** **é a resposta direta para "não temos a lógica do CTA".** O CTA deixa de
 ser escolha de última hora e passa a ser consequência do tipo de vídeo — decidido no começo do
 roteiro, junto com o objetivo. Casa com a calibração real da conta: os Reels aspiracionais de
@@ -376,10 +391,10 @@ acervo dela com ideia de terceiro.
 | CUR-007 | Promessa → consequência → exemplos | gancho/estrutura | ⬜ 🔴 |
 | CUR-008 | **A estrutura de 9 batidas** | estrutura | ⬜ 🔴 |
 | CUR-009 | Introdução leva até os 10s | estrutura | ⬜ |
-| CUR-010 | Pontas soltas, mínimo 2 | estrutura/retenção | 🟡 |
+| CUR-010 | **Pontas soltas, mínimo 2** | estrutura/retenção | 🟢 |
 | CUR-011 | ~~Contraste, correção, repetição~~ → exemplo | — | ⚠️ |
 | CUR-012 | Um tema, 8–9 formatos | estrutura | ⬜ |
-| CUR-013 | **Tipo de vídeo decide tipo de CTA** | CTA | ⬜ 🔴 ⚠️ |
+| CUR-013 | **Tipo de vídeo decide tipo de CTA** | CTA | 🟡/⬜ ⚠️ |
 | CUR-014 | CTA ruim = queda no final da curva | CTA | ⬜ |
 | CUR-015 | **Os 6 formatos de curva** | diagnóstico | ⬜ 🔴 |
 | CUR-016 | Conferir a curva em ~1h | diagnóstico | ⬜ |
@@ -397,17 +412,88 @@ acervo dela com ideia de terceiro.
 | CUR-028 | Perfil espião e referência na pauta | processo | ⬜ |
 | CUR-029 | 100 vídeos antes de julgar *(MrBeast)* | processo | ⬜ |
 
+| CUR-030 | **CTA múltiplo causa paralisia** | CTA | 🟡 |
+| CUR-031 | CTA pausada no meio do conteúdo denso | CTA | ⬜ |
+| CUR-032 | Slide 2 é uma segunda capa | carrossel | ⬜ |
+| CUR-033 | Método CICE | carrossel | ⬜ |
+| CUR-034 | Design limpo vence design produzido | carrossel | ⬜ |
+| CUR-035 | O miolo não se delega | autoridade | ⬜ |
+
 🔴 = fonte única · ⚠️ = ressalva registrada no princípio
+
+---
+
+## 8. Carrossel e CTA (fonte: `Db9aIvrgAMY`)
+
+### CUR-030 — Pedir várias ações ao mesmo tempo não gera nenhuma ⭐
+**Enunciado:** um CTA por peça. Pedir salvar + curtir + comentar + compartilhar junto **reduz**
+a ação em vez de somar.
+**Racional dela:** paralisia de escolha — ações conflitantes competem entre si.
+**Fonte:** `Db9aIvrgAMY` · **Confiança:** 🟡
+**Por que 🟡:** é a outra ponta de CUR-013 e vinda de vídeo independente. Junto com ele, forma o
+par que sustenta a lógica de CTA: **um só, e escolhido pelo objetivo.**
+**Tradução p/ o Isaac:** valida o campo "objetivo primário é escolha única" da ficha, que eu tinha
+escrito como decisão de projeto. Agora tem fonte. E explica um erro comum nos roteiros atuais:
+fechar pedindo comentário *e* compartilhamento "para garantir" — isso não garante, divide.
+
+### CUR-031 — CTA pausada
+**Enunciado:** em conteúdo longo ou denso, cabe um CTA **no meio** (tipicamente salvamento), além
+do CTA final.
+**Fonte:** `Db9aIvrgAMY` · **Confiança:** ⬜
+**Tradução p/ o Isaac:** aplicável ao Reel longo e ao carrossel de autoridade — o formato de maior
+alcance e menor interação da conta. Se o problema desse formato é que ninguém age, um pedido no
+meio (onde a pessoa ainda está) pode valer mais que um no fim. **Hipótese testável e barata.**
+⚠️ Cuidado: não vira desculpa para dois CTAs conflitantes — CUR-030 continua valendo. Um no meio,
+um no fim, **e o do fim é o que conta para o objetivo primário**.
+
+### CUR-032 — O slide 2 é uma segunda capa
+**Enunciado:** o algoritmo reentrega o carrossel mostrando o segundo slide para quem ignorou a
+capa. Trate o slide 2 como capa alternativa; nunca ponha bloco denso de texto nele.
+**Fonte:** `Db9aIvrgAMY` · **Confiança:** ⬜
+**Tradução p/ o Isaac:** direto aplicável ao carrossel de autoridade. Hoje o slide 2 provavelmente
+já é o começo do conteúdo — e por isso a segunda chance de alcance é desperdiçada.
+
+### CUR-033 — Método CICE (slide a slide)
+**Enunciado:** **C**omo deixar o título mais chamativo · **I**magem complementar · **C**uriosidade
+o tempo todo · **E**lementos visuais (setas, destaques, caixas).
+**Fonte:** `Db9aIvrgAMY` · **Confiança:** ⬜
+**Nota:** é o equivalente do "ganchismo" para carrossel — vários canais atuando no mesmo slide.
+
+### CUR-034 — Design limpo vence design produzido
+**Enunciado:** formatos crus (print de tweet, story nativo, app de notas, Canva mínimo) performam
+melhor que arte superproduzida.
+**Racional dela:** peça muito produzida parece anúncio de agência, e isso derruba engajamento e
+conexão.
+**Fonte:** `Db9aIvrgAMY` · **Confiança:** ⬜
+⚠️ **Conflito potencial com o Isaac.** O perfil tem identidade visual de escritório e um skill de
+diretrizes de marca. Este princípio **não entra sozinho** — é o caso típico em que a regra dela
+foi feita para criador digital e pode contrariar a marca. Decisão de vocês, não minha.
+**O que sobrevive sem conflito:** o dado real da conta mostra que **foto pessoal sem produção** foi
+o maior fenômeno orgânico isolado do perfil. Então a direção — menos produção, mais humano — tem
+apoio nos dois lados; o formato específico (print de tweet) é que precisa passar pela marca.
+
+### CUR-035 — O miolo não se delega
+**Enunciado:** capa e estrutura podem ser sistematizadas; o conteúdo do meio tem que vir da sua
+experiência real, não de IA nem de terceiro.
+**Racional dela:** autoridade e tom autêntico dependem de conhecimento prático próprio.
+**Fonte:** `Db9aIvrgAMY` · **Confiança:** ⬜
+**Tradução p/ o Isaac:** é o princípio que define o limite deste repositório inteiro. O método pode
+decidir gancho, ordem, corte e CTA — **o argumento jurídico e a opinião são dele.** Vale registrar
+porque é exatamente o risco de um processo que ficou bom demais: virar fábrica de roteiro sem dono.
 
 ## Lacunas conhecidas (pós-auditoria)
 
-1. **Os três pilares têm fonte única** — CUR-008, CUR-013 e CUR-015. São justamente as peças que
-   respondem ao problema do time. Não estão erradas; estão **não confirmadas**.
+1. **Dois pilares seguem com fonte única** — CUR-008 (estrutura de 9 batidas) e CUR-015
+   (os 6 formatos de curva). CUR-013 foi parcialmente resgatado: a lógica *"CTA único vindo do
+   objetivo"* ganhou segunda fonte (CUR-030); o **mapa específico** de qual CTA para qual tipo
+   continua com uma frase só.
 2. **Falta o vídeo mais valioso do acervo dela:** em `DOXJDffjASd` ela anuncia *"comenta ROTEIRO
    se você quer o passo a passo de como eu faço os meus [roteiros]"*. Esse vídeo de resposta
    existe e não está conosco. É o que corrobora ou derruba CUR-008.
-3. **Três vídeos do plano não foram transcritos:** `DbOMz_RgGdj`, `DTL_sqsAHbi` (ambos do Lote 1)
-   e `Db9aIvrgAMY`.
+3. **Dois vídeos ficaram sem transcrição** — `DbOMz_RgGdj` ("como ela escreve um roteiro na
+   prática") e `DTL_sqsAHbi` ("passo a passo 2026"), ambos do Lote 1, derrubados por 503
+   persistente da API. São justamente os que corroborariam CUR-008. Decisão consciente de seguir
+   sem eles; **CUR-008 permanece 🔴 até que apareçam.**
 4. **Falta a legenda de `DPH3pNygOxW`**, onde está o racional das métricas por formato.
 5. **Método ATA sem proporção** (CUR-027).
 6. **Nenhuma data de post preenchida.**
