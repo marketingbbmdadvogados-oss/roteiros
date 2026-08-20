@@ -23,12 +23,17 @@ marcada como hipótese; o que não pode é a hipótese se disfarçar de certeza.
 
 | Camada | Arquivo | O que responde |
 |---|---|---|
+| **0. O método** | **`metodo/01-o-metodo.md`** | ***Como se escreve um roteiro deste perfil?*** — comece aqui |
 | 1. Base de princípios | `base-cureau/` | *De onde vem a regra?* — o método da Luíza Cureau, extraído e datado |
 | 2. Ficha de justificativa | `metodo/02-ficha-de-justificativa.md` | *Por que cada elemento deste roteiro é assim?* |
 | 3. Protocolo de captura | `metodo/03-protocolo-de-captura.md` | *Como a base se mantém atualizada quando o algoritmo muda?* |
 | 4. Loop de validação | `metodo/04-loop-de-validacao.md` | *A justificativa se confirmou no número real?* |
 
-Comece por `metodo/00-arquitetura.md`.
+**Comece por `metodo/01-o-metodo.md`** — é o documento operacional: quem for escrever um roteiro
+segue ele do começo ao fim e não precisa de mais nada aberto. As outras camadas são o que
+sustenta, audita e valida o que está escrito lá.
+
+A arquitetura de como isso foi montado está em `metodo/00-arquitetura.md`.
 
 ## Status atual
 
@@ -40,8 +45,9 @@ Comece por `metodo/00-arquitetura.md`.
 - [x] **Base Cureau preenchida** — 23 vídeos, 35 princípios em `base-cureau/principios.md`
 - [x] **Auditoria das fontes** — `base-cureau/auditoria-das-fontes.md`
 - [x] **Ficha de justificativa v2** — princípios reais no lugar dos `[PROVISÓRIO]`
-- [ ] Ficha rodada num roteiro real do Isaac (a prova de que o método se sustenta)
-- [ ] Primeiro ciclo de D+7 fechado
+- [x] **O método escrito** — `metodo/01-o-metodo.md`, operacional, 9 batidas, todas as regras com fonte
+- [x] Ficha rodada num roteiro real (`analises/fichas/001-golpe…`, com PDF para envio)
+- [ ] **Primeiro ciclo de validação fechado** — nenhum roteiro publicado ainda seguindo o método
 
 As fichas já rodam com princípios reais. Cada decisão de roteiro aponta para um `CUR-xxx` com
 fonte, e **carrega o nível de confiança do princípio** — uma decisão sustentada por 🟢 e uma

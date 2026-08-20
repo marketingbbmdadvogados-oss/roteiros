@@ -60,9 +60,9 @@ tema  →  escolhe princípios na base  →  escreve o roteiro
 
 ## O que este método NÃO é
 
-- Não é um gerador de roteiro. O roteiro continua saindo da skill
-  `instagram-reels-script-architect` (fórmula GRAVA). Este repositório é a **camada de defesa**
-  que passa por cima dela.
+- **A estrutura de roteiro deste perfil é a de 9 batidas** (`metodo/01-o-metodo.md`), derivada do
+  método da Luíza Cureau. A fórmula GRAVA, usada antes, foi substituída — não convivem duas
+  estruturas concorrentes, porque aí ninguém sabe qual defender quando perguntam o porquê.
 - Não é cópia do conteúdo da Cureau. É a extração dos **princípios** que ela ensina, aplicados a um
   perfil jurídico/empresarial com público e restrições próprias.
 - Não substitui dado próprio. Onde houver número real do @isaacbertolini, o número real ganha do
