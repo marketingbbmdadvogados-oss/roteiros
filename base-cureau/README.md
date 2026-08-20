@@ -23,32 +23,24 @@ depois.
 
 **Regra dura: nada entra nesta pasta sem fonte verificável (vídeo + data).**
 
-## O que eu preciso de vocês (por ordem de utilidade)
+## O que eu preciso de vocês
 
-### 1. Transcrição dos vídeos-método dela — o que mais rende
-Não precisa de todos. **10 a 15 vídeos** em que ela ensina, especificamente:
-- como construir gancho / título
-- estrutura de roteiro (começo, meio, fim)
-- retenção e onde o vídeo perde gente
-- lógica de CTA
-- o que mudou no algoritmo (esses são os mais valiosos e os que vencem mais rápido)
+A lista de vídeos já existe (30 links únicos, varredura de ~830 posts do perfil). Ela está
+em `materia-prima/urls.txt`, deduplicada e ordenada por prioridade.
 
-Como mandar: qualquer um destes serve —
-- colar o texto direto no chat;
-- jogar num Doc do Google Drive (eu leio Drive) — sugestão de nome: `CUREAU — transcrições`;
-- print da tela / carrossel dela: **eu leio imagem**, então print funciona;
-- link de post/reel: **não funciona daqui**, o Instagram está bloqueado.
+**O que falta é transcrever.** O passo a passo — com scripts prontos — está em
+`materia-prima/COMO-RODAR.md`. Resumo:
 
-Para cada vídeo, o mínimo viável é: **transcrição (ou resumo do que ela ensina) + data do vídeo.**
-A data não é burocracia — é ela que permite aposentar um princípio quando o algoritmo virar.
+1. `./1-baixar.sh` — yt-dlp com o cookie do navegador, baixa os reels e guarda a data de cada post
+2. `python3 2-transcrever.py` — Gemini assiste ao vídeo e devolve fala + texto na tela +
+   o que acontece na imagem + as regras que ela enuncia
+3. as transcrições voltam para `materia-prima/transcricoes/` (ou Drive, ou coladas no chat)
 
-### 2. Os materiais em PDF dela
-O PDF de ganchos e qualquer outro material que vocês já tenham baixado. Podem ir para
-`base-cureau/materia-prima/` ou para o Drive.
+Comece pelos **8 do Tier 1** — cobrem os cinco temas e destravam a base. Não espere os 30.
 
-### 3. O episódio do Bianchi Podcast (EP15, abr/2026)
-Se conseguirem a transcrição, é a fonte mais densa e mais fácil de extrair — formato longo, ela
-explica raciocínio em vez de dar dica solta.
+O download não sai daqui: o Instagram está bloqueado na rede deste ambiente (403 no proxy),
+e o HuggingFace e o CDN da OpenAI também, então nem Whisper local eu consigo rodar.
+Detalhes e alternativas em `COMO-RODAR.md`.
 
 ## O que eu faço quando a matéria-prima chegar
 
