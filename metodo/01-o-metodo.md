@@ -1,7 +1,13 @@
-# O Método de Roteiro — @isaacbertolini
+# Método Isaac
+
+**Método de roteiro do perfil @isaacbertolini · v1**
 
 **Documento operacional.** Quem for escrever um roteiro para este perfil segue este arquivo, do
 começo ao fim, e não precisa de mais nada aberto.
+
+O Método Isaac é a **tradução do método da Luíza Cureau para este perfil**: as regras são dela,
+filtradas e calibradas pelo que os números desta conta mostram. Onde os dois discordam, o número
+da casa manda. É essa calibração que faz dele um método próprio, e não uma cópia.
 
 Todas as regras aqui vêm de duas fontes, e **toda regra diz de onde veio**:
 
@@ -380,7 +386,7 @@ documento deixa de ser hipótese organizada e vira método com lastro próprio.
 
 ---
 
-## Resumo de uma página
+## O Método Isaac em uma página
 
 1. Escreva para **pares** — advogado e empresário, não trabalhador em apuros.
 2. Escolha **um objetivo** antes da primeira linha.

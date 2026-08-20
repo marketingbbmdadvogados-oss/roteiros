@@ -1,4 +1,6 @@
-# Método de Roteiro — perfil @isaacbertolini
+# Método Isaac
+
+Método de roteiro de vídeo curto do perfil **@isaacbertolini**.
 
 Repositório do **método justificável** de roteiro de vídeo curto.
 
@@ -27,7 +29,7 @@ marcada como hipótese; o que não pode é a hipótese se disfarçar de certeza.
 
 | Camada | Arquivo | O que responde |
 |---|---|---|
-| **0. O método** | **`metodo/01-o-metodo.md`** | ***Como se escreve um roteiro deste perfil?*** — comece aqui |
+| **0. O Método Isaac** | **`metodo/01-o-metodo.md`** | ***Como se escreve um roteiro deste perfil?*** — comece aqui |
 | 0b. O modelo | `metodo/05-modelo-de-roteiro.md` | *Onde eu escrevo?* — formulário para copiar e preencher |
 | 1. Base de princípios | `base-cureau/` | *De onde vem a regra?* — o método da Luíza Cureau, extraído e datado |
 | 2. Ficha de justificativa | `metodo/02-ficha-de-justificativa.md` | *Por que cada elemento deste roteiro é assim?* |

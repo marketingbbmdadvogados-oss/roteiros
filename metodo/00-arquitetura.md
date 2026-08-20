@@ -1,4 +1,4 @@
-# Arquitetura do método
+# Arquitetura do Método Isaac
 
 ## Por que "justificar" é um problema de sistema, não de talento
 

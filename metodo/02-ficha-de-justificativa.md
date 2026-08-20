@@ -1,4 +1,4 @@
-# Ficha de justificativa v2
+# Ficha de justificativa — Método Isaac
 
 Anexo obrigatório de todo roteiro. Sem ficha, o roteiro não está pronto — mesmo que o texto esteja
 ótimo.

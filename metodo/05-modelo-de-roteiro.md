@@ -1,4 +1,6 @@
-# Modelo de roteiro — copie e preencha
+# Modelo de roteiro — Método Isaac
+
+Copie e preencha. Referência: `metodo/01-o-metodo.md`.
 
 Formato padrão de entrega. Quem grava lê a coluna **Fala**; o resto é direção.
 
