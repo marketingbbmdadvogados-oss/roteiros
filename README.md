@@ -32,6 +32,7 @@ marcada como hipótese; o que não pode é a hipótese se disfarçar de certeza.
 | **0. O Método Isaac** | **`metodo/01-o-metodo.md`** | ***Como se escreve um roteiro deste perfil?*** — comece aqui |
 | 0b. O modelo | `metodo/05-modelo-de-roteiro.md` | *Onde eu escrevo?* — formulário para copiar e preencher |
 | 0c. A skill | `.claude/skills/metodo-isaac/` | o método executável — o Claude escreve e diagnostica seguindo ele |
+| 0d. A página | `site/metodo-isaac.html` | versão para circular no escritório — publicada em https://claude.ai/code/artifact/d0e4847c-9b80-4a76-957f-965e3b75f606 |
 | 1. Base de princípios | `base-cureau/` | *De onde vem a regra?* — o método da Luíza Cureau, extraído e datado |
 | 2. Ficha de justificativa | `metodo/02-ficha-de-justificativa.md` | *Por que cada elemento deste roteiro é assim?* |
 | 3. Protocolo de captura | `metodo/03-protocolo-de-captura.md` | *Como a base se mantém atualizada quando o algoritmo muda?* |

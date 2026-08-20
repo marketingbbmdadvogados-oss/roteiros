@@ -1,0 +1,462 @@
+<title>Método Isaac</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+
+<style>
+:root{
+  --papel:#F1F2F4;
+  --papel-2:#FAFAFB;
+  --papel-3:#E7E9EC;
+  --tinta:#15181E;
+  --tinta-2:#454C58;
+  --tinta-3:#6E7684;
+  --linha:#D5D9DF;
+  --linha-forte:#B6BCC6;
+  --acento:#1B4A63;
+  --acento-claro:#2C6D8F;
+  --confirmado:#2C6046;
+  --corroborado:#8A6410;
+  --unico:#9B3A26;
+  --sombra:0 1px 2px rgba(21,24,30,.05), 0 8px 24px -12px rgba(21,24,30,.14);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --papel:#111419;
+    --papel-2:#171B22;
+    --papel-3:#1F242C;
+    --tinta:#E8EAEE;
+    --tinta-2:#A9B1BD;
+    --tinta-3:#7C8493;
+    --linha:#2A303A;
+    --linha-forte:#3C4450;
+    --acento:#6FB3D2;
+    --acento-claro:#8FC9E3;
+    --confirmado:#6FBF93;
+    --corroborado:#D9AC52;
+    --unico:#E08871;
+    --sombra:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.6);
+  }
+}
+:root[data-theme="dark"]{
+  --papel:#111419;
+  --papel-2:#171B22;
+  --papel-3:#1F242C;
+  --tinta:#E8EAEE;
+  --tinta-2:#A9B1BD;
+  --tinta-3:#7C8493;
+  --linha:#2A303A;
+  --linha-forte:#3C4450;
+  --acento:#6FB3D2;
+  --acento-claro:#8FC9E3;
+  --confirmado:#6FBF93;
+  --corroborado:#D9AC52;
+  --unico:#E08871;
+  --sombra:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.6);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--papel); color:var(--tinta);
+  font-family:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-size:16px; line-height:1.62; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px;display:grid;grid-template-columns:216px minmax(0,1fr);gap:56px}
+@media (max-width:900px){.wrap{grid-template-columns:1fr;gap:0;padding:0 20px}}
+
+/* ---------- nav ---------- */
+nav{position:sticky;top:0;align-self:start;padding:44px 0 40px;max-height:100vh;overflow-y:auto}
+@media (max-width:900px){nav{position:static;max-height:none;padding:24px 0 0;border-bottom:1px solid var(--linha)}}
+.nav-tit{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--tinta-3);margin:0 0 14px}
+nav ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:1px;counter-reset:n}
+@media (max-width:900px){nav ol{flex-direction:row;flex-wrap:wrap;gap:6px;padding-bottom:20px}}
+nav a{
+  display:flex;gap:9px;align-items:baseline;text-decoration:none;color:var(--tinta-2);
+  font-size:13.5px;padding:4px 8px;margin-left:-8px;border-radius:4px;line-height:1.35;
+}
+nav a:hover{background:var(--papel-3);color:var(--tinta)}
+nav a:focus-visible{outline:2px solid var(--acento);outline-offset:1px}
+nav a .n{font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--tinta-3);flex-shrink:0}
+
+/* ---------- conteúdo ---------- */
+main{padding:44px 0 96px;max-width:70ch}
+header.topo{padding-bottom:34px;margin-bottom:44px;border-bottom:2px solid var(--tinta)}
+.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--acento);margin:0 0 14px}
+h1{font-family:Spectral,Georgia,serif;font-weight:700;font-size:clamp(2.7rem,7vw,4rem);line-height:1;letter-spacing:-.02em;margin:0 0 16px;text-wrap:balance}
+.dek{font-family:Spectral,Georgia,serif;font-size:1.22rem;line-height:1.55;color:var(--tinta-2);margin:0;max-width:52ch}
+.meta{margin-top:22px;font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--tinta-3);display:flex;gap:18px;flex-wrap:wrap}
+
+section{margin-bottom:62px;scroll-margin-top:24px}
+h2{font-family:Spectral,Georgia,serif;font-weight:600;font-size:1.85rem;line-height:1.2;letter-spacing:-.01em;margin:0 0 6px;text-wrap:balance}
+h2 .num{font-family:"IBM Plex Mono",monospace;font-size:.72rem;color:var(--acento);letter-spacing:.1em;display:block;margin-bottom:8px;font-weight:500}
+h3{font-family:"IBM Plex Sans",sans-serif;font-weight:600;font-size:1.02rem;margin:30px 0 8px;letter-spacing:-.005em}
+p{margin:0 0 15px}
+.lede{font-size:1.06rem;color:var(--tinta-2);margin-bottom:24px;max-width:60ch}
+strong{font-weight:600}
+em{font-style:italic}
+a.ref{color:var(--acento);text-decoration:none;border-bottom:1px solid var(--linha-forte)}
+a.ref:hover{border-bottom-color:var(--acento)}
+
+/* ---------- selo de procedência ---------- */
+.selo{
+  display:inline-flex;align-items:center;gap:5px;font-family:"IBM Plex Mono",monospace;
+  font-size:10.5px;font-weight:500;letter-spacing:.03em;padding:2px 7px;border-radius:3px;
+  border:1px solid;white-space:nowrap;vertical-align:baseline;
+}
+.selo.cur{color:var(--acento);border-color:color-mix(in srgb,var(--acento) 35%,transparent);background:color-mix(in srgb,var(--acento) 7%,transparent)}
+.selo.dado{color:var(--confirmado);border-color:color-mix(in srgb,var(--confirmado) 38%,transparent);background:color-mix(in srgb,var(--confirmado) 8%,transparent)}
+.selo.aviso{color:var(--unico);border-color:color-mix(in srgb,var(--unico) 38%,transparent);background:color-mix(in srgb,var(--unico) 8%,transparent)}
+.selo.meio{color:var(--corroborado);border-color:color-mix(in srgb,var(--corroborado) 40%,transparent);background:color-mix(in srgb,var(--corroborado) 9%,transparent)}
+
+/* ---------- blocos ---------- */
+.caixa{background:var(--papel-2);border:1px solid var(--linha);border-radius:7px;padding:20px 22px;margin:22px 0}
+.caixa.destaque{border-left:3px solid var(--acento)}
+.caixa.alerta{border-left:3px solid var(--unico)}
+.caixa p:last-child{margin-bottom:0}
+.caixa .rot{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--tinta-3);margin:0 0 9px}
+
+blockquote{
+  margin:22px 0;padding:2px 0 2px 20px;border-left:2px solid var(--linha-forte);
+  font-family:Spectral,Georgia,serif;font-size:1.13rem;font-style:italic;color:var(--tinta-2);line-height:1.5;
+}
+blockquote strong{font-style:normal;color:var(--tinta)}
+
+/* ---------- tabelas ---------- */
+.tabela-wrap{overflow-x:auto;margin:22px 0;border:1px solid var(--linha);border-radius:7px;background:var(--papel-2)}
+table{width:100%;border-collapse:collapse;font-size:14.2px;min-width:420px}
+th{
+  text-align:left;font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--tinta-3);font-weight:500;padding:11px 15px;
+  border-bottom:1px solid var(--linha-forte);white-space:nowrap;
+}
+td{padding:11px 15px;border-bottom:1px solid var(--linha);vertical-align:top;line-height:1.5}
+tr:last-child td{border-bottom:none}
+
+/* ---------- espinha das 9 batidas ---------- */
+.espinha{list-style:none;margin:26px 0;padding:0;position:relative}
+.espinha::before{content:"";position:absolute;left:15px;top:14px;bottom:14px;width:1px;background:var(--linha-forte)}
+.espinha li{position:relative;padding:0 0 20px 48px;min-height:32px}
+.espinha li:last-child{padding-bottom:0}
+.bat-n{
+  position:absolute;left:0;top:0;width:31px;height:31px;border-radius:50%;
+  background:var(--papel);border:1px solid var(--linha-forte);color:var(--tinta-2);
+  font-family:"IBM Plex Mono",monospace;font-size:12px;
+  display:flex;align-items:center;justify-content:center;z-index:1;
+}
+.espinha li.chave .bat-n{background:var(--acento);border-color:var(--acento);color:var(--papel-2)}
+:root[data-theme="dark"] .espinha li.chave .bat-n{color:#111419}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .espinha li.chave .bat-n{color:#111419}}
+.bat-nome{font-weight:600;font-size:15.5px;display:block;margin-bottom:1px}
+.bat-desc{font-size:14px;color:var(--tinta-2);line-height:1.5}
+.bat-t{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--tinta-3);margin-left:8px;font-weight:400}
+
+/* ---------- grid dos 4 ganchos ---------- */
+.ganchos{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin:24px 0}
+.gancho{background:var(--papel-2);border:1px solid var(--linha);border-radius:7px;padding:15px 17px}
+.gancho.obrig{border-color:var(--acento);box-shadow:inset 3px 0 0 var(--acento)}
+.gancho h4{margin:0 0 4px;font-size:14.5px;font-weight:600;display:flex;justify-content:space-between;align-items:center;gap:8px}
+.gancho p{margin:0;font-size:13.4px;color:var(--tinta-2);line-height:1.48}
+.tag-ob{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.08em;color:var(--acento);border:1px solid color-mix(in srgb,var(--acento) 35%,transparent);padding:1px 5px;border-radius:3px}
+
+/* ---------- curvas ---------- */
+.curvas{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:14px;margin:26px 0}
+.curva{background:var(--papel-2);border:1px solid var(--linha);border-radius:7px;padding:14px 15px 15px}
+.curva svg{display:block;width:100%;height:auto;margin-bottom:10px}
+.curva .diag{font-weight:600;font-size:14px;margin:0 0 2px;line-height:1.35}
+.curva .acao{font-size:12.8px;color:var(--tinta-3);margin:0;line-height:1.4}
+.curva.ok{border-color:color-mix(in srgb,var(--confirmado) 45%,var(--linha))}
+
+/* ---------- lista de checagem ---------- */
+ul.check{list-style:none;margin:18px 0;padding:0;display:flex;flex-direction:column;gap:9px}
+ul.check li{position:relative;padding-left:26px;font-size:14.8px;line-height:1.5}
+ul.check li::before{
+  content:"";position:absolute;left:0;top:4px;width:13px;height:13px;
+  border:1.5px solid var(--linha-forte);border-radius:3px;
+}
+ul.plain{margin:16px 0;padding-left:20px}
+ul.plain li{margin-bottom:7px}
+
+/* ---------- rodapé ---------- */
+footer{border-top:1px solid var(--linha);padding:30px 0 60px;margin-top:20px;color:var(--tinta-3);font-size:13.4px}
+footer code{font-family:"IBM Plex Mono",monospace;font-size:12.3px;color:var(--tinta-2);background:var(--papel-3);padding:1px 5px;border-radius:3px}
+footer p{margin:0 0 10px}
+</style>
+
+<div class="wrap">
+<nav>
+  <p class="nav-tit">Método Isaac</p>
+  <ol>
+    <li><a href="#origem"><span class="n">01</span><span>De onde vem cada regra</span></a></li>
+    <li><a href="#publico"><span class="n">02</span><span>Para quem se escreve</span></a></li>
+    <li><a href="#batidas"><span class="n">03</span><span>As nove batidas</span></a></li>
+    <li><a href="#ganchismo"><span class="n">04</span><span>O ganchismo</span></a></li>
+    <li><a href="#pontas"><span class="n">05</span><span>Pontas soltas</span></a></li>
+    <li><a href="#virada"><span class="n">06</span><span>A virada</span></a></li>
+    <li><a href="#cta"><span class="n">07</span><span>O CTA</span></a></li>
+    <li><a href="#curva"><span class="n">08</span><span>Ler a curva</span></a></li>
+    <li><a href="#marca"><span class="n">09</span><span>Regras de marca</span></a></li>
+    <li><a href="#limites"><span class="n">10</span><span>O que ainda não sabemos</span></a></li>
+  </ol>
+</nav>
+
+<main>
+<header class="topo">
+  <p class="eyebrow">Método de roteiro · v1</p>
+  <h1>Método Isaac</h1>
+  <p class="dek">Como se escreve um roteiro de vídeo curto para o perfil <strong>@isaacbertolini</strong> — e como justificar cada decisão dele.</p>
+  <div class="meta">
+    <span>23 vídeos transcritos</span>
+    <span>35 princípios com fonte</span>
+    <span>90 dias de dado próprio</span>
+  </div>
+</header>
+
+<section id="origem">
+  <h2><span class="num">01</span>De onde vem cada regra</h2>
+  <p class="lede">O problema que este método resolve não é escrever melhor. É <strong>conseguir defender o que foi escrito</strong> — por que esse título, por que esse enredo, por que esse trecho, por que esse CTA.</p>
+
+  <p>Por isso toda regra carrega a procedência. Só existem duas origens possíveis:</p>
+
+  <div class="tabela-wrap"><table>
+    <tr><th>Selo</th><th>Significa</th></tr>
+    <tr><td><span class="selo cur">CUR-xxx</span></td><td>Princípio extraído de <strong>23 vídeos transcritos da Luíza Cureau</strong> (@lucureau), com o vídeo de origem registrado</td></tr>
+    <tr><td><span class="selo dado">DADO</span></td><td>Número real da conta — 90 dias, orgânico já separado do pago</td></tr>
+  </table></div>
+
+  <div class="caixa destaque">
+    <p class="rot">Regra de precedência</p>
+    <p><strong>Quando as duas discordam, o <span class="selo dado">DADO</span> ganha.</strong> O método da Luíza foi feito para criadora digital falando com criadores. Este perfil fala com advogados e empresários. É essa calibração que faz do Método Isaac um método próprio, e não uma cópia.</p>
+  </div>
+
+  <p>E cada princípio carrega também o quanto se sustenta, porque uma decisão apoiada em três fontes e uma apoiada em meia frase não são igualmente defensáveis:</p>
+
+  <div class="tabela-wrap"><table>
+    <tr><th>Selo</th><th>Quer dizer</th></tr>
+    <tr><td><span class="selo dado">confirmado</span></td><td>Fontes independentes <em>e</em> o número da conta apontam para o mesmo lugar</td></tr>
+    <tr><td><span class="selo meio">corroborado</span></td><td>Mais de uma fonte, ainda sem teste no perfil</td></tr>
+    <tr><td><span class="selo aviso">fonte única</span></td><td>Vem de um vídeo só. Usar como hipótese, registrar como teste</td></tr>
+  </table></div>
+
+  <div class="caixa alerta">
+    <p class="rot">Regra de fronteira</p>
+    <p><strong>Nunca se inventa regra.</strong> Prática que não sai do acervo dela nem de número da conta não é método — vai para a quarentena e espera corroboração ou teste. É isso que impede o método de virar colcha de retalhos de opinião, que é exatamente o problema que ele existe para resolver.</p>
+  </div>
+</section>
+
+<section id="publico">
+  <h2><span class="num">02</span>Para quem se escreve</h2>
+  <p>O público real do perfil <span class="selo dado">DADO</span> são <strong>pares de profissão</strong>: advogados, empresários e profissionais liberais, de 25 a 45 anos.</p>
+  <p><strong>Não é</strong> trabalhador buscando defesa individual. Isso muda o tom de qualquer conteúdo trabalhista — fala-se para quem também atua no meio, não para quem está sofrendo o problema.</p>
+  <p>E nos três primeiros segundos <span class="selo cur">CUR-021</span> a pessoa precisa entender <strong>do que você fala e com quem você fala</strong>. Um gancho genial que não diz o assunto perde para um gancho simples que diz.</p>
+  <blockquote>Teste rápido: um advogado rolando o feed sabe, em três segundos, que isso é para ele?</blockquote>
+</section>
+
+<section id="batidas">
+  <h2><span class="num">03</span>As nove batidas</h2>
+  <p class="lede">Não é sugestão de ordem. É a ordem. <span class="selo cur">CUR-008</span> <span class="selo aviso">fonte única</span></p>
+
+  <ol class="espinha">
+    <li class="chave"><span class="bat-n">1</span><span class="bat-nome">Ganchismo<span class="bat-t">0–3s</span></span><span class="bat-desc">Trava o dedo com quatro canais ao mesmo tempo</span></li>
+    <li><span class="bat-n">2</span><span class="bat-nome">Promessa aberta</span><span class="bat-desc">Renova a tensão sem entregar nada</span></li>
+    <li><span class="bat-n">3</span><span class="bat-nome">Introdução<span class="bat-t">→10s</span></span><span class="bat-desc">Leva a pessoa até os dez segundos. Passou dali, a chance de ficar até o fim sobe muito</span></li>
+    <li><span class="bat-n">4</span><span class="bat-nome">Bloco 1</span><span class="bat-desc">Primeira parte do conteúdo útil</span></li>
+    <li class="chave"><span class="bat-n">5</span><span class="bat-nome">Ponta solta 1</span><span class="bat-desc">Frase de curiosidade que não informa nada</span></li>
+    <li><span class="bat-n">6</span><span class="bat-nome">Bloco 2</span><span class="bat-desc">Segunda parte, com a âncora de autoridade — dado, lei, decisão, caso</span></li>
+    <li class="chave"><span class="bat-n">7</span><span class="bat-nome">Ponta solta 2</span><span class="bat-desc">Segunda frase de curiosidade</span></li>
+    <li class="chave"><span class="bat-n">8</span><span class="bat-nome">Virada</span><span class="bat-desc">O reframe contraintuitivo</span></li>
+    <li class="chave"><span class="bat-n">9</span><span class="bat-nome">CTA</span><span class="bat-desc">Uma ação só, escolhida antes de escrever</span></li>
+  </ol>
+
+  <div class="caixa alerta">
+    <p class="rot">Ressalva registrada</p>
+    <p>Esta estrutura vem de <strong>um único vídeo</strong>, em que ela desenha o esquema no quadro. Os dois vídeos que a corroborariam não foram capturados. É a espinha do método e a peça de menor lastro — os primeiros roteiros são <strong>teste</strong>, não aplicação de lei consolidada.</p>
+  </div>
+</section>
+
+<section id="ganchismo">
+  <h2><span class="num">04</span>O ganchismo</h2>
+  <p class="lede">Não é escolher um gancho. São quatro canais atuando <strong>ao mesmo tempo</strong>. <span class="selo cur">CUR-001</span></p>
+  <p>Um gancho sozinho compete com o polegar. Quatro juntos quebram o padrão.</p>
+
+  <div class="ganchos">
+    <div class="gancho obrig"><h4>Escrito <span class="tag-ob">OBRIGATÓRIO</span></h4><p>Texto grande na tela, legível em um segundo. Melhor ainda se trocar no meio dos 3 segundos: afirmação → reviravolta.</p></div>
+    <div class="gancho obrig"><h4>Falado <span class="tag-ob">OBRIGATÓRIO</span></h4><p>A primeira frase dita. Nunca saudação, nunca contexto, nunca “hoje eu vou falar sobre”.</p></div>
+    <div class="gancho"><h4>Visual</h4><p>Movimento, print, objeto, corte. Algo que acontece na imagem antes da palavra.</p></div>
+    <div class="gancho"><h4>Sonoro</h4><p>Batida, estalo, silêncio brusco. Marca a virada do texto na tela.</p></div>
+  </div>
+
+  <p><strong>Se um dos quatro estiver vazio no roteiro, ele não está pronto para gravar.</strong> É a checagem que mais reprova.</p>
+
+  <h3>Por que o escrito é o mais importante</h3>
+  <p><span class="selo cur">CUR-002</span> <span class="selo dado">DADO</span> <span class="selo dado">confirmado</span> — É o único ponto em que ela e o número da casa dizem exatamente a mesma coisa.</p>
+  <ul class="plain">
+    <li><strong>Ela:</strong> o texto grande contextualiza o vídeo antes de a pessoa ouvir qualquer palavra.</li>
+    <li><strong>O dado:</strong> bastidores publicados como Story deram o <em>pior alcance da conta</em>. O mesmo tema, reformatado como Reel com gancho de legenda, deu o <em>melhor alcance para não-seguidor de toda a conta</em>.</li>
+  </ul>
+  <blockquote><strong>O tema nunca foi o problema. Era o formato sem gancho.</strong></blockquote>
+
+  <h3>A entrega vale tanto quanto o texto</h3>
+  <p><span class="selo cur">CUR-005</span> Quatro pessoas podem ler o mesmo gancho e só uma viralizar. Se o gancho depende de entonação, o roteiro registra <strong>como falar</strong>, não só o que falar.</p>
+</section>
+
+<section id="pontas">
+  <h2><span class="num">05</span>Pontas soltas</h2>
+  <p class="lede">No mínimo duas, e não são opcionais. <span class="selo cur">CUR-010</span> <span class="selo dado">confirmado</span></p>
+
+  <p>São frases que <strong>abrem curiosidade sem entregar nada</strong>, colocadas exatamente onde a pessoa decidiria sair.</p>
+
+  <div class="caixa">
+    <p class="rot">Moldes</p>
+    <p><em>“Mas essa nem é a pior parte…”</em><br>
+    <em>“E o que quase ninguém percebe é que…”</em><br>
+    <em>“Só que existe um erro ainda maior…”</em><br>
+    <em>“Só que tem uma parte dessa história que quase ninguém viu.”</em></p>
+  </div>
+
+  <p>É a regra mais bem sustentada do método depois do gancho escrito, porque <strong>três leituras independentes chegaram nela</strong>: ela ensinando em Reel, ela ensinando em carrossel, e a análise das referências de outros criadores que o time já tinha no Drive.</p>
+
+  <p>Custam dois segundos, não informam nada, e são o primeiro item que alguém corta achando que roteiro é sobre informação. <strong>É por não informarem nada que funcionam.</strong></p>
+
+  <h3>O truque que dobra o valor</h3>
+  <p>Use a ponta solta para <strong>anunciar o melhor dado antes de entregá-lo</strong>. Um fato forte solto no meio de uma rajada de números passa batido. Anunciado, vira pagamento — e quem ficou sente que ficou por um motivo.</p>
+
+  <h3>A regra do corte</h3>
+  <p>Todo trecho tem função declarada. Trecho cuja função é “explicar melhor” ou “contextualizar” sai primeiro: <strong>contexto não segura retenção, tensão segura.</strong> Se um trecho não compra o próximo, não é trecho — é gordura.</p>
+</section>
+
+<section id="virada">
+  <h2><span class="num">06</span>A virada</h2>
+  <p class="lede">Sem virada, não existe roteiro.</p>
+  <p>Antes de escrever, formule em uma frase qual é o reframe contraintuitivo. Se não houver, volte ao tema. O formato preferido é a <strong>antítese</strong>: <em>não é X, é Y</em>.</p>
+  <blockquote>“Perfil profissional, foto boa, discurso de autoridade — isso não é prova de nada. Isso é produção.”</blockquote>
+  <p>A virada é o momento que a pessoa quer salvar ou mandar para alguém. <strong>Ela gera o compartilhamento; o CTA só coleta.</strong> Dois dos vídeos mais compartilháveis do acervo de referência não têm CTA nenhum.</p>
+</section>
+
+<section id="cta">
+  <h2><span class="num">07</span>O CTA</h2>
+  <p class="lede">Um só. <span class="selo cur">CUR-030</span> Pedir várias ações ao mesmo tempo <strong>reduz</strong> a ação em vez de somar — paralisia de escolha.</p>
+  <p>Fechar pedindo comentário <em>e</em> compartilhamento “para garantir” não garante. Divide.</p>
+
+  <div class="tabela-wrap"><table>
+    <tr><th>Se o vídeo é…</th><th>o CTA pede…</th><th>Molde</th></tr>
+    <tr><td>análise, opinião, notícia, timing</td><td><strong>compartilhamento</strong></td><td><em>“Manda esse vídeo pra pessoa que…”</em></td></tr>
+    <tr><td>guia, passo a passo, direitos</td><td><strong>salvamento</strong></td><td><em>“Guarda isso pra quando acontecer com você.”</em></td></tr>
+    <tr><td>tema que divide opinião</td><td><strong>comentário</strong></td><td>pergunta respondível em até 4 palavras</td></tr>
+    <tr><td>história pessoal, bastidor</td><td><strong>nenhum</strong></td><td>a virada já faz o trabalho</td></tr>
+  </table></div>
+
+  <h3>Por que compartilhamento é a alavanca mais forte</h3>
+  <p>O espectador não compartilha o vídeo — <strong>ele compartilha um recado que não quer dar na cara.</strong> Por isso o CTA descreve <em>um tipo de pessoa</em>, em vez de pedir um favor.</p>
+
+  <div class="caixa alerta">
+    <p class="rot">Nunca peça confissão pública</p>
+    <p><em>“Você já contratou alguém só porque viu ele bem nas redes?”</em> pede que a pessoa admita em público que errou. O custo social é alto e o comentário morre antes de nascer. Auto-implicação funciona quando o desconforto é privado.</p>
+  </div>
+
+  <div class="caixa">
+    <p class="rot">Lastro desta seção</p>
+    <p><strong>“Um CTA, vindo do objetivo”</strong> tem duas fontes independentes <span class="selo meio">corroborado</span>. Já o <strong>mapa específico</strong> da tabela acima tem uma frase, num vídeo só <span class="selo aviso">fonte única</span> — e ela mesma não o segue: os CTAs de todo o acervo dela são captação por palavra-chave, e em dois vídeos analíticos ela pede comentário quando a própria regra manda pedir compartilhamento.</p>
+    <p style="margin-top:10px">Continua sendo a melhor lógica de CTA disponível. <strong>Promissor e confirmado não são a mesma coisa</strong>, e o método registra os dois.</p>
+  </div>
+
+  <h3>Proibido neste perfil</h3>
+  <ul class="plain">
+    <li>CTA genérico falado: “comenta aqui”, “curte esse vídeo”, “me segue”</li>
+    <li>Captação por palavra-chave no comentário</li>
+    <li>Esfera Legal citada nominalmente, em qualquer hipótese</li>
+  </ul>
+</section>
+
+<section id="curva">
+  <h2><span class="num">08</span>Ler a curva</h2>
+  <p class="lede">Cerca de uma hora depois de publicar, abra a curva de retenção nos Insights e leia o formato dela. <span class="selo cur">CUR-015</span> <span class="selo aviso">fonte única</span></p>
+
+  <div class="curvas">
+    <div class="curva ok">
+      <svg viewBox="0 0 100 60" fill="none" aria-hidden="true"><path d="M0 5 C25 12 50 22 100 38" stroke="var(--confirmado)" stroke-width="2.2" stroke-linecap="round"/><line x1="0" y1="56" x2="100" y2="56" stroke="var(--linha)" stroke-width="1"/></svg>
+      <p class="diag">Cai suave, se mantém</p><p class="acao">O vídeo está certo</p>
+    </div>
+    <div class="curva">
+      <svg viewBox="0 0 100 60" fill="none" aria-hidden="true"><path d="M0 5 C4 8 8 40 14 44 C40 47 70 49 100 50" stroke="var(--unico)" stroke-width="2.2" stroke-linecap="round"/><line x1="0" y1="56" x2="100" y2="56" stroke="var(--linha)" stroke-width="1"/></svg>
+      <p class="diag">Despenca no início</p><p class="acao">Ganchismo fraco → seção 04</p>
+    </div>
+    <div class="curva">
+      <svg viewBox="0 0 100 60" fill="none" aria-hidden="true"><path d="M0 7 C20 10 30 14 45 20 C60 30 80 42 100 50" stroke="var(--corroborado)" stroke-width="2.2" stroke-linecap="round"/><line x1="0" y1="56" x2="100" y2="56" stroke="var(--linha)" stroke-width="1"/></svg>
+      <p class="diag">Cai contínuo no meio</p><p class="acao">Conteúdo pouco aplicável → seção 05</p>
+    </div>
+    <div class="curva">
+      <svg viewBox="0 0 100 60" fill="none" aria-hidden="true"><path d="M0 7 C14 10 26 12 38 13 L38 33 C56 36 80 43 100 47" stroke="var(--corroborado)" stroke-width="2.2" stroke-linecap="round"/><line x1="0" y1="56" x2="100" y2="56" stroke="var(--linha)" stroke-width="1"/></svg>
+      <p class="diag">Degrau brusco num ponto</p><p class="acao">Aquele trecho é ruim — ache o segundo</p>
+    </div>
+    <div class="curva">
+      <svg viewBox="0 0 100 60" fill="none" aria-hidden="true"><path d="M0 6 C25 10 55 14 76 18 C82 26 87 44 91 51 L100 53" stroke="var(--unico)" stroke-width="2.2" stroke-linecap="round"/><line x1="0" y1="56" x2="100" y2="56" stroke="var(--linha)" stroke-width="1"/></svg>
+      <p class="diag">Cai no final</p><p class="acao">CTA mal posicionado → seção 07</p>
+    </div>
+    <div class="curva">
+      <svg viewBox="0 0 100 60" fill="none" aria-hidden="true"><path d="M0 5 C2 8 4 45 7 52 L100 54" stroke="var(--unico)" stroke-width="2.2" stroke-linecap="round"/><line x1="0" y1="56" x2="100" y2="56" stroke="var(--linha)" stroke-width="1"/></svg>
+      <p class="diag">Zera logo de cara</p><p class="acao">Estrutura inteira errada → seção 03</p>
+    </div>
+  </div>
+
+  <blockquote>É isto que acaba com o <strong>“o vídeo foi mal”</strong>. Vira <strong>“a queda foi no segundo 4, então o problema é o gancho”</strong> — e o método diz qual seção revisar.</blockquote>
+
+  <h3>Diagnosticar não é julgar</h3>
+  <p>A curva de um vídeo diagnostica <strong>aquele vídeo</strong>. Só o agregado julga a estratégia. Sem essa distinção, o time abandona um formato bom no terceiro flop.</p>
+
+  <h3>Cada formato tem a sua métrica</h3>
+  <p><span class="selo cur">CUR-025</span> <span class="selo dado">confirmado</span> — Julgar pelo número errado reprova conteúdo bom.</p>
+  <div class="tabela-wrap"><table>
+    <tr><th>Formato</th><th>O que esperar <span style="text-transform:none;letter-spacing:0">(dado real, 90 dias)</span></th></tr>
+    <tr><td>Reel com storytelling + indignação</td><td>Melhor interação orgânica da conta</td></tr>
+    <tr><td>Reel aspiracional de carreira</td><td>Maior número de compartilhamentos</td></tr>
+    <tr><td>Foto pessoal sem produção</td><td>Maior fenômeno orgânico isolado</td></tr>
+    <tr><td>Carrossel de autoridade</td><td>Maior alcance, <strong>interação baixíssima por natureza</strong></td></tr>
+    <tr><td>Conteúdo utilitário tipo guia</td><td>Volume baixo, <strong>maior taxa de salvamento</strong></td></tr>
+    <tr><td>Técnico ou analítico “seco”, sozinho</td><td>O mais fraco — depende de verba para parecer relevante</td></tr>
+  </table></div>
+  <p><strong>Carrossel de autoridade não se julga por curtida.</strong> Ele nunca prometeu curtida.</p>
+</section>
+
+<section id="marca">
+  <h2><span class="num">09</span>Regras de marca</h2>
+  <p class="lede">Checagem antes de gravar. Nenhuma delas é negociável.</p>
+  <ul class="check">
+    <li>Toda afirmação factual conferida na fonte, com link guardado. <strong>Nada de memória.</strong></li>
+    <li>Presunção de inocência: <em>“segundo a polícia”</em>, <em>“a investigação aponta”</em>. Nunca afirmar autoria de crime. Sem nome, rosto ou @ identificável.</li>
+    <li>Sem promessa de resultado jurídico.</li>
+    <li>Sem generalização absoluta — “todo mundo”, “sempre”, “nunca”, “ninguém”.</li>
+    <li>Voz de um criador com opinião própria, não narrador neutro de jornal.</li>
+    <li>Os quatro canais de gancho preenchidos; o escrito não está vazio.</li>
+    <li>Duas pontas soltas, no mínimo.</li>
+    <li>Um CTA só, alinhado ao objetivo primário.</li>
+    <li>Previsão da curva registrada <strong>antes</strong> de publicar.</li>
+  </ul>
+
+  <div class="caixa destaque">
+    <p class="rot">O limite do método <span class="selo cur">CUR-035</span></p>
+    <p>O método decide gancho, ordem, corte e CTA. <strong>O argumento jurídico e a opinião são do Isaac.</strong> O miolo não se delega — nem para IA, nem para terceiro. É o que impede um processo bom demais de virar fábrica de roteiro sem dono.</p>
+  </div>
+</section>
+
+<section id="limites">
+  <h2><span class="num">10</span>O que este método ainda não sabe</h2>
+  <p class="lede">Está escrito porque método honesto declara o próprio limite — e porque é isso que separa isto de uma apostila comprada pronta.</p>
+
+  <div class="tabela-wrap"><table>
+    <tr><th>Peça</th><th>Situação</th></tr>
+    <tr><td>A estrutura de nove batidas</td><td><span class="selo aviso">fonte única</span> Os dois vídeos que a corroborariam não foram capturados</td></tr>
+    <tr><td>O diagnóstico pela curva</td><td><span class="selo aviso">fonte única</span> Um vídeo de cinquenta segundos</td></tr>
+    <tr><td>O mapa de CTA por tipo</td><td><span class="selo aviso">fonte única</span> Uma frase — e contrariada pela prática dela</td></tr>
+    <tr><td>Tudo neste documento</td><td><strong>Zero ciclos de validação fechados.</strong> Nenhum roteiro foi publicado ainda seguindo o método</td></tr>
+  </table></div>
+
+  <p>Consequência prática: <strong>os primeiros cinco a dez roteiros são teste.</strong> Cada um sai com previsão de curva registrada antes de publicar, e o resultado confirma ou derruba a regra.</p>
+  <p>É assim que este documento deixa de ser hipótese bem organizada e passa a ter lastro próprio — construído com os números desta conta, não emprestado de ninguém.</p>
+</section>
+
+<footer>
+  <p><strong>O Método Isaac é a tradução do método da Luíza Cureau (@lucureau) para este perfil</strong> — as regras são dela, filtradas e calibradas pelo que os números desta conta mostram.</p>
+  <p>No repositório: <code>metodo/01-o-metodo.md</code> (manual completo) · <code>metodo/05-modelo-de-roteiro.md</code> (formulário) · <code>base-cureau/principios.md</code> (os 35 princípios com fonte) · <code>base-cureau/auditoria-das-fontes.md</code> (o que se sustenta e o que não) · <code>.claude/skills/metodo-isaac/</code> (o método executável)</p>
+</footer>
+</main>
+</div>
