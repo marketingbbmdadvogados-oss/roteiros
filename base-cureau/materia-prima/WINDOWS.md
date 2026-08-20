@@ -61,6 +61,22 @@ set GEMINI_API_KEY=cole-sua-chave-aqui
 ⚠️ Isso vale só **enquanto aquele terminal estiver aberto**. Se você fechar e abrir outro,
 precisa rodar de novo. Se der erro de "falta GEMINI_API_KEY", é quase sempre isso.
 
+**Trocando de chave** (estourou a cota, mudou de conta): é o mesmo comando com o valor novo.
+Não precisa mexer em arquivo nenhum, nem apagar nada. O que já foi transcrito continua salvo
+e será pulado.
+
+Se cansar de redigitar a cada terminal novo, dá pra gravar no usuário do Windows:
+
+```
+setx GEMINI_API_KEY "sua-chave"
+```
+
+Aí vale em todo terminal aberto **depois** disso (o atual não pega). Guarda no seu perfil do
+Windows, nunca no repositório.
+
+> 🔒 **Nunca cole a chave dentro de um arquivo do projeto.** Se ela for parar num commit, vira
+> pública e precisa ser revogada. A chave mora no terminal ou no ambiente do Windows, só.
+
 ---
 
 > 👥 **Vai compartilhar com o time pelo OneDrive?** Leia o `ONEDRIVE.md` antes deste

@@ -48,6 +48,7 @@ CONFIG = types.GenerateContentConfig(
 MAX_TENTATIVAS = int(os.environ.get("MAX_TENTATIVAS", "4"))
 
 _log = threading.Lock()
+_parar = threading.Event()
 
 
 def log(msg):
@@ -166,6 +167,13 @@ def aguardar_ativo(client, arquivo, limite=600):
     return arquivo
 
 
+def _cota_esgotada(erro) -> bool:
+    """Distingue limite diário (não adianta esperar) de excesso momentâneo."""
+    texto = str(erro).lower()
+    sinais = ("perday", "per day", "daily", "quota_exceeded", "free_tier", "exceeded your current quota")
+    return any(s in texto for s in sinais)
+
+
 def transcrever(client, video: pathlib.Path) -> str:
     """Sobe, pergunta, limpa. Com backoff em rate limit (429) e erro transitório."""
     for tentativa in range(1, MAX_TENTATIVAS + 1):
@@ -176,11 +184,20 @@ def transcrever(client, video: pathlib.Path) -> str:
                 model=MODELO, contents=[enviado, PROMPT], config=CONFIG
             ).text
         except genai_errors.APIError as erro:
-            transitorio = getattr(erro, "code", None) in (429, 500, 503)
-            if not transitorio or tentativa == MAX_TENTATIVAS:
+            codigo = getattr(erro, "code", None)
+
+            if codigo == 429 and _cota_esgotada(erro):
+                # Cota diária não volta esperando alguns segundos: parar tudo agora
+                # evita repetir o mesmo erro em cada vídeo restante.
+                _parar.set()
+                raise RuntimeError(
+                    "cota da chave esgotada — troque a chave ou espere o reset diário"
+                ) from erro
+
+            if codigo not in (429, 500, 503) or tentativa == MAX_TENTATIVAS:
                 raise
             espera = min(60, 2**tentativa) + random.uniform(0, 2)
-            log(f"    {video.stem}: {erro.code}, nova tentativa em {espera:.0f}s")
+            log(f"    {video.stem}: {codigo}, nova tentativa em {espera:.0f}s")
             time.sleep(espera)
         finally:
             if enviado is not None:
@@ -192,6 +209,8 @@ def transcrever(client, video: pathlib.Path) -> str:
 
 
 def processar(client, video: pathlib.Path):
+    if _parar.is_set():
+        return None
     saida = DIR_SAIDA / f"{video.stem}.md"
     if saida.exists():
         log(f"  {video.stem}: já feito")
@@ -264,6 +283,16 @@ def main():
 
     prontos = len(list(DIR_SAIDA.glob("*.md")))
     log(f"\n{prontos} transcrições em {DIR_SAIDA}/ ({time.time() - inicio:.0f}s)")
+    if _parar.is_set():
+        log(
+            "\nA cota da chave acabou. O que já foi transcrito está salvo.\n"
+            "Troque a chave e rode de novo — ele continua de onde parou:\n"
+            '  $env:GEMINI_API_KEY="nova-chave"   (PowerShell)\n'
+            "  set GEMINI_API_KEY=nova-chave      (CMD)\n"
+            "  python 2-transcrever.py --listar   (confere o que falta)"
+        )
+        sys.exit(1)
+
     if falhas:
         log("\nFalharam (rode de novo — ele pula o que já deu certo):")
         for nome, erro in falhas:
