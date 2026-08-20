@@ -31,6 +31,7 @@ marcada como hipótese; o que não pode é a hipótese se disfarçar de certeza.
 |---|---|---|
 | **0. O Método Isaac** | **`metodo/01-o-metodo.md`** | ***Como se escreve um roteiro deste perfil?*** — comece aqui |
 | 0b. O modelo | `metodo/05-modelo-de-roteiro.md` | *Onde eu escrevo?* — formulário para copiar e preencher |
+| 0c. A skill | `.claude/skills/metodo-isaac/` | o método executável — o Claude escreve e diagnostica seguindo ele |
 | 1. Base de princípios | `base-cureau/` | *De onde vem a regra?* — o método da Luíza Cureau, extraído e datado |
 | 2. Ficha de justificativa | `metodo/02-ficha-de-justificativa.md` | *Por que cada elemento deste roteiro é assim?* |
 | 3. Protocolo de captura | `metodo/03-protocolo-de-captura.md` | *Como a base se mantém atualizada quando o algoritmo muda?* |
@@ -54,7 +55,9 @@ A arquitetura de como isso foi montado está em `metodo/00-arquitetura.md`.
 - [x] **Ficha de justificativa v2** — princípios reais no lugar dos `[PROVISÓRIO]`
 - [x] **O método escrito** — `metodo/01-o-metodo.md`, operacional, 9 batidas, todas as regras com fonte
 - [x] Ficha rodada num roteiro real (`analises/fichas/001-golpe…`, com PDF para envio)
+- [x] **Skill `metodo-isaac`** — o método vira executável, em `.claude/skills/`
 - [ ] **Primeiro ciclo de validação fechado** — nenhum roteiro publicado ainda seguindo o método
+- [ ] **Aposentar a skill `instagram-reels-script-architect`** — é a do GRAVA e conflita com esta
 
 As fichas já rodam com princípios reais. Cada decisão de roteiro aponta para um `CUR-xxx` com
 fonte, e **carrega o nível de confiança do princípio** — uma decisão sustentada por 🟢 e uma
