@@ -1,6 +1,10 @@
 # Base de princípios — Luíza Cureau (@lucureau)
 
-**Status: VAZIA. Bloqueada por falta de matéria-prima.**
+**Status: PREENCHIDA E AUDITADA — 22 vídeos, 29 princípios.**
+
+- `principios.md` — a base numerada (CUR-001…CUR-029), com fonte e tradução para o Isaac
+- `auditoria-das-fontes.md` — **leia antes de usar**: corroboração, contradições e pontos soltos
+- `materia-prima/transcricoes/` — as 22 transcrições brutas
 
 ## Por que está vazia (leia antes de cobrar)
 

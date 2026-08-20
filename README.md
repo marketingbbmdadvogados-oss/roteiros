@@ -37,8 +37,10 @@ Comece por `metodo/00-arquitetura.md`.
 - [x] Protocolo de captura definido
 - [x] Loop de validação definido
 - [x] Engenharia reversa das referências que já estavam no Drive (`analises/`)
-- [ ] **Base Cureau preenchida** — bloqueada, ver `base-cureau/README.md`. É a única peça que
-      depende de matéria-prima que ainda não temos.
+- [x] **Base Cureau preenchida** — 22 vídeos transcritos, 29 princípios em `base-cureau/principios.md`
+- [x] **Auditoria das fontes** — `base-cureau/auditoria-das-fontes.md`
+- [ ] Ficha de justificativa reescrita com os princípios reais no lugar dos `[PROVISÓRIO]`
+- [ ] Ficha rodada num roteiro real do Isaac
 
 Enquanto a camada 1 não estiver preenchida, as fichas rodam com princípios provisórios
 (marcados como `[PROVISÓRIO]`) vindos do acervo próprio e de dados reais do perfil.
