@@ -28,8 +28,12 @@ depois.
 A lista de vídeos já existe (30 links únicos, varredura de ~830 posts do perfil). Ela está
 em `materia-prima/urls.txt`, deduplicada e ordenada por prioridade.
 
-**O que falta é transcrever.** O passo a passo — com scripts prontos — está em
-`materia-prima/COMO-RODAR.md`. Resumo:
+**O que falta é transcrever.** Dois caminhos, mesmo resultado:
+
+- **Sem terminal, clicando** → `materia-prima/COMECE-AQUI.md` (8 vídeos, ~40 min)
+- **Automático, para quem é técnico** → `materia-prima/COMO-RODAR.md` (30 vídeos, ~10 min)
+
+A versão automática, em resumo:
 
 1. `./1-baixar.sh` — yt-dlp com o cookie do navegador, baixa os reels e guarda a data de cada post
 2. `python3 2-transcrever.py` — Gemini assiste ao vídeo e devolve fala + texto na tela +

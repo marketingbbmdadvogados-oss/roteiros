@@ -1,5 +1,9 @@
 # Como baixar e transcrever os vídeos da @lucureau
 
+> 🟢 **Não é técnico? Não leia este arquivo.** Abra o `COMECE-AQUI.md` nesta mesma pasta:
+> é o mesmo resultado, feito só clicando no navegador, sem instalar nada.
+> Este aqui é a versão automática, para quem mexe com terminal.
+
 ## Resposta curta: eu não consigo fazer o download daqui
 
 Testado agora, não é suposição:
