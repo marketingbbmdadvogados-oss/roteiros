@@ -64,7 +64,7 @@ Um `.md` por vídeo em `transcricoes/`, já com fonte, data e a estrutura que eu
 transcrição da fala, texto na tela, o que acontece na imagem, e as regras que ela enuncia
 com o racional dela. Pode interromper e rodar de novo — pula o que já ficou pronto.
 
-Custo: os 30 reels dão algo em torno de 45 min de vídeo. No `gemini-2.5-flash` isso fica
+Custo: os 30 reels dão algo em torno de 45 min de vídeo. No `gemini-3.6-flash` isso fica
 na casa de poucos dólares, e boa parte pode cair na cota gratuita do AI Studio.
 
 ### 4. Me entregar

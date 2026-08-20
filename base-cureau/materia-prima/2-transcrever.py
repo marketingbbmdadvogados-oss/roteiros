@@ -30,16 +30,20 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 from google import genai
 from google.genai import errors as genai_errors
+from google.genai import types
 
 import codigos
 import config
 
 CODIGOS_VALIDOS = {c for c, _, _ in codigos.TODOS} | set(codigos.REPOSTS)
 
-MODELO = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
+MODELO = os.environ.get("GEMINI_MODEL", "gemini-3.6-flash")
 DIR_VIDEOS = config.DIR_VIDEOS
 DIR_SAIDA = config.DIR_TRANSCRICOES
 WORKERS = int(os.environ.get("WORKERS", "3"))
+CONFIG = types.GenerateContentConfig(
+    automatic_function_calling=types.AutomaticFunctionCallingConfig(disable=True)
+)
 MAX_TENTATIVAS = int(os.environ.get("MAX_TENTATIVAS", "4"))
 
 _log = threading.Lock()
@@ -102,6 +106,39 @@ def cliente():
     return genai.Client(api_key=chave)
 
 
+def conferir_modelo(client):
+    """Falha cedo e com clareza se o modelo não existir para esta chave.
+
+    O Google aposenta modelo sem aviso, e sem isso o script cospe o mesmo 404
+    uma vez por vídeo — o que esconde a causa real no meio da saída.
+    """
+    try:
+        client.models.get(model=MODELO)
+        return
+    except genai_errors.APIError as erro:
+        if getattr(erro, "code", None) != 404:
+            return  # outro problema: deixa estourar no uso real
+
+    print(f"O modelo '{MODELO}' não está disponível para a sua chave.\n")
+    try:
+        nomes = [
+            m.name.removeprefix("models/")
+            for m in client.models.list()
+            if "generateContent" in (getattr(m, "supported_actions", None) or [])
+        ]
+        flashes = [n for n in nomes if "flash" in n and "image" not in n and "tts" not in n]
+        print("Modelos disponíveis para você (os 'flash' são os mais baratos e rápidos):")
+        for n in sorted(flashes or nomes)[:15]:
+            print(f"  {n}")
+    except Exception:
+        print("Veja a lista em https://aistudio.google.com")
+
+    print("\nEscolha um e rode de novo, por exemplo:")
+    print('  $env:GEMINI_MODEL="gemini-3.6-flash"   (PowerShell)')
+    print("  set GEMINI_MODEL=gemini-3.6-flash      (CMD)")
+    sys.exit(1)
+
+
 def data_do_post(video: pathlib.Path) -> str:
     """Lê a data do .info.json do yt-dlp. Data é campo obrigatório na base."""
     info = video.parent / f"{video.stem}.info.json"
@@ -135,7 +172,7 @@ def transcrever(client, video: pathlib.Path) -> str:
         try:
             enviado = aguardar_ativo(client, client.files.upload(file=str(video)))
             return client.models.generate_content(
-                model=MODELO, contents=[enviado, PROMPT]
+                model=MODELO, contents=[enviado, PROMPT], config=CONFIG
             ).text
         except genai_errors.APIError as erro:
             transitorio = getattr(erro, "code", None) in (429, 500, 503)
@@ -180,6 +217,7 @@ def processar(client, video: pathlib.Path):
 
 def main():
     client = cliente()
+    conferir_modelo(client)
     DIR_SAIDA.mkdir(parents=True, exist_ok=True)
 
     videos = (

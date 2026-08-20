@@ -109,6 +109,17 @@ conteúdo com a lista dos 25 que a gente conhece. É isso que resolve o problema
 
 ---
 
+> **Se aparecer erro 404 dizendo que o modelo não está disponível:** o Google aposenta
+> modelo de tempos em tempos. O script agora avisa logo no começo e lista os que a sua
+> chave alcança. Escolha um da lista e rode assim:
+>
+> ```
+> $env:GEMINI_MODEL="nome-do-modelo"
+> python 2-transcrever.py
+> ```
+
+---
+
 ## PASSO 7 — Arrumar os nomes automaticamente
 
 ```
