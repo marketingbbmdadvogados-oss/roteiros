@@ -78,7 +78,21 @@ Formato: "- REGRA — porque [racional dela]". Se ela não der racional, escreva
 
 ## Tema principal
 [Escolha um ou mais: gancho | estrutura | retenção | CTA | algoritmo | outro]
+
+## Identificação
+Abaixo está a lista de vídeos conhecidos deste perfil, com o que cada um ensina.
+Diga qual deles é ESTE vídeo, comparando com o conteúdo que você acabou de analisar.
+Responda em duas linhas, exatamente neste formato:
+
+CODIGO: <o código da lista, ou NENHUM se não corresponder a nenhum>
+CONFIANCA: <alta, media ou baixa>
+
+Lista de vídeos conhecidos:
+{catalogo}
 """
+
+_CATALOGO = "\n".join(f"- {cod}: {desc}" for cod, _, desc in codigos.TODOS)
+PROMPT = PROMPT.format(catalogo=_CATALOGO)
 
 
 def cliente():

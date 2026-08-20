@@ -92,26 +92,10 @@ Ele mostra os 25 vídeos por lote, marcando o que está baixado, transcrito e fa
 
 ---
 
-## PASSO 6 — Renomear (só se ele acusar nomes desconhecidos)
+## PASSO 6 — Transcrever, mesmo com os nomes errados
 
-Se você baixou por site, os arquivos vieram com nome tipo `snapinsta_8823.mp4`.
-
-```
-python 0-renomear.py
-```
-
-Isso **não renomeia ainda** — gera um arquivo `renomear.txt` com a proposta. Abra ele no
-VS Code (vai aparecer na barra lateral), confira se cada arquivo bate com o código, corrija
-o que estiver trocado, salve. Depois:
-
-```
-python 0-renomear.py --aplicar
-python 0-conferir.py
-```
-
----
-
-## PASSO 7 — Transcrever o que já está baixado
+**Não precisa renomear antes.** Se você baixou por site, os arquivos vieram com nome tipo
+`snapinsta_8823.mp4` — tudo bem. O script transcreve qualquer nome.
 
 ```
 python 2-transcrever.py
@@ -119,6 +103,36 @@ python 2-transcrever.py
 
 Os 15 vídeos dos lotes 1 e 2 saem em uns 4–6 minutos. As transcrições aparecem na pasta
 `transcricoes`. Pode parar com `Ctrl+C` e rodar de novo — ele pula o que já ficou pronto.
+
+Junto da transcrição, o Gemini também **identifica qual vídeo é aquele**, comparando o
+conteúdo com a lista dos 25 que a gente conhece. É isso que resolve o problema do nome.
+
+---
+
+## PASSO 7 — Arrumar os nomes automaticamente
+
+```
+python 3-organizar.py
+```
+
+Ele lê a identificação de cada transcrição e mostra o que pretende renomear — **sem mudar
+nada ainda**. Confira a lista. Se estiver certa:
+
+```
+python 3-organizar.py --aplicar
+python 0-conferir.py
+```
+
+Isso renomeia o vídeo e a transcrição para o código certo e corrige o link da fonte
+dentro do arquivo.
+
+O que ele identificar com **confiança baixa** não é renomeado sozinho — fica listado pra
+você resolver à mão com o `0-renomear.py`. É de propósito: chute errado aqui contamina a
+base inteira depois.
+
+> **Uma coisa que o download por site não traz: a data do post.** Depois de organizar, abra
+> os links (o `0-conferir.py` lista todos) e anote as datas. Nos 5 vídeos sobre algoritmo
+> isso é essencial — são os que envelhecem rápido.
 
 ---
 
@@ -169,7 +183,8 @@ Me avise que subiu.
 | O que fazer | Comando |
 |---|---|
 | ver a situação | `python 0-conferir.py` |
-| renomear arquivos baixados por site | `python 0-renomear.py` → confere → `--aplicar` |
+| arrumar nomes depois de transcrever | `python 3-organizar.py` → confere → `--aplicar` |
+| renomear à mão (casos duvidosos) | `python 0-renomear.py` → confere → `--aplicar` |
 | baixar o que falta | `python 1-baixar.py` |
 | transcrever | `python 2-transcrever.py` |
 | mandar pra mim | `git add transcricoes` → `git commit -m "..."` → `git push` |
