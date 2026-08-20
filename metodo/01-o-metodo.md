@@ -312,7 +312,68 @@ princípio confirmado sobe de confiança, princípio derrubado três vezes sai d
 
 ---
 
-## 12. O que este método ainda não sabe
+## 12. A camada de direção — como entregar
+
+As seções acima decidem **o que falar e em que ordem**. Esta decide **como aquilo sai da boca e do
+corpo**. Sem ela, dois princípios da base ficam sem uso prático.
+
+`CUR-005` — quatro pessoas podem ler o mesmo gancho e só uma viralizar: a entrega pode valer mais
+que o texto.
+`CUR-019` — não verbal desalinhado com a fala derruba a retenção. Corpo parado com fala indignada
+não convence.
+
+**Todo roteiro sai com três colunas por batida:**
+
+| Coluna | O que registra |
+|---|---|
+| **Técnica** | por que essa batida existe e o que ela faz na retenção |
+| **Expressão facial** | o que o rosto e o corpo fazem — é o que se lê em tela pequena |
+| **Tom de voz** | ritmo, ênfase, onde acelera, onde pausa |
+
+Exemplo de preenchimento, de um roteiro real do acervo:
+
+> **Batida:** virada · **Fala:** *"Enquanto os americanos processam empresa por empresa, atrás do
+> prejuízo já feito, o Brasil legislou pra frente."*
+> **Técnica:** antítese, ápice do roteiro, é o trecho mais compartilhável.
+> **Expressão:** volta ao olhar fixo, pausa pequena antes do nome do conceito, gesto de abrir as
+> mãos em "pra todo mundo".
+> **Tom:** mais grave e mais lento que o resto — é o ápice, merece destaque vocal.
+
+### Regras de direção
+
+**Contraste de ritmo.** Acelere no gancho e na promessa aberta; desacelere nos dados. Cada número
+precisa de uma micro-pausa antes e depois para ser absorvido. O contraste marca a mudança de tom
+melhor que qualquer corte.
+
+**Grave 2 a 3 tomadas do gancho isoladamente.** É `CUR-005` virando prática: dá para testar
+entonações diferentes na edição sem regravar o vídeo inteiro. **Regra da casa.**
+
+**Um ou dois gestos pontuais por vídeo, não mais.** Excesso de movimento tira a atenção do rosto,
+que é onde ela precisa estar em tela pequena.
+
+### Ficha técnica — a parte que ninguém lembra e que constrói o perfil
+
+`CUR-021` — consistência é um dos três fatores que fazem alguém decidir seguir um perfil: o cérebro
+do público precisa **reconhecer um padrão**. Isso não é só sobre tema; é sobre o que se vê.
+
+Todo roteiro abre com:
+
+| Campo | Padrão deste perfil |
+|---|---|
+| **Locação** | escritório, fundo levemente desfocado |
+| **Figurino** | social discreto, cor lisa. **Sem estampa** — compete com o texto na tela |
+| **Continuidade** | manter a mesma peça dentro de uma mesma série de vídeos |
+| **Enquadramento** | plano médio, câmera na altura dos olhos |
+| **Iluminação** | frontal e suave, sem sombra dura — a expressão precisa ser legível em tela pequena |
+
+> **Decisão em aberto:** um roteiro do acervo pede *"plano único, cortando só nas viradas, pra
+> simular conversa real"*. Isso colide com a regra de que corte e mudança de enquadramento renovam
+> a atenção. As duas posições têm argumento. **Teste barato:** mesmo roteiro, duas edições, compara
+> a curva. Até lá, não há regra da casa sobre isso.
+
+---
+
+## 13. O que este método ainda não sabe
 
 Está escrito porque método honesto declara o próprio limite — e porque é isso que separa isto de
 uma apostila comprada pronta.
@@ -322,6 +383,8 @@ uma apostila comprada pronta.
 | Estrutura de 9 batidas (§2) | **fonte única.** Os dois vídeos que a corroborariam não foram capturados |
 | Diagnóstico pela curva (§11) | **fonte única** — um vídeo de ~50 segundos |
 | Mapa de CTA por tipo (§7) | uma frase, um vídeo. A lógica *"um CTA, vindo do objetivo"* tem duas fontes; o **mapa específico**, não |
+| Camada de direção (§12) | vem da prática do próprio time, não do acervo dela — funciona, mas nunca foi medida |
+| Plano único × cortes (§12) | duas posições defensáveis, nenhuma testada |
 | Tudo neste documento | **zero ciclos de validação fechados.** Nenhum roteiro foi publicado ainda seguindo o método |
 
 **Consequência prática:** os primeiros 5 a 10 roteiros são teste. Cada um sai com previsão de curva
@@ -346,4 +409,5 @@ documento deixa de ser hipótese organizada e vira método com lastro próprio.
 6. **Uma virada** em antítese. Sem ela, não grava.
 7. **Um CTA**, escolhido pelo tipo do vídeo. Nunca genérico, nunca dois.
 8. Confira fonte, presunção de inocência e as regras de marca.
-9. Uma hora depois, leia a curva. Sete dias depois, feche a ficha.
+9. Dirija a entrega: expressão e tom por batida, e 2–3 tomadas do gancho.
+10. Uma hora depois, leia a curva. Sete dias depois, feche a ficha.
