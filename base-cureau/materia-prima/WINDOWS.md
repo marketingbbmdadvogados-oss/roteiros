@@ -63,6 +63,9 @@ precisa rodar de novo. Se der erro de "falta GEMINI_API_KEY", é quase sempre is
 
 ---
 
+> 👥 **Vai compartilhar com o time pelo OneDrive?** Leia o `ONEDRIVE.md` antes deste
+> passo — tem um cuidado importante sobre onde o repositório NÃO pode ficar.
+
 ## PASSO 4 — Colocar os vídeos que você já baixou
 
 Crie a pasta `videos` dentro de `base-cureau\materia-prima` e mova os arquivos dos lotes

@@ -1,6 +1,7 @@
 videos/
 faltantes.txt
 renomear.txt
+caminhos.txt
 *.mp4
 *.info.json
 __pycache__/

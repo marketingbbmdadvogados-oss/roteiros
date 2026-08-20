@@ -14,22 +14,23 @@ import pathlib
 import sys
 
 import codigos
+import config
 
-DIR_VIDEOS = pathlib.Path("videos")
-MAPA = pathlib.Path("renomear.txt")
-VIDEO_EXT = {".mp4", ".mov", ".webm", ".mkv"}
+DIR_VIDEOS = config.DIR_VIDEOS
+MAPA = pathlib.Path(__file__).resolve().parent / "renomear.txt"
+VIDEO_EXT = config.VIDEO_EXT
 
 
 def nao_identificados():
     conhecidos = {c for c, _, _ in codigos.TODOS} | set(codigos.REPOSTS)
-    arquivos = [p for p in DIR_VIDEOS.iterdir() if p.suffix.lower() in VIDEO_EXT]
     return sorted(
-        (p for p in arquivos if p.stem not in conhecidos), key=lambda p: p.stat().st_mtime
+        (p for p in config.videos_existentes() if p.stem not in conhecidos),
+        key=lambda p: p.stat().st_mtime,
     )
 
 
 def codigos_livres():
-    ja_tem = {p.stem for p in DIR_VIDEOS.iterdir() if p.suffix.lower() in VIDEO_EXT}
+    ja_tem = {p.stem for p in config.videos_existentes()}
     return [(c, d) for c, _, d in codigos.TODOS if c not in ja_tem]
 
 
@@ -101,5 +102,5 @@ def aplicar():
 
 
 if __name__ == "__main__":
-    DIR_VIDEOS.mkdir(exist_ok=True)
+    DIR_VIDEOS.mkdir(parents=True, exist_ok=True)
     aplicar() if "--aplicar" in sys.argv else propor()

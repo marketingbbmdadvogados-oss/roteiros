@@ -22,14 +22,14 @@ import subprocess
 import sys
 
 import codigos
+import config
 
-DIR_VIDEOS = pathlib.Path("videos")
-VIDEO_EXT = {".mp4", ".mov", ".webm", ".mkv"}
+DIR_VIDEOS = config.DIR_VIDEOS
 
 
 def links_faltantes():
-    DIR_VIDEOS.mkdir(exist_ok=True)
-    ja_tem = {p.stem for p in DIR_VIDEOS.iterdir() if p.suffix.lower() in VIDEO_EXT}
+    DIR_VIDEOS.mkdir(parents=True, exist_ok=True)
+    ja_tem = {p.stem for p in config.videos_existentes()}
     return [codigos.url(c) for c, _, _ in codigos.TODOS if c not in ja_tem]
 
 
@@ -40,7 +40,8 @@ def main():
     ap.add_argument("--cookies", help="caminho de um cookies.txt exportado")
     args = ap.parse_args()
 
-    DIR_VIDEOS.mkdir(exist_ok=True)
+    DIR_VIDEOS.mkdir(parents=True, exist_ok=True)
+    print(config.resumo() + "\n")
 
     cmd = [
         sys.executable, "-m", "yt_dlp",
@@ -70,8 +71,7 @@ def main():
 
     resultado = subprocess.run(cmd)
 
-    baixados = len([p for p in DIR_VIDEOS.iterdir() if p.suffix.lower() in VIDEO_EXT])
-    print(f"\n{baixados} vídeo(s) em {DIR_VIDEOS}/")
+    print(f"\n{len(config.videos_existentes())} vídeo(s) em {DIR_VIDEOS}")
     print("Confira com:  python 0-conferir.py")
 
     if resultado.returncode != 0:

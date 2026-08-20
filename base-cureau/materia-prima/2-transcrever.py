@@ -32,12 +32,13 @@ from google import genai
 from google.genai import errors as genai_errors
 
 import codigos
+import config
 
 CODIGOS_VALIDOS = {c for c, _, _ in codigos.TODOS} | set(codigos.REPOSTS)
 
 MODELO = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
-DIR_VIDEOS = pathlib.Path(os.environ.get("DIR_VIDEOS", "videos"))
-DIR_SAIDA = pathlib.Path(os.environ.get("DIR_SAIDA", "transcricoes"))
+DIR_VIDEOS = config.DIR_VIDEOS
+DIR_SAIDA = config.DIR_TRANSCRICOES
 WORKERS = int(os.environ.get("WORKERS", "3"))
 MAX_TENTATIVAS = int(os.environ.get("MAX_TENTATIVAS", "4"))
 
@@ -165,17 +166,18 @@ def processar(client, video: pathlib.Path):
 
 def main():
     client = cliente()
-    DIR_SAIDA.mkdir(exist_ok=True)
+    DIR_SAIDA.mkdir(parents=True, exist_ok=True)
 
     videos = (
         [pathlib.Path(a) for a in sys.argv[1:]]
         if len(sys.argv) > 1
-        else sorted(DIR_VIDEOS.glob("*.mp4"))
+        else config.videos_existentes()
     )
     if not videos:
-        sys.exit(f"Nenhum .mp4 em {DIR_VIDEOS}/. Rode ./1-baixar.sh antes.")
+        sys.exit(f"Nenhum vídeo em {DIR_VIDEOS}. Rode: python 1-baixar.py")
 
-    log(f"{len(videos)} vídeos, {WORKERS} em paralelo, modelo {MODELO}\n")
+    log(config.resumo())
+    log(f"\n{len(videos)} vídeos, {WORKERS} em paralelo, modelo {MODELO}\n")
     inicio = time.time()
     falhas = []
 

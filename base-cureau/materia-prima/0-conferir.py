@@ -14,21 +14,23 @@ import pathlib
 import sys
 
 import codigos
+import config
 
-DIR_VIDEOS = pathlib.Path("videos")
-DIR_SAIDA = pathlib.Path("transcricoes")
+DIR_VIDEOS = config.DIR_VIDEOS
+DIR_SAIDA = config.DIR_TRANSCRICOES
 
 
 def main():
-    DIR_VIDEOS.mkdir(exist_ok=True)
-    arquivos = sorted(p for p in DIR_VIDEOS.iterdir() if p.suffix.lower() in {".mp4", ".mov", ".webm"})
+    DIR_VIDEOS.mkdir(parents=True, exist_ok=True)
+    arquivos = config.videos_existentes()
+    print(config.resumo() + "\n")
     conhecidos = {c for c, _, _ in codigos.TODOS} | set(codigos.REPOSTS)
 
     baixados = {p.stem for p in arquivos if p.stem in conhecidos}
     nao_identificados = [p for p in arquivos if p.stem not in conhecidos]
     transcritos = {p.stem for p in DIR_SAIDA.glob("*.md")} if DIR_SAIDA.exists() else set()
 
-    print(f"Pasta videos/: {len(arquivos)} arquivo(s)\n")
+    print(f"{len(arquivos)} arquivo(s) de vídeo\n")
 
     faltantes = []
     for lote in (1, 2, 3, 4, 5):
