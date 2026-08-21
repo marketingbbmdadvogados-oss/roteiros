@@ -26,17 +26,35 @@ Todas as regras aqui vêm de duas fontes, e **toda regra diz de onde veio**:
 `DADO` — O público real do perfil são **pares de profissão**: advogados, empresários e
 profissionais liberais, 25 a 45 anos, espalhados pelo Brasil.
 
-**Não é** trabalhador buscando defesa individual. Isso muda tudo em conteúdo de direito do
-trabalho: fala-se **para quem também atua** no meio jurídico e empresarial, não para quem está
-sofrendo um problema trabalhista.
+**Decisão editorial (21/08/2026):** entram também os **estudantes de direito** como público-alvo.
+
+> ⚠️ **Isto é decisão do time, não achado do dado.** A calibração de 90 dias não mostra estudantes
+> como segmento — ela mostra pares já formados. Está registrado assim de propósito: é uma aposta
+> deliberada, e o número vai dizer se ela se confirma. **Como verificar:** olhar a faixa etária do
+> público novo nos Insights depois de 4 a 6 semanas publicando com essa lente. Se a faixa 18–24
+> crescer, a decisão se confirma e vira `DADO`.
+
+**O que NÃO muda:** não é público de trabalhador buscando defesa individual. Isso continua valendo
+para qualquer conteúdo trabalhista — fala-se para quem atua ou vai atuar no meio, não para quem
+está sofrendo o problema.
+
+**O que muda ao incluir estudante:**
+
+| | Pares formados | Estudante de direito |
+|---|---|---|
+| Pressupõe | vocabulário técnico, prática de escritório | teoria fresca, zero vivência de rotina |
+| Quer | o ângulo que ele não tinha pensado | a tradução entre o que estudou e o mundo real |
+| Perde interesse quando | você explica o óbvio | você usa jargão de rotina sem abrir |
+
+**Regra prática:** um termo técnico pode entrar, mas **abre em cinco palavras na primeira vez**.
+*"Pejotização — contratar CLT disfarçado de PJ"* atende os dois: o formado não se sente
+subestimado, e o estudante não fica de fora.
 
 `CUR-021` — Nos **3 primeiros segundos** a pessoa precisa entender **do que você fala e com quem
 você fala**. Um gancho genial que não diz o assunto perde para um gancho simples que diz.
 
-**Teste rápido:** leia seu gancho e pergunte *"um advogado rolando o feed sabe, em 3 segundos, que
-isso é para ele?"* Se não, o gancho não está pronto.
-
----
+**Teste rápido:** leia seu gancho e pergunte *"um advogado — ou alguém no sétimo semestre — rolando
+o feed sabe, em 3 segundos, que isso é para ele?"* Se não, o gancho não está pronto.
 
 ## 2. A estrutura padrão — 9 batidas
 

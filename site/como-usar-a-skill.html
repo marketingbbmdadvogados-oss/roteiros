@@ -1,0 +1,174 @@
+<title>Método Isaac na prática</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --papel:#F1F2F4; --papel-2:#FAFAFB; --papel-3:#E7E9EC;
+  --tinta:#15181E; --tinta-2:#454C58; --tinta-3:#6E7684;
+  --linha:#D5D9DF; --linha-forte:#B6BCC6;
+  --acento:#1B4A63; --confirmado:#2C6046; --corroborado:#8A6410; --unico:#9B3A26;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --papel:#111419; --papel-2:#171B22; --papel-3:#1F242C;
+  --tinta:#E8EAEE; --tinta-2:#A9B1BD; --tinta-3:#7C8493;
+  --linha:#2A303A; --linha-forte:#3C4450;
+  --acento:#6FB3D2; --confirmado:#6FBF93; --corroborado:#D9AC52; --unico:#E08871;
+}}
+:root[data-theme="dark"]{
+  --papel:#111419; --papel-2:#171B22; --papel-3:#1F242C;
+  --tinta:#E8EAEE; --tinta-2:#A9B1BD; --tinta-3:#7C8493;
+  --linha:#2A303A; --linha-forte:#3C4450;
+  --acento:#6FB3D2; --confirmado:#6FBF93; --corroborado:#D9AC52; --unico:#E08871;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--papel);color:var(--tinta);font-family:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,sans-serif;font-size:16px;line-height:1.62;-webkit-font-smoothing:antialiased}
+main{max-width:74ch;margin:0 auto;padding:46px 26px 90px}
+.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--acento);margin:0 0 13px}
+h1{font-family:Spectral,Georgia,serif;font-weight:700;font-size:clamp(2.4rem,6.5vw,3.5rem);line-height:1.02;letter-spacing:-.02em;margin:0 0 15px;text-wrap:balance}
+.dek{font-family:Spectral,Georgia,serif;font-size:1.2rem;line-height:1.55;color:var(--tinta-2);margin:0 0 34px;max-width:54ch}
+h2{font-family:Spectral,Georgia,serif;font-weight:600;font-size:1.8rem;line-height:1.2;margin:52px 0 8px;letter-spacing:-.01em;text-wrap:balance}
+h2 .num{font-family:"IBM Plex Mono",monospace;font-size:.68rem;color:var(--acento);letter-spacing:.12em;display:block;margin-bottom:9px;font-weight:500}
+h3{font-size:1.04rem;font-weight:600;margin:30px 0 7px}
+p{margin:0 0 14px}
+hr{border:0;border-top:2px solid var(--tinta);margin:0 0 34px}
+.prompt{position:relative;background:var(--papel-2);border:1px solid var(--linha);border-left:3px solid var(--acento);border-radius:7px;padding:16px 18px;margin:14px 0 20px;font-family:"IBM Plex Mono",monospace;font-size:13.4px;line-height:1.6;white-space:pre-wrap;overflow-x:auto}
+.prompt::before{content:"COPIE E COLE";position:absolute;top:-9px;left:14px;background:var(--papel);padding:0 7px;font-size:9.5px;letter-spacing:.12em;color:var(--tinta-3);font-weight:500}
+.caixa{background:var(--papel-2);border:1px solid var(--linha);border-radius:7px;padding:18px 20px;margin:20px 0}
+.caixa.alerta{border-left:3px solid var(--unico)}
+.caixa.ok{border-left:3px solid var(--confirmado)}
+.caixa .rot{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--tinta-3);margin:0 0 8px}
+.caixa p:last-child{margin-bottom:0}
+.tabela-wrap{overflow-x:auto;margin:20px 0;border:1px solid var(--linha);border-radius:7px;background:var(--papel-2)}
+table{width:100%;border-collapse:collapse;font-size:14.2px;min-width:400px}
+th{text-align:left;font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--tinta-3);font-weight:500;padding:11px 15px;border-bottom:1px solid var(--linha-forte);background:var(--papel-3);white-space:nowrap}
+td{padding:11px 15px;border-bottom:1px solid var(--linha);vertical-align:top;line-height:1.5}
+tr:last-child td{border-bottom:none}
+ol.passos{list-style:none;counter-reset:s;margin:22px 0;padding:0}
+ol.passos li{counter-increment:s;position:relative;padding:0 0 18px 44px;min-height:30px}
+ol.passos li::before{content:counter(s);position:absolute;left:0;top:-1px;width:29px;height:29px;border-radius:50%;background:var(--acento);color:var(--papel-2);font-family:"IBM Plex Mono",monospace;font-size:12.5px;display:flex;align-items:center;justify-content:center}
+:root[data-theme="dark"] ol.passos li::before{color:#111419}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) ol.passos li::before{color:#111419}}
+ul{margin:14px 0;padding-left:21px}
+li{margin-bottom:7px}
+code{font-family:"IBM Plex Mono",monospace;font-size:13px;background:var(--papel-3);padding:1.5px 6px;border-radius:3px}
+strong{font-weight:600}
+blockquote{margin:20px 0;padding:2px 0 2px 19px;border-left:2px solid var(--linha-forte);font-family:Spectral,Georgia,serif;font-size:1.1rem;font-style:italic;color:var(--tinta-2)}
+footer{margin-top:60px;padding-top:24px;border-top:1px solid var(--linha);color:var(--tinta-3);font-size:13.4px}
+</style>
+
+<main>
+<p class="eyebrow">Guia do time · v1</p>
+<h1>Método Isaac na prática</h1>
+<p class="dek">Como usar a skill que escreve, revisa e diagnostica os roteiros do perfil — e o que conferir antes de gravar.</p>
+<hr>
+
+<h2><span class="num">Antes de tudo</span>Instalar</h2>
+<ol class="passos">
+  <li>Abra o arquivo <code>metodo-isaac.skill</code> que o Felipe compartilhou.</li>
+  <li>Clique em <strong>&ldquo;Save skill&rdquo;</strong> no card do arquivo. Pronto — ela fica disponível na sua conta.</li>
+  <li><strong>Desative a skill antiga</strong> <code>instagram-reels-script-architect</code> nas configurações. Ela usa o método velho (fórmula GRAVA) e vai brigar com esta pelo mesmo pedido.</li>
+</ol>
+<div class="caixa alerta">
+  <p class="rot">Não pule o passo 3</p>
+  <p>Com as duas ativas, você nunca sabe qual respondeu. Se um roteiro voltar falando em &ldquo;gancho, retenção, autoridade, virada, ação&rdquo;, é a antiga — o método atual tem <strong>nove batidas</strong>, não cinco.</p>
+</div>
+<p><strong>Você não precisa chamar a skill pelo nome.</strong> Ela entra sozinha quando o pedido é sobre roteiro, pauta, gancho, CTA ou desempenho de vídeo do perfil.</p>
+
+<h2><span class="num">Modo 1</span>Achar pauta</h2>
+<p>Quando não há tema ainda. Ela pesquisa o que aconteceu de verdade nesta semana dentro dos pilares do perfil.</p>
+<div class="prompt">Me dá 5 pautas pro Isaac dessa semana. Quero coisa que
+aconteceu de verdade nos últimos dias, com fonte.</div>
+<p>Volta com <strong>3 a 5 pautas</strong>, cada uma com fato, data, fonte, lente, gancho e a virada. Você escolhe uma antes de virar roteiro.</p>
+<h3>Para direcionar</h3>
+<div class="prompt">Só pauta de direito do trabalho.
+
+Alguma coisa de IA e futuro do trabalho.
+
+Preciso de uma pauta que dê carrossel, não Reels.</div>
+<div class="caixa">
+  <p class="rot">A pergunta que ela usa para filtrar</p>
+  <blockquote>&ldquo;O que aconteceu essa semana que o Isaac, como advogado, tem algo a dizer que ninguém mais vai dizer?&rdquo;</blockquote>
+  <p>Por isso ela descarta notícia que qualquer página daria. Se você achar que ela recusou uma pauta boa, insista dizendo qual é o ângulo dele — normalmente é isso que faltava.</p>
+</div>
+
+<h2><span class="num">Modo 2</span>Escrever um roteiro</h2>
+<p>Quando o tema já existe.</p>
+<div class="prompt">Faz um roteiro pro Isaac sobre [tema].
+Objetivo: compartilhamento.</div>
+<p>Dizer o objetivo ajuda, mas não é obrigatório — ela pergunta ou decide pelo tipo do vídeo.</p>
+<h3>Com material na mão</h3>
+<div class="prompt">Transforma essa notícia em roteiro pro Isaac:
+[cola o link ou o texto]</div>
+<h3>O que volta</h3>
+<ul>
+  <li>Ficha técnica — tema, objetivo, duração</li>
+  <li>O roteiro nas 9 batidas, com <code>TELA</code>, <code>IMAGEM</code> e <code>SOM</code> marcados no gancho</li>
+  <li>Por que cada decisão — o princípio que sustenta cada escolha</li>
+  <li>Notas de produção com <strong>as fontes e os links</strong></li>
+  <li>A previsão da curva de retenção</li>
+</ul>
+<div class="caixa ok">
+  <p class="rot">Por que a previsão da curva importa</p>
+  <p>Ela registra <strong>antes</strong> de publicar o que deve acontecer. Depois, o gráfico real confirma ou desmente. É isso que transforma o método em algo que aprende, em vez de opinião que sempre acha que estava certa.</p>
+</div>
+
+<h2><span class="num">Modo 3</span>Revisar um roteiro pronto</h2>
+<p>Funciona com roteiro de qualquer origem — escrito por você, por outra IA, por quem for.</p>
+<div class="prompt">Revisa esse roteiro pelo Método Isaac:
+[cola o roteiro]</div>
+<p>Ela aponta o que está faltando e entrega a correção pronta, não só o diagnóstico. Os três achados mais comuns:</p>
+<div class="tabela-wrap"><table>
+  <tr><th>O problema</th><th>A correção</th></tr>
+  <tr><td>Só tem a fala, sem texto na tela</td><td>Ela escreve o gancho escrito e sugere o visual e o som</td></tr>
+  <tr><td>Nenhuma ponta solta no meio</td><td>Ela escreve as frases e diz onde encaixar</td></tr>
+  <tr><td>CTA genérico ou duplo</td><td>Ela troca pelo CTA que combina com o tipo do vídeo</td></tr>
+</table></div>
+
+<h2><span class="num">Modo 4</span>Descobrir por que um vídeo foi mal</h2>
+<p>O mais subusado, e o que mais ensina.</p>
+<div class="prompt">Esse vídeo do Isaac foi mal. Segue o print da curva
+de retenção e o roteiro. O que aconteceu?</div>
+<p>O formato da curva diz onde está o erro:</p>
+<div class="tabela-wrap"><table>
+  <tr><th>A curva</th><th>O que aconteceu</th></tr>
+  <tr><td>Despenca nos primeiros segundos</td><td>O gancho não segurou</td></tr>
+  <tr><td>Cai devagar no meio</td><td>O conteúdo não estava sendo útil</td></tr>
+  <tr><td>Degrau brusco num ponto</td><td>Aquele trecho específico é ruim — dá pra achar o segundo</td></tr>
+  <tr><td>Cai no final</td><td>O CTA falhou, <strong>ou você avisou que ia acabar</strong></td></tr>
+</table></div>
+<div class="caixa">
+  <p class="rot">Antes de culpar o roteiro</p>
+  <p><strong>Confira o formato.</strong> Carrossel de autoridade tem alcance alto e interação baixíssima <em>por natureza</em> — julgá-lo por curtida é reprovar o formato por algo que ele nunca prometeu. Cada formato tem a métrica dele.</p>
+</div>
+
+<h2><span class="num">Sempre</span>Antes de gravar</h2>
+<p>A skill entrega o roteiro pronto, mas <strong>quatro coisas são responsabilidade de quem grava</strong>:</p>
+<ol class="passos">
+  <li><strong>Abra os links das fontes.</strong> Ela pesquisa e cita, mas a conferência final é humana. Dado errado num perfil de advogado não é vergonha, é problema.</li>
+  <li><strong>Veja o que ela marcou como não confirmado.</strong> Se não der pra confirmar até a gravação, esse trecho sai — e o roteiro tem que funcionar sem ele.</li>
+  <li><strong>Cheque a linguagem de investigação.</strong> &ldquo;Segundo a polícia&rdquo;, &ldquo;a investigação aponta&rdquo;. Nunca afirmar autoria de crime, nunca identificar a pessoa.</li>
+  <li><strong>Leia em voz alta.</strong> Se travar na sua boca, muda. O método decide a estrutura; a voz é do Isaac.</li>
+</ol>
+
+<h2><span class="num">Limites</span>O que ela não faz</h2>
+<ul>
+  <li><strong>Não escreve o argumento jurídico por você.</strong> Estrutura, gancho, ordem e CTA, sim. A tese e a opinião são do Isaac — é regra do método, não limitação técnica.</li>
+  <li><strong>Não enxerga áudio em alta no Reels.</strong> Isso o app mostra na hora de gravar.</li>
+  <li><strong>Não acessa os Insights sozinha.</strong> Você manda o print.</li>
+  <li><strong>Não inventa dado.</strong> Se não achar fonte, ela avisa e tira — mesmo que enfraqueça o roteiro.</li>
+</ul>
+
+<h2><span class="num">Importante</span>O método ainda está sendo testado</h2>
+<p>Ele é derivado do conteúdo da <strong>Luíza Cureau</strong> (@lucureau), com 48 princípios documentados, e calibrado pelos números reais da conta. Mas <strong>nenhum roteiro foi publicado seguindo ele ainda.</strong></p>
+<div class="caixa alerta">
+  <p class="rot">O que isso pede de você</p>
+  <p>Depois de publicar, <strong>abra a curva de retenção cerca de uma hora depois e guarde o print.</strong> É com esses prints que o método deixa de ser hipótese e passa a ter prova nossa — não emprestada.</p>
+  <p style="margin-top:10px">Se a curva contrariar a previsão, melhor ainda: alguma regra está errada, e é melhor descobrir no terceiro vídeo do que no trigésimo.</p>
+</div>
+
+<footer>
+  <p><strong>Método Isaac v1</strong> — documentação completa, os 48 princípios com fonte e data, e o modelo de roteiro estão no repositório <code>marketingbbmdadvogados-oss/roteiros</code>, branch <code>claude/roteiros-metodo-perfil-4jcnhh</code>.</p>
+  <p>Dúvida sobre por que uma regra existe? Pergunte à própria skill: <em>&ldquo;por que o método manda fazer isso?&rdquo;</em> — ela cita o princípio e o vídeo de origem.</p>
+</footer>
+</main>

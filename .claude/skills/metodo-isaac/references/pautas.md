@@ -30,7 +30,7 @@ Toda pauta entra por uma destas. A mesma notícia rende vídeos diferentes confo
 
 | Lente | O ângulo |
 |---|---|
-| **Direito do trabalho** | falando **para pares** — advogados e empresários —, não para trabalhador em apuros |
+| **Direito do trabalho** | falando **para pares** — advogados, empresários e estudantes de direito —, não para trabalhador em apuros |
 | **Liderança e gestão** | decisão, time, cultura, o custo de gerir mal |
 | **Negócios e mercado jurídico** | o que muda para quem advoga ou empreende |
 | **IA e futuro do trabalho** | o cruzamento mais fértil do momento, e o menos disputado no nicho |
@@ -87,8 +87,9 @@ interessante", não passa como pauta do momento.
 Assunto em alta não basta. Reprovou em uma, descarta ou reformula.
 
 1. **Está dentro do corte de recência?** É a que mais reprova. Leve a sério.
-2. **O público de pares se importa?** Advogado e empresário de 25 a 45 anos. Tendência genérica não
-   serve; tendência quente dentro da lente, sim.
+2. **O público se importa?** Advogado, empresário ou estudante de direito. Tendência genérica não
+   serve; tendência quente dentro da lente, sim. Pauta que só interessa a estudante — concurso,
+   OAB, faculdade — entra com moderação: o núcleo da conta continua sendo quem já atua.
 3. **Ele tem algo a dizer que ninguém mais vai dizer?** Se a resposta é "não, mas dá pra comentar",
    é conteúdo de página de notícia. Sai.
 4. **Dá uma virada?** Reframe contraintuitivo, de preferência em antítese. Sem virada é só notícia.

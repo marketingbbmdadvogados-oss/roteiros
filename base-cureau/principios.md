@@ -657,6 +657,21 @@ especialista que só ele tem.
 
 ---
 
+## Decisões editoriais do time (não são princípios, não são dado)
+
+Registradas aqui para não se confundirem com o que saiu do acervo dela nem com número da conta.
+
+### DEC-001 — Estudantes de direito entram no público-alvo · 21/08/2026
+**O que é:** além de advogados, empresários e profissionais liberais de 25 a 45 (que é o que o
+`DADO` de 90 dias mostra), o perfil passa a falar também com **estudantes de direito**.
+**Origem:** decisão do time. **Não** aparece na calibração.
+**Consequência prática:** termo técnico abre em cinco palavras na primeira vez.
+**Como verificar:** faixa etária do público novo nos Insights, 4 a 6 semanas depois. Se 18–24
+crescer, a decisão vira `DADO`. Se não crescer, ela sai — ou se assume que é aposta de longo prazo,
+por escrito.
+
+---
+
 ## Envelhecimento da base
 
 Datas conferidas em `materia-prima/datas-dos-videos.md` e validadas de forma independente: a ordem

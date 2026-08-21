@@ -32,7 +32,8 @@ marcada como hipótese; o que não pode é a hipótese se disfarçar de certeza.
 | **0. O Método Isaac** | **`metodo/01-o-metodo.md`** | ***Como se escreve um roteiro deste perfil?*** — comece aqui |
 | 0b. O modelo | `metodo/05-modelo-de-roteiro.md` | *Onde eu escrevo?* — formulário para copiar e preencher |
 | 0c. A skill | `.claude/skills/metodo-isaac/` | o método executável — o Claude escreve e diagnostica seguindo ele |
-| 0d. A página | `site/metodo-isaac.html` | versão para circular no escritório — publicada em https://claude.ai/code/artifact/d0e4847c-9b80-4a76-957f-965e3b75f606 |
+| 0d. Guia do time | `site/como-usar-a-skill.html` | como usar a skill no dia a dia — os 4 modos, com prompts prontos |
+| 0e. A página | `site/metodo-isaac.html` | versão para circular no escritório — publicada em https://claude.ai/code/artifact/d0e4847c-9b80-4a76-957f-965e3b75f606 |
 | 1. Base de princípios | `base-cureau/` | *De onde vem a regra?* — o método da Luíza Cureau, extraído e datado |
 | 2. Ficha de justificativa | `metodo/02-ficha-de-justificativa.md` | *Por que cada elemento deste roteiro é assim?* |
 | 3. Protocolo de captura | `metodo/03-protocolo-de-captura.md` | *Como a base se mantém atualizada quando o algoritmo muda?* |
@@ -56,7 +57,8 @@ A arquitetura de como isso foi montado está em `metodo/00-arquitetura.md`.
 - [x] **Ficha de justificativa v2** — princípios reais no lugar dos `[PROVISÓRIO]`
 - [x] **O método escrito** — `metodo/01-o-metodo.md`, operacional, 9 batidas, todas as regras com fonte
 - [x] Ficha rodada num roteiro real (`analises/fichas/001-golpe…`, com PDF para envio)
-- [x] **Skill `metodo-isaac`** — o método vira executável, em `.claude/skills/`
+- [x] **Skill `metodo-isaac`** — o método vira executável, com modo pauta; pacote em `dist/`
+- [x] **Guia do time** — `site/como-usar-a-skill.html`
 - [x] **Datas dos 30 vídeos** — conferidas e carimbadas; base agora envelhece à vista
 - [x] **Live de roteirização capturada** — corroborou a estrutura e o mapa de CTA, que estavam com fonte única
 - [ ] **Primeiro ciclo de validação fechado** — nenhum roteiro publicado ainda seguindo o método

@@ -61,6 +61,11 @@ própria versão em cima dele."*
 fórmula fixa. O que vale é o **método**: identificar o padrão de um vídeo que performou e refazer
 com conteúdo próprio. Não tratar as fórmulas específicas dela como regra.
 
+## O público
+
+Advogados, empresários, profissionais liberais **e estudantes de direito**. Termo técnico abre em
+cinco palavras na primeira vez.
+
 ## Nunca
 
 Saudação · "hoje eu vou falar sobre" · contexto antes da tensão · gancho que não diz o assunto.

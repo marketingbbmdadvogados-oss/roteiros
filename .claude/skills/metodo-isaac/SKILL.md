@@ -23,11 +23,19 @@ Isaac um método próprio.
 ## Para quem se escreve
 
 `DADO` — O público é de **pares**: advogados, empresários e profissionais liberais, 25–45 anos.
-**Não é** trabalhador buscando defesa. Isso muda o tom de qualquer conteúdo trabalhista: fala-se
-para quem também atua no meio, não para quem está sofrendo o problema.
+**+ Decisão editorial (21/08/2026):** incluir também **estudantes de direito** — aposta do time,
+ainda não confirmada pelo dado.
+
+**Não é** trabalhador buscando defesa individual. Isso muda o tom de qualquer conteúdo trabalhista:
+fala-se para quem atua ou vai atuar no meio, não para quem está sofrendo o problema.
+
+**Ao escrever para os dois ao mesmo tempo:** termo técnico pode entrar, mas **abre em cinco palavras
+na primeira vez** — *"pejotização, que é contratar CLT disfarçado de PJ"*. O formado não se sente
+subestimado; o estudante não fica de fora.
 
 `CUR-021` — Nos 3 primeiros segundos a pessoa precisa entender **do que você fala e com quem**.
-Teste: *um advogado rolando o feed sabe, em 3 segundos, que isso é para ele?*
+Teste: *um advogado — ou alguém no sétimo semestre — rolando o feed sabe, em 3 segundos, que
+isso é para ele?*
 
 ## Modo pauta — quando ainda não há tema
 
