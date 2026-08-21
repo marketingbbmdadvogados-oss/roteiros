@@ -1,6 +1,6 @@
 # Base de princípios — Luíza Cureau (@lucureau)
 
-Extraída de **22 vídeos-método** transcritos em 20/08/2026 (transcrição por vídeo em
+Extraída de **25 vídeos-método** transcritos em 20/08/2026 (transcrição por vídeo em
 `materia-prima/transcricoes/`, com fala, texto na tela e demonstração visual).
 
 > 🔍 **Leia `auditoria-das-fontes.md` antes de usar esta base.** Cada princípio abaixo já
@@ -115,7 +115,7 @@ batidas não tem por que estar no vídeo — e essa é a régua objetiva que fal
 **Racional dela:** "depois que ela tá presa ali, a chance de continuar assistindo é muito maior".
 **Fonte:** `DbCV7PxgZT4` (20/07/2026) · **Confiança:** ⬜
 
-### CUR-010 — Pontas soltas: no mínimo duas, obrigatórias
+### CUR-010 — Pontas soltas: de duas a três, obrigatórias
 **Enunciado:** frases que abrem curiosidade sem entregar nada, espalhadas pelo roteiro. Exemplos
 dela: *"Mas essa nem é a pior parte…"*, *"E o que quase ninguém percebe é que…"*,
 *"Só que existe um erro ainda maior…"*.
@@ -661,8 +661,8 @@ sem data envelhece sem avisar.
 
 **A leitura é reconfortante e desconfortável ao mesmo tempo.**
 
-Reconfortante: as três peças de fonte única — `CUR-008` (estrutura), `CUR-015` (curva) e
-`CUR-013` (CTA) — são todas de **julho de 2026**, com menos de 35 dias. Fonte única, mas fresca.
+Reconfortante: as peças centrais são todas de **julho de 2026**, com menos de 35 dias — e a live
+de roteirização (25/07) tirou `CUR-008` e `CUR-013` da condição de fonte única. Fonte única, mas fresca.
 E mais: `DbCV7PxgZT4` (20/07), `DbI9QcxgcUm` (23/07) e `DbOMz_RgGdj` (25/07) são **três vídeos em
 cinco dias, sobre estrutura, curva e escrita de roteiro**. Não são achados isolados — são uma
 série. Isso não substitui corroboração, mas muda o quadro: era um bloco de ensino conectado.

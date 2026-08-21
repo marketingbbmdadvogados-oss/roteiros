@@ -1,4 +1,7 @@
-# Auditoria das 23 transcrições
+# Auditoria das fontes
+
+> **Atualizada em 21/08/2026**, depois da live de roteirização. As conclusões marcadas ✅ abaixo
+> mudaram: dois dos três pilares saíram de fonte única. Ver §7 no fim.
 
 Feita **antes** de usar a base para justificar qualquer roteiro. A pergunta aqui não é
 "o que ela ensina" — é **"o que ela ensina se sustenta?"**: quantas fontes independentes cada
@@ -197,7 +200,7 @@ E rendeu seis princípios novos (CUR-030 a CUR-035), incluindo o que fecha a ló
 
 **O que não melhorou:** `DbOMz_RgGdj` e `DTL_sqsAHbi` foram derrubados por 503 persistente da API e
 ficaram de fora por decisão consciente. Eram os que corroborariam a estrutura de 9 batidas.
-**CUR-008 e CUR-015 permanecem 🔴 fonte única** — as duas peças mais usadas do método e as menos
+~~**CUR-008 e CUR-015 permanecem 🔴 fonte única**~~ ✅ **superado, ver §7** — as peças mais usadas e menos
 confirmadas. Está marcado em todo lugar onde aparecem.
 
 ---
@@ -224,3 +227,43 @@ confirmadas. Está marcado em todo lugar onde aparecem.
 3. **A legenda de `DPH3pNygOxW`** — é onde está o racional das métricas por formato.
 4. **Um vídeo sobre o método ATA** com a proporção.
 5. **Qualquer vídeo dela sobre CTA isoladamente** — é a peça com menos lastro e maior importância.
+
+
+---
+
+## 7. Revisão de 21/08/2026 — a live de roteirização
+
+`DbOMz_RgGdj` (25/07/2026) mudou o quadro desta auditoria. É a fonte mais densa da base e a única
+em que ela explica o próprio método do começo ao fim, sem ser em formato de reel.
+
+### O que saiu de fonte única
+
+| Peça | Antes | Depois |
+|---|---|---|
+| `CUR-008` estrutura | 🔴 um vídeo (o esquema no quadro) | 🟡 **duas fontes** — a live confirma o esqueleto *"os 4 ganchos, o miolo e o refinamento, e a CTA"*, cinco dias depois |
+| `CUR-013` mapa de CTA | 🔴 uma frase | 🟡 **duas fontes** — ela percorre o mapa ao vivo, com a ressalva de que não é regra universal |
+| `CUR-010` pontas soltas | 🟢 duas fontes | 🟢🟢 **três fontes**, e a quantidade correta: **2 a 3** |
+
+**Segue com fonte única:** `CUR-015`, o diagnóstico das seis curvas. Ela cita esse vídeo na live
+(*"alguém viu meu vídeo de gráficos?"*), o que confirma a autoria, mas não repete o conteúdo.
+
+### O que a auditoria pegou de errado no que eu tinha escrito
+
+1. **`CUR-030` estava mais restrito que ela ensina.** Eu escrevi "um CTA só, sempre". A regra dela é
+   não misturar objetivos diferentes; *"seguir o perfil é uma CTA complementar"* e pode acompanhar
+   outra. No perfil do Isaac a marca é mais restritiva, então na prática não muda — mas o princípio
+   estava registrado errado.
+2. **A ordem das 9 batidas não é a ordem de escrita.** Ela escreve o miolo primeiro e o gancho por
+   último. O método estava induzindo o erro que ela aponta.
+3. **`CUR-004` gancho sonoro não é obrigatório.** *"Ele sempre vai existir? Não necessariamente."*
+
+### O primeiro choque frontal entre `CUR` e `DADO`
+
+Ela: *"storytelling em 2026 pra cima tá caindo por terra"*. O dado de 90 dias: storytelling pessoal
+é o melhor formato orgânico da conta. Pela regra de precedência o `DADO` ganha — e a distinção que
+resolve o conflito está em `CUR-047`: ela condena storytelling **desconectado do nicho**, usado como
+isca; o que funciona no perfil é o caso da própria atuação, que **é** o conteúdo.
+
+**Este era o teste da regra de precedência, e ela funcionou.** Não bastou escolher um lado: o
+conflito, lido com cuidado, produziu uma regra mais precisa do que qualquer um dos dois lados
+sozinho.

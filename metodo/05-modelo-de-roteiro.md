@@ -2,6 +2,11 @@
 
 Copie e preencha. Referência: `metodo/01-o-metodo.md`.
 
+> **Ordem de escrita ≠ ordem das batidas** (`CUR-040`). Preencha nesta sequência:
+> **1º** os blocos 4 e 6 (o miolo) · **2º** a virada · **3º** o ganchismo, com o tempo que ele
+> merece · **4º** as pontas soltas e o CTA, no refino.
+> *"Se a gente começa pelo gancho, a gente nem sabe o que vai falar no vídeo ainda."*
+
 Formato padrão de entrega. Quem grava lê a coluna **Fala**; o resto é direção.
 
 ---
@@ -68,7 +73,7 @@ Formato padrão de entrega. Quem grava lê a coluna **Fala**; o resto é direç�
 | **Expressão** | |
 | **Tom** | |
 
-### 5. Ponta solta 1 — obrigatória
+### 5. Ponta solta 1 — obrigatória *(de 2 a 3 no roteiro todo)*
 | | |
 |---|---|
 | **Fala** | *(frase que abre curiosidade e não informa nada)* |
@@ -100,6 +105,10 @@ Formato padrão de entrega. Quem grava lê a coluna **Fala**; o resto é direç�
 | **Tom** | mais grave e mais lento que o resto |
 
 ### 9. CTA — um só
+
+⚠️ Antes: **a conclusão não pode ter conclusão** (`CUR-039`). Nada de
+*"e pra concluir"*, *"e por fim"*, *"pra finalizar"*, *"e por último"*.
+
 | | |
 |---|---|
 | **Fala** | |
@@ -130,9 +139,10 @@ Formato padrão de entrega. Quem grava lê a coluna **Fala**; o resto é direç�
 ## Checagem antes de gravar
 
 - [ ] Os 4 canais de gancho preenchidos — o escrito não pode estar vazio
-- [ ] Duas pontas soltas, no mínimo
+- [ ] De duas a três pontas soltas
+- [ ] Nenhuma expressão que anuncia o fim do vídeo
 - [ ] Uma virada, em antítese
-- [ ] Um CTA só, alinhado ao objetivo primário
+- [ ] Um CTA só, alinhado ao objetivo primário. Nunca curtida
 - [ ] Toda afirmação factual com link guardado
 - [ ] Presunção de inocência onde houver investigação ou processo
 - [ ] Sem generalização absoluta · sem promessa de resultado · sem CTA genérico falado

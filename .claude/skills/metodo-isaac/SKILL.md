@@ -8,7 +8,8 @@ description: Escreve, revisa ou diagnostica roteiros de vídeo curto (Reels, Tik
 Método de roteiro do perfil **@isaacbertolini**. Toda regra aqui vem de uma de duas fontes, e o
 roteiro entregue diz de onde veio cada decisão:
 
-- **`CUR-xxx`** — princípio extraído de 23 vídeos transcritos da **Luíza Cureau** (@lucureau)
+- **`CUR-xxx`** — um dos 47 princípios extraídos de 25 vídeos transcritos da **Luíza Cureau**
+  (@lucureau), cada um com o vídeo e a data de origem registrados
 - **`DADO`** — número real da conta, 90 dias, orgânico separado do pago
 
 **Quando as duas discordam, o `DADO` ganha.** O método dela foi feito para criadora digital falando

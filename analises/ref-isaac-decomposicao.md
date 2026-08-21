@@ -9,6 +9,11 @@ em arquétipo reutilizável.
 > ancorada no acervo próprio e nos dados reais de 90 dias do @isaacbertolini. **Não são princípios
 > da Cureau** — a base dela está vazia (`base-cureau/README.md`). Tudo aqui entra na ficha marcado
 > como `[PROVISÓRIO]` até ser confirmado por ela ou pelo número real do perfil.
+>
+> **Atualização 21/08/2026:** boa parte já foi confirmada. O "rehook é sempre uma frase que não
+> informa nada" virou `CUR-010` com quatro leituras independentes; "nomear o conceito no fim"
+> convergiu com o roteiro do ECA Digital; e o CTA de compartilhamento direcionado virou `CUR-013`,
+> corroborado. O que segue provisório são as leituras de ritmo e ordem de abertura.
 
 ---
 

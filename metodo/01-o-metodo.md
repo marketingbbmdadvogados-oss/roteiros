@@ -11,8 +11,8 @@ da casa manda. É essa calibração que faz dele um método próprio, e não uma
 
 Todas as regras aqui vêm de duas fontes, e **toda regra diz de onde veio**:
 
-- **`CUR-xxx`** — princípio extraído do conteúdo da **Luíza Cureau** (@lucureau), a partir de 23
-  vídeos transcritos. A base completa está em `base-cureau/principios.md`, com a auditoria de
+- **`CUR-xxx`** — princípio extraído do conteúdo da **Luíza Cureau** (@lucureau), a partir de 25
+  vídeos transcritos (26 transcrições). A base completa está em `base-cureau/principios.md`, com a auditoria de
   quanto cada um se sustenta em `base-cureau/auditoria-das-fontes.md`.
 - **`DADO`** — número real do perfil @isaacbertolini, 90 dias, orgânico separado do pago.
 
@@ -131,7 +131,7 @@ Regra prática: se a frase pode abrir uma palestra, ela não serve como promessa
 
 ## 5. Batidas 4 a 7 — Blocos e pontas soltas
 
-### Pontas soltas: mínimo duas, não são opcionais
+### Pontas soltas: de duas a três, não são opcionais — `CUR-010` 🟢🟢
 
 `CUR-010` — **A regra mais bem sustentada do método depois do gancho escrito.** Três leituras
 independentes chegaram nela: a Luíza ensinando em Reel, a Luíza ensinando em carrossel, e a análise
@@ -226,6 +226,20 @@ nascer. Auto-implicação funciona quando o desconforto é privado.
 
 `CUR-031` — Em conteúdo longo ou carrossel denso, cabe um pedido **no meio** (tipicamente
 salvamento). O do fim continua sendo o do objetivo primário.
+
+### Na conclusão não pode ter conclusão — `CUR-039` ⭐
+
+Nunca sinalize que o vídeo está acabando. **Proibido:** *"e pra concluir"*, *"e por fim"*,
+*"pra finalizar"*, *"e por último"*.
+
+> *"Quando o gráfico de retenção cai no final, é porque o seu final deu a entender que era o
+> final. A pessoa sai do seu vídeo imediatamente."*
+
+Isto dá o mecanismo que faltava no diagnóstico: a queda no fim muitas vezes **não é o CTA
+errado — é você avisando que acabou.** É a correção mais barata do método: apagar quatro
+expressões. Vale igual no carrossel, onde um slide de "conclusão" anunciada derruba a rolagem.
+
+**Nunca peça curtida** (`CUR-043`): não move resultado, e queima a chance de pedir algo que move.
 
 ### Proibido neste perfil — não-negociável
 
@@ -324,8 +338,22 @@ conta; o mesmo tema em Reel curto com gancho de legenda é o melhor.
 cumprir sempre do que prometer 7 e oscilar. O algoritmo premia previsibilidade.
 `DADO` — pico de audiência entre 15h e 18h; secundário por volta das 9h; evitar depois das 21h.
 
-**Por roteiro:** escrever seguindo as 9 batidas → preencher a ficha de justificativa
-(`metodo/02-ficha-de-justificativa.md`) → checagem de marca (§8) → gravar.
+**Por roteiro — e a ordem de escrita não é a ordem das batidas** (`CUR-040`):
+
+1. **Confira os fatos.** Toda afirmação factual vai para a busca antes de virar frase.
+2. **Escolha UM objetivo** (`CUR-020`) e formule **a virada em uma frase**. Sem virada, volte ao tema.
+3. **Escreva o miolo primeiro** — despeje o conteúdo, sem gancho e sem pontas soltas.
+   > *"Se a gente começa pelo gancho, a gente acaba se confundindo, e a gente nem sabe o que vai
+   > falar no vídeo ainda."*
+4. **Depois o gancho**, com o tempo que ele merece (`CUR-041`): de 30 minutos de roteiro, ela
+   gasta **10 a 15 minutos só no ganchismo**.
+5. **Refine**: insira as 2 a 3 pontas soltas e corte a gordura.
+   > *"Nos meus pensamentos iniciais não tem ponta solta, não tem gatilho, sou só eu ensinando o
+   > assunto. Só que eu sei que isso não prende."*
+   Se usar IA aqui: ela **refina, nunca escreve do zero** (`CUR-042`) — corta redundância sem
+   mudar sua forma de falar nem sua linha de raciocínio.
+6. **Preencha a ficha de justificativa** (`metodo/02-ficha-de-justificativa.md`).
+7. **Checagem de marca** (§8) → gravar.
 
 ---
 

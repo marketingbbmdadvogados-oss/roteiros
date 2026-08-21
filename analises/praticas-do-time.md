@@ -15,10 +15,11 @@ Elas podem ser usadas na produção. O que não podem é ser citadas como "o mé
 > Acelerar no gancho e na pergunta; desacelerar nos dados. Cada número com micro-pausa antes e
 > depois.
 
-**Situação:** não aparece em nenhuma das 23 transcrições.
+**Situação:** não aparece em nenhuma das 26 transcrições.
 **Relação com a base:** `CUR-005` diz que a forma de falar o gancho pode valer mais que o texto —
 mas ela nunca detalha ritmo por trecho. Isto é extrapolação.
-**Como corroborar:** procurar vídeo dela sobre entonação e ritmo além do `DUZI63ngIuo`.
+**Atualização 21/08:** a live de roteirização trata de som e música (`CUR-045`) mas **não** de
+ritmo de fala por trecho. Continua sem lastro.
 
 ## 2. Gravar 2 a 3 tomadas do gancho isoladamente
 **Situação:** não aparece nas transcrições.
@@ -51,6 +52,15 @@ retenção; `CUR-017` lista movimento de câmera e mudança de cenário como ala
 **Avaliação:** as duas posições têm argumento. É a candidata número um a virar teste.
 **Teste proposto:** mesmo roteiro, duas edições — uma em plano único, outra com cortes nos blocos.
 Compara a curva de retenção. Barato e conclusivo.
+
+---
+
+## ✅ Uma já saiu: música e som
+
+A live de roteirização trouxe o que faltava sobre áudio, e virou `CUR-045` no método: o gancho
+sonoro (riser) é **opcional**, música quase sempre atrapalha em conteúdo sério e, se usar, é
+instrumental, sem letra, volume 4 ou 5. **Isso não estava nesta gaveta — mas mostra que a gaveta
+funciona:** era tema de produção sem lastro, e agora tem fonte.
 
 ---
 

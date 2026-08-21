@@ -167,7 +167,7 @@ forma de uso.** Estão em `metodo/01-o-metodo.md` §12.
 
 | Prática | Por quê |
 |---|---|
-| Contraste de ritmo (acelerar/desacelerar) | não aparece em nenhuma das 23 transcrições |
+| Contraste de ritmo (acelerar/desacelerar) | não aparece em nenhuma das 26 transcrições |
 | Gravar 2–3 tomadas do gancho | dedução razoável de `CUR-005`, mas ela não diz |
 | "Um ou dois gestos, não mais" | **tensiona com `CUR-017`/`CUR-018`**, que dizem que movimento renova atenção |
 | Figurino, enquadramento e luz específicos | decisão de marca legítima, sem lastro no acervo |

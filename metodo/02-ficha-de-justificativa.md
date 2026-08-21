@@ -1,5 +1,7 @@
 # Ficha de justificativa — Método Isaac
 
+> Atualizada em 21/08/2026 com a live de roteirização.
+
 Anexo obrigatório de todo roteiro. Sem ficha, o roteiro não está pronto — mesmo que o texto esteja
 ótimo.
 
@@ -7,7 +9,7 @@ Ela existe para uma situação concreta: alguém perguntar *"por que assim?"* e 
 documento, não uma conversa.
 
 **O que mudou da v1:** as justificativas deixaram de ser `[PROVISÓRIO]`. Cada uma aponta para um
-princípio numerado da base (`base-cureau/principios.md`), extraído de 23 vídeos da @lucureau e
+princípio numerado da base (`base-cureau/principios.md`), extraído de 25 vídeos da @lucureau e
 auditado em `base-cureau/auditoria-das-fontes.md`.
 
 > **A confiança do princípio é parte da justificativa.** Uma decisão sustentada por 🟢 e uma
@@ -106,7 +108,7 @@ a ficha registra **como falar**, não só o que falar.
 | **A virada, em uma frase** | *(o reframe contraintuitivo — sem isso o roteiro não sai)* |
 | **Métrica que valida** | retenção média · % que assiste até o fim |
 
-### A estrutura de 9 batidas — `CUR-008` ⬜ 🔴
+### A estrutura — `CUR-008` 🟡
 
 ```
 Ganchismo → Promessa Aberta → Introdução → Bloco 1 → Ponta Solta 1
@@ -116,10 +118,12 @@ Ganchismo → Promessa Aberta → Introdução → Bloco 1 → Ponta Solta 1
 **A introdução tem prazo:** levar a pessoa até os **10 segundos**. Passou dali, a chance de ficar
 até o fim sobe muito (`CUR-009` ⬜).
 
-> 🔴 **Leia isto antes de tratar como lei.** Esta estrutura vem de **um único vídeo**, em que ela
-> desenha o esquema no quadro. Os dois vídeos que a corroborariam — "como eu escrevo meus roteiros"
-> e o passo a passo de 2026 — não estão no acervo. É a peça mais importante do método e a de menor
-> lastro. Use, registre na ficha, e trate o resultado como **teste**, não como confirmação.
+> ✅ **Corroborada.** A live de roteirização (`DbOMz_RgGdj`, 25/07/2026) confirma o esqueleto —
+> *"os 4 ganchos, o miolo e o refinamento, e a CTA"*. O que ainda tem fonte única é a
+> granularidade de 9 caixas; o esqueleto de quatro partes tem duas fontes.
+>
+> **A ordem acima é a do vídeo pronto, não a de escrita.** Ela escreve o miolo primeiro e o gancho
+> por último (`CUR-040`), e gasta metade do tempo do roteiro só no gancho (`CUR-041`).
 
 ---
 
@@ -139,16 +143,18 @@ Uma linha por bloco. Este é o quadro que responde *"por que esse trecho?"*.
 | 8 | | solução / virada | | | |
 | 9 | | CTA | | | |
 
-### Pontas soltas: no mínimo duas, e não são opcionais — `CUR-010` 🟢
+### Pontas soltas: de duas a três, e não são opcionais — `CUR-010` 🟢🟢
 
 Frases que **abrem curiosidade sem entregar nada**, colocadas exatamente onde a pessoa decidiria
 sair. Exemplos dela: *"Mas essa nem é a pior parte…"* · *"E o que quase ninguém percebe é que…"* ·
 *"Só que existe um erro ainda maior…"*
 
-**Por que é 🟢:** três leituras independentes chegaram no mesmo lugar.
-1. Ela, em Reel (`DbCV7PxgZT4`): mínimo duas, espalhadas pelo roteiro.
+**Por que é o princípio mais bem sustentado da base:** quatro leituras independentes no mesmo lugar.
+1. Ela, em Reel (`DbCV7PxgZT4`): pontas soltas na estrutura do roteiro.
 2. Ela, em carrossel (`Db9aIvrgAMY`): frase de continuidade no fim de cada slide do miolo.
-3. Eu, lendo as 15 referências do próprio Isaac, antes de ter acesso a ela: *"rehook é sempre uma
+3. Ela, na live (`DbOMz_RgGdj`): *"tem que ter pelo menos **2 a 3** pontas soltas"*, com exemplo
+   real colocado aos 30 segundos do vídeo.
+4. Eu, lendo as 15 referências do próprio Isaac, antes de ter acesso a ela: *"rehook é sempre uma
    frase que não informa nada"* — "aí os cientistas fizeram uma maldadezinha", "calma, valente".
 
 Mesma mecânica, formatos diferentes, fontes independentes. **O que ela acrescenta é o mínimo
@@ -175,7 +181,7 @@ custam 2 segundos e não informam nada. É exatamente por isso que funcionam.
 | **Alternativa descartada** | |
 | **Métrica que valida** | |
 
-### O CTA é consequência, não enfeite — `CUR-013` 🟡/⬜ ⚠️
+### O CTA é consequência, não enfeite — `CUR-013` 🟡
 
 | Se o vídeo é… | o CTA pede… |
 |---|---|
@@ -189,12 +195,12 @@ E bate com os números do Isaac: os Reels aspiracionais de carreira (analíticos
 os que mais geram **compartilhamento**; o conteúdo utilitário tipo guia é o de maior taxa de
 **salvamento**. A regra dela prevê o que a conta já mostra.
 
-> ⚠️ **Duas camadas, lastros diferentes** — registre qual você está usando:
+> ✅ **Corroborado.** Na live ela percorre o mapa ao vivo: timing/notícia/polêmica →
+> compartilhamento (comentário é alternativa; *"salvamento eu não faria"*); tutorial/útil →
+> salvamento. Com a ressalva dela: *"não é uma regra universal, é entender o comportamento humano
+> que combina com cada coisa"*.
 >
-> | Camada | Fontes | Status |
-> |---|---|---|
-> | CTA **único**, vindo do objetivo | 2 vídeos independentes | 🟡 sustentado |
-> | O **mapa** (polêmico→share, tutorial→save) | 1 frase, 1 vídeo | ⬜ 🔴 hipótese |
+> **Nunca curtida** (`CUR-043`): não move resultado e queima a chance de pedir algo que move.
 >
 > E a auditoria achou algo que ninguém deve ignorar: **ela enuncia a regra e não a segue.** Os CTAs
 > de todo o acervo dela são captação por palavra-chave (`4GANCHOS`, `LULU`, `PAPEL`, `LOBO`…: seis
@@ -203,6 +209,16 @@ os que mais geram **compartilhamento**; o conteúdo utilitário tipo guia é o d
 >
 > Continua sendo a melhor lógica de CTA disponível. **Promissor e confirmado não são a mesma
 > coisa**, e a ficha registra os dois.
+
+### Na conclusão não pode ter conclusão — `CUR-039` ⭐
+
+Nunca sinalize que o vídeo vai acabar. Proibido: *"e pra concluir"*, *"e por fim"*,
+*"pra finalizar"*, *"e por último"*.
+
+> *"Quando o gráfico de retenção cai no final, é porque o seu final deu a entender que era o
+> final. A pessoa sai do seu vídeo imediatamente."*
+
+**Antes de culpar o CTA por uma queda no fim, procure essas quatro expressões no roteiro.**
 
 ### CTA pausada — `CUR-031` ⬜
 Em conteúdo longo ou denso, cabe um pedido **no meio** (tipicamente salvamento), além do final.
@@ -231,7 +247,7 @@ Cerca de **1 hora após publicar**, abra a curva de retenção (Insights do Reel
 | **Despenca nos primeiros segundos** | Ganchismo fraco | Bloco 1 da ficha |
 | **Cai continuamente no meio** | Conteúdo pouco útil ou aplicável | Bloco 2 |
 | **Degrau brusco num ponto** | Aquele trecho específico é ruim — ache o segundo | Bloco 3 |
-| **Cai no final** | CTA mal posicionado ou mal executado | Bloco 4 |
+| **Cai no final** | CTA mal posicionado — **ou você anunciou o fim** (`CUR-039`) | Bloco 4 |
 | **Zera logo de cara** | A estrutura inteira está errada | Bloco 2, do começo |
 
 > **Isto é o que faltava.** Hoje "o vídeo foi mal" é frase sem ação. Com a curva, vira
@@ -256,8 +272,9 @@ carrossel de autoridade, que já se sabe ter interação baixa por natureza.
 - [ ] Sem generalização absoluta ("todo mundo", "sempre", "nunca", "ninguém")
 - [ ] Esfera Legal não citada nominalmente
 - [ ] Termos restritos de recrutamento indireto ausentes fora de contexto
-- [ ] **O argumento e a opinião são do Isaac** — `CUR-035`. O método decide gancho, ordem, corte e
-      CTA. O miolo não se delega, nem para IA nem para terceiro. É o limite deste repositório.
+- [ ] Nenhuma expressão que anuncia o fim do vídeo (`CUR-039`).
+- [ ] **O argumento e a opinião são do Isaac** — `CUR-035` + `CUR-042`. O método decide gancho,
+      ordem, corte e CTA. IA **refina, nunca escreve do zero**. É o limite deste repositório.
 
 ---
 

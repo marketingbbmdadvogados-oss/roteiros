@@ -1,10 +1,16 @@
 # Base de princípios — Luíza Cureau (@lucureau)
 
-**Status: PREENCHIDA E AUDITADA — 22 vídeos, 29 princípios.**
+**Status: PREENCHIDA E AUDITADA — 25 vídeos, 26 transcrições, 47 princípios.**
+
+Última atualização relevante: a **live de roteirização** (`DbOMz_RgGdj`, 25/07/2026) corroborou a
+estrutura (`CUR-008`) e o mapa de CTA (`CUR-013`), que eram as peças de fonte única, e corrigiu
+três coisas que estavam escritas errado. Detalhe na seção 9 de `principios.md`.
 
 - `principios.md` — a base numerada (CUR-001…CUR-029), com fonte e tradução para o Isaac
 - `auditoria-das-fontes.md` — **leia antes de usar**: corroboração, contradições e pontos soltos
-- `materia-prima/transcricoes/` — as 22 transcrições brutas
+- `materia-prima/transcricoes/` — as 26 transcrições brutas (25 vídeos; `aula-carrossel-longa`
+  é a versão longa da mesma aula de `Db9aIvrgAMY`, não conta como fonte independente)
+- `materia-prima/datas-dos-videos.md` — data de publicação dos 30 links, conferida
 
 ## Por que está vazia (leia antes de cobrar)
 

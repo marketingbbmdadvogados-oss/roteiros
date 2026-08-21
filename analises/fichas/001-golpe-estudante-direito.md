@@ -54,9 +54,9 @@ de tensão: sétimo semestre, estágio, nome da operação, perfil clonado, loja
 
 **Por que importa.** É bloco de informação, e informação sozinha não segura ninguém. O que segura
 são frases que abrem curiosidade **sem entregar nada** — a Luíza chama de pontas soltas e manda usar
-no mínimo duas. Vale notar que essa é a única regra em que três leituras independentes bateram: ela
-ensinando em Reel, ela ensinando em carrossel, e a análise das referências que vocês já tinham no
-Drive (Rony, Nigro, Benchimol).
+de duas a três. Essa é a regra mais bem sustentada de toda a base — **quatro leituras independentes**
+bateram nela: ela em Reel, ela em carrossel, ela na live de roteirização (*"pelo menos 2 a 3 pontas
+soltas"*), e a análise das referências que vocês já tinham no Drive (Rony, Nigro, Benchimol).
 
 **Como corrigir.** Duas frases, dois segundos cada:
 
