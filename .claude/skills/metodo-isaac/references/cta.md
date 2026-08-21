@@ -1,9 +1,14 @@
 # CTA — decisão, mecânica e proibições
 
-## Um só · `CUR-030` 🟡
+## Não misture objetivos · `CUR-030` 🟡 *(corrigido)*
 
-Pedir várias ações ao mesmo tempo **reduz** a ação: paralisia de escolha. Fechar com comentário
-*e* compartilhamento "para garantir" não garante — divide.
+Salvar + comentar + compartilhar + curtir competem entre si — ela chama de **Teoria da Netflix**:
+opção demais trava a decisão.
+
+**Exceção dela:** *"seguir o perfil é uma CTA complementar"* — pode acompanhar outra.
+**Não vale aqui:** "me segue" falado é CTA genérico, proibido por marca. Regra da casa: um só.
+
+**Nunca curtida** (`CUR-043`): não move resultado, e queima a chance de pedir algo que move.
 
 O objetivo é escolhido **antes** de escrever (`CUR-020`), não depois.
 
@@ -36,6 +41,13 @@ Por isso o CTA descreve **um tipo de pessoa**, não pede favor:
 ✅ *"Manda esse vídeo pra pessoa que fecha contrato só porque o perfil é bonito."*
 ✅ *"Envia pra um pai, uma mãe, alguém com filho grudado no celular."*
 ❌ *"Compartilha aí se você gostou."*
+
+## Na conclusão não pode ter conclusão · `CUR-039`
+
+Nunca sinalize o fim: *"e pra concluir"*, *"e por fim"*, *"pra finalizar"*, *"e por último"*.
+> *"Quando o gráfico cai no final, é porque o seu final deu a entender que era o final."*
+
+Antes de culpar o CTA por uma queda no fim, procure estas quatro expressões no roteiro.
 
 ## Nunca peça confissão pública
 

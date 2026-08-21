@@ -98,9 +98,14 @@ Ganchismo → Promessa Aberta → Introdução → Bloco 1 → Ponta Solta 1
 
 **Racional dela:** é a estrutura que ela usa tanto em Reels quanto em vídeos de mais de 10
 minutos; atribui a ela mais de 20 mil seguidores novos.
-**Fonte:** `DbCV7PxgZT4` (20/07/2026) (ela desenha o esquema na tela, barra por barra) · **Confiança:** ⬜
-🔴 **Fonte única.** É a peça mais importante da base e a que tem menos lastro. Os dois vídeos
-que provavelmente a corroboram não foram capturados — ver §6 da auditoria.
+**Fonte:** `DbCV7PxgZT4` (20/07/2026, o esquema no quadro) **+ `DbOMz_RgGdj`** (25/07/2026, a
+live de roteirização) · **Confiança:** 🟡
+**Promovido.** A live corrobora o esqueleto com outra granularidade: *"falamos dos 4 ganchos, o
+miolo e o refinamento, e falamos da CTA"*. Ou seja, **ganchismo → miolo (com pontas soltas) →
+conclusão → CTA**. As 9 batidas do quadro são o detalhamento desse mesmo esqueleto — o miolo
+abre em introdução, blocos e solução. Duas fontes, cinco dias de distância, mesma espinha.
+⚠️ O que **não** está corroborado é a granularidade de 9 caixas: só o vídeo do quadro a mostra.
+O esqueleto de 4 partes, esse sim, tem duas fontes.
 **Tradução p/ o Isaac:** **este é o item que resolve o "por que esse enredo".** Cada bloco do
 roteiro passa a ter um nome e uma função declarada. Um trecho que não é nenhuma dessas nove
 batidas não tem por que estar no vídeo — e essa é a régua objetiva que faltava para cortar.
@@ -154,8 +159,13 @@ caso, não regra generalizável. Fica registrado como **exemplo de leitura de pa
 **Racional dela:** "ela precisa fazer sentido com o estilo e objetivo do vídeo". Ela mostra dois
 posts reais dela como prova — um analítico com ícone de compartilhar, um tutorial com ícone de
 salvar.
-**Fonte:** `DbCV7PxgZT4` (20/07/2026) · **Confiança:** ⬜ · 🔴 **fonte única** · ⚠️ **enunciada, não demonstrada**
-**A ressalva que a auditoria levantou:** ela enuncia esta regra uma vez e **não a segue**. Os CTAs
+**Fonte:** `DbCV7PxgZT4` (20/07/2026) **+ `DbOMz_RgGdj`** (25/07/2026) · **Confiança:** 🟡
+**🔴 fonte única — RESOLVIDO.** Na live ela percorre o mapa ao vivo, com a plateia: vídeo de
+timing, notícia ou polêmica → **compartilhamento** (comentário é alternativa válida;
+*"salvamento eu não faria"*). Vídeo de passo a passo, tutorial, útil → **salvamento**.
+**Ressalva dela, textual:** *"não é uma regra universal, é a gente entender o comportamento
+humano que combina com cada coisa"*. O mapa orienta; não decide sozinho.
+**A ressalva que continua de pé:** ela enuncia a regra e, no acervo público, **não a segue** — Os CTAs
 de todo o acervo são de captação por palavra-chave (`4GANCHOS`, `LULU`, `PAPEL`, `LOBO`,
 `GANCHISMO`, `ROTEIRO` — seis palavras, o mesmo PDF), e em dois vídeos analíticos ela pede
 comentário, quando a própria regra manda pedir compartilhamento. Um caso a segue
@@ -389,12 +399,12 @@ acervo dela com ideia de terceiro.
 | CUR-005 | Entonação > texto do gancho | gancho | ⬜ |
 | CUR-006 | Copie o padrão, troque o conteúdo | gancho/estrutura | ⬜ |
 | CUR-007 | Promessa → consequência → exemplos | gancho/estrutura | ⬜ 🔴 |
-| CUR-008 | **A estrutura de 9 batidas** | estrutura | ⬜ 🔴 |
+| CUR-008 | **A estrutura: ganchismo → miolo → CTA** | estrutura | 🟡 |
 | CUR-009 | Introdução leva até os 10s | estrutura | ⬜ |
-| CUR-010 | **Pontas soltas, mínimo 2** | estrutura/retenção | 🟢 |
+| CUR-010 | **Pontas soltas, 2 a 3** | estrutura/retenção | 🟢🟢 |
 | CUR-011 | ~~Contraste, correção, repetição~~ → exemplo | — | ⚠️ |
 | CUR-012 | Um tema, 8–9 formatos | estrutura | ⬜ |
-| CUR-013 | **Tipo de vídeo decide tipo de CTA** | CTA | 🟡/⬜ ⚠️ |
+| CUR-013 | **Tipo de vídeo decide tipo de CTA** | CTA | 🟡 |
 | CUR-014 | CTA ruim = queda no final da curva | CTA | ⬜ |
 | CUR-015 | **Os 6 formatos de curva** | diagnóstico | ⬜ 🔴 |
 | CUR-016 | Conferir a curva em ~1h | diagnóstico | ⬜ |
@@ -412,7 +422,7 @@ acervo dela com ideia de terceiro.
 | CUR-028 | Perfil espião e referência na pauta | processo | ⬜ |
 | CUR-029 | 100 vídeos antes de julgar *(MrBeast)* | processo | ⬜ |
 
-| CUR-030 | **CTA múltiplo causa paralisia** | CTA | 🟡 |
+| CUR-030 | **Não misture CTAs de objetivos diferentes** | CTA | 🟡 *(corrigido)* |
 | CUR-031 | CTA pausada no meio do conteúdo denso | CTA | ⬜ |
 | CUR-032 | Slide 2 é uma segunda capa | carrossel | ⬜ |
 | CUR-033 | Método CICE | carrossel | ⬜ |
@@ -421,6 +431,15 @@ acervo dela com ideia de terceiro.
 | CUR-036 | Não existe formato morto | formato | ⬜ |
 | CUR-037 | Os 4 formatos de carrossel | carrossel | ⬜ |
 | CUR-038 | O miolo começa no slide 3 | carrossel | ⬜ |
+| CUR-039 | **Na conclusão não pode ter conclusão** | CTA/retenção | ⬜ |
+| CUR-040 | **Escreva o miolo primeiro, o gancho por último** | processo | ⬜ |
+| CUR-041 | Metade do tempo do roteiro vai no gancho | processo | ⬜ |
+| CUR-042 | IA refina, nunca escreve do zero | processo | ⬜ |
+| CUR-043 | Nunca peça curtida | CTA | ⬜ |
+| CUR-044 | Viralizar ≠ converter | objetivo | 🟡 |
+| CUR-045 | Gancho sonoro é opcional; música atrapalha | gravação | ⬜ |
+| CUR-046 | O mercado saiu da produção e entrou no conhecimento | posicionamento | 🟡 |
+| CUR-047 | Storytelling forçado perdeu validade | gancho | ⚠️ conflito |
 
 🔴 = fonte única · ⚠️ = ressalva registrada no princípio
 
@@ -428,9 +447,17 @@ acervo dela com ideia de terceiro.
 
 ## 8. Carrossel e CTA (fonte: `Db9aIvrgAMY`)
 
-### CUR-030 — Pedir várias ações ao mesmo tempo não gera nenhuma ⭐
-**Enunciado:** um CTA por peça. Pedir salvar + curtir + comentar + compartilhar junto **reduz**
-a ação em vez de somar.
+### CUR-030 — Não misture CTAs de objetivos diferentes ⭐ *(corrigido)*
+**Enunciado:** nunca peça salvar + comentar + compartilhar + curtir na mesma peça — são
+objetivos diferentes e competem entre si.
+**⚠️ Correção feita depois da live.** Eu tinha escrito "um CTA só, sempre". **Está mais
+restrito do que ela ensina.** A regra real dela tem uma exceção nomeada:
+> *"Seguir o perfil é uma CTA **complementar**. Você nunca vai falar 'salve, comente e
+> compartilhe'. Mas você pode falar: 'compartilha com alguém que precisa e siga o perfil'."*
+Ela usa o complemento principalmente em vídeo útil, *"que eu sei que ajudou muito a pessoa"*.
+**Para o @isaacbertolini isso é irrelevante na prática:** "me segue" falado é CTA genérico e
+está proibido por regra de marca. Ou seja, **aqui a marca é mais restritiva que ela** — e a
+regra da casa continua sendo um CTA só. Mas o princípio fica registrado como ela ensina.
 **Racional dela:** paralisia de escolha — ações conflitantes competem entre si. **Ela dá nome:
 "Teoria da Netflix"** — opção demais trava a decisão.
 **Fonte:** `Db9aIvrgAMY` (12/08/2026) · **Confiança:** 🟡
@@ -515,6 +542,108 @@ chance de alcance que o algoritmo dá.
 
 ---
 
+## 9. A live de roteirização — `DbOMz_RgGdj` (25/07/2026)
+
+### CUR-039 — Na conclusão não pode ter conclusão ⭐
+**Enunciado:** ao chegar no fim, **nunca sinalize que o vídeo está acabando**. Proibido: *"e pra
+concluir"*, *"e por fim"*, *"pra finalizar"*, *"e por último"*.
+**Racional dela:** *"Quando o gráfico de retenção cai no final, é porque o seu final deu a entender
+que era o final. A pessoa sai do seu vídeo imediatamente."*
+**Fonte:** `DbOMz_RgGdj` (25/07/2026) · **Confiança:** ⬜
+**Por que isto é importante:** dá o **mecanismo** que faltava em `CUR-014`. A queda no fim da curva
+não é só "CTA mal posicionado" — é frequentemente **você avisando que acabou**. E a correção é uma
+das mais baratas do método inteiro: apagar quatro expressões do roteiro.
+**Tradução p/ o Isaac:** entra na checagem final. Vale também para o carrossel — slide de
+"conclusão" anunciada derruba a rolagem.
+
+### CUR-040 — Escreva o miolo primeiro; o gancho por último ⭐
+**Enunciado:** despeje o conteúdo no papel primeiro, sem gancho e sem pontas soltas. Só depois,
+com a base pronta, escreva o gancho e **refine** inserindo as pontas soltas.
+**Racional dela:** *"Se a gente começa pelo gancho, a gente acaba se confundindo, e a gente nem
+sabe o que vai falar no vídeo ainda."*
+**Fonte:** `DbOMz_RgGdj` (25/07/2026) · **Confiança:** ⬜
+**⚠️ Isto corrige o fluxo do método.** A ordem das 9 batidas é a ordem **do vídeo pronto**, não a
+ordem de escrita. Escrever na ordem 1→9 é justamente o erro que ela aponta.
+**O refinamento, com as palavras dela:** *"ali nos meus pensamentos iniciais não tem ponta solta,
+não tem gatilho, sou só eu ensinando o assunto. Só que eu sei que isso não prende."*
+
+### CUR-041 — Gaste o tempo do roteiro no gancho
+**Enunciado:** de 30 minutos escrevendo um roteiro, **10 a 15 minutos vão só para o ganchismo**.
+**Racional dela:** *"É isso que vai definir se as pessoas vão querer ver o seu vídeo ou não."*
+**Fonte:** `DbOMz_RgGdj` (25/07/2026) · **Confiança:** ⬜
+**Tradução p/ o Isaac:** transforma `CUR-001` em alocação de tempo. Se o gancho está sendo escrito
+em dois minutos no fim do processo, o método não está sendo seguido.
+
+### CUR-042 — IA refina, nunca escreve do zero
+**Enunciado:** escreva o roteiro à mão, depois peça à IA para **refinar sem mudar sua forma de
+falar nem sua linha de raciocínio** — cortar redundância e deixar mais atraente, só isso.
+**Racional dela:** *"Pedir pra IA escrever um roteiro do zero sobre um tema que você é bom é você
+dizer que ela é melhor que você."* E: prompt mirabolante não resolve — ela busca base genérica da
+internet e o resultado nunca fica bom.
+**Fonte:** `DbOMz_RgGdj` (25/07/2026) · **Confiança:** ⬜
+**Complementa `CUR-035`** e fecha a fronteira do uso de IA neste projeto: **estrutura, gancho e
+refino podem ser assistidos; o conhecimento e a opinião não.**
+**Técnica adicional dela:** pegar um vídeo que viralizou na sua área, transcrever (ela cita o
+TurboScribe) e **refinar com a sua personalidade** — é `CUR-006` na prática.
+
+### CUR-043 — Nunca peça curtida
+**Enunciado:** curtida não entra em CTA.
+**Racional dela:** curtida não é métrica relevante para resultado, e pedir curtida **queima a
+oportunidade** de direcionar a pessoa para uma ação que importa — compartilhar, comentar ou salvar.
+**Fonte:** `DbOMz_RgGdj` (25/07/2026) · **Confiança:** ⬜ · já era regra de marca do perfil
+
+### CUR-044 — Viralizar e converter são coisas diferentes
+**Enunciado:** *"Tem diferença entre viralizar e viralizar com conversão alta."* Frase
+motivacional e post de identificação geram engajamento, **não geram seguidor novo**. Quem gera
+seguidor é utilidade.
+**Fonte:** `DbOMz_RgGdj` (25/07/2026) · **Confiança:** 🟡 — corrobora `CUR-020` e `CUR-022`
+**Tradução p/ o Isaac:** reforça o filtro contra o viés de view do acervo dela.
+
+### CUR-045 — O gancho sonoro é opcional, e música quase sempre atrapalha
+**Enunciado:** o riser (som de aumento) é o gancho sonoro típico, mas *"ele sempre vai existir? Não
+necessariamente"*. Música de fundo **muda a sensação do vídeo** e, em conteúdo sério, quebra.
+Se usar: **instrumental, sem letra, volume baixo (4–5)**.
+**Fonte:** `DbOMz_RgGdj` (25/07/2026) · **Confiança:** ⬜
+**⚠️ Ajusta `CUR-004`.** O gancho sonoro não é obrigatório — é situacional. Para conteúdo jurídico
+sério, a regra prática é: **sem música, ou instrumental muito baixo.**
+
+### CUR-046 — O mercado saiu da produção e entrou no conhecimento
+**Enunciado:** edição robusta, carrossel interligado e mega produção saturaram. *"O que sempre vai
+ficar é o seu conhecimento."* E a condição para isso funcionar é **ser identificável**: especialista
+em algo específico, não genérico.
+**Racional dela:** as pessoas se encantavam com a produção mas não aprendiam nada — e cansaram.
+**Fonte:** `DbOMz_RgGdj` (25/07/2026), corroborado por `DTL_sqsAHbi` (06/01/2026, passo 1: definição
+de nicho) · **Confiança:** 🟡
+**Tradução p/ o Isaac:** é o princípio que mais favorece este perfil. A vantagem competitiva dele é
+conhecimento jurídico real — exatamente o ativo que ela diz ser atemporal. Ela inclusive usa
+advogado como exemplo: *"eu sou bom em falar de direito, eu sou advogado e atendo essas pessoas"*.
+
+### CUR-047 — Storytelling forçado como gancho perdeu a validade ⚠️ conflita com o DADO
+**Enunciado dela:** *"Storytelling em 2026 pra cima tá caindo por terra."* Abrir vídeo com história
+pessoal desconectada do assunto — *"eu machuquei o joelho quando era criança e foi assim que
+aprendi sobre nutrição"* — virou clichê: o público reconhece a técnica e não sente naturalidade.
+**Fonte:** `DbOMz_RgGdj` (25/07/2026) · **Confiança:** ⚠️ **em conflito**
+
+> 🔴 **Este é o primeiro choque frontal entre um `CUR` e o `DADO`.**
+>
+> O dado de 90 dias do @isaacbertolini diz o oposto: **Reels com storytelling pessoal + indignação
+> são a melhor interação orgânica absoluta da conta.**
+>
+> **Pela regra de precedência, o `DADO` ganha.** Mas a leitura atenta mostra que o conflito é menor
+> do que parece — e a distinção é o que interessa:
+>
+> | Ela condena | O dado do Isaac aprova |
+> |---|---|
+> | história **desconectada do nicho**, usada como isca para o assunto | história **da própria atuação**, que *é* o assunto |
+> | *"machuquei o joelho → por isso ensino nutrição"* | *"uma demissão discriminatória que eu acompanhei"* |
+> | narrativa como técnica de retenção | narrativa como **a própria entrega de conhecimento** |
+>
+> **Regra da casa:** storytelling entra quando o caso **é** o conteúdo — um caso real da prática
+> dele, que ensina algo. Não entra como aquecimento antes do assunto de verdade. Se a história
+> pudesse ser trocada por outra sem mudar a lição, ela é isca — e sai.
+
+---
+
 ## Envelhecimento da base
 
 Datas conferidas em `materia-prima/datas-dos-videos.md` e validadas de forma independente: a ordem
@@ -567,8 +696,8 @@ ela publicar vídeo novo sobre o tema.
 
 ## Lacunas conhecidas (pós-auditoria)
 
-1. **Dois pilares seguem com fonte única** — CUR-008 (estrutura de 9 batidas) e CUR-015
-   (os 6 formatos de curva). CUR-013 foi parcialmente resgatado: a lógica *"CTA único vindo do
+1. **Um pilar segue com fonte única** — `CUR-015`, os 6 formatos de curva. `CUR-008` e `CUR-013`
+   foram corroborados pela live de roteirização. CUR-013 foi parcialmente resgatado: a lógica *"CTA único vindo do
    objetivo"* ganhou segunda fonte (CUR-030); o **mapa específico** de qual CTA para qual tipo
    continua com uma frase só.
 2. **Falta o vídeo mais valioso do acervo dela:** em `DOXJDffjASd` ela anuncia *"comenta ROTEIRO

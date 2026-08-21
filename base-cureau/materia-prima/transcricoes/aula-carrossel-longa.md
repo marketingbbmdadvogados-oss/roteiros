@@ -1,16 +1,11 @@
-# DbOMz_RgGdj
+# Aula de carrossel (versão longa, 79 min)
 
 - **Fonte:** https://www.instagram.com/lucureau/reel/DbOMz_RgGdj/
-- **Data do post:** 25/07/2026 *(se o arquivo for mesmo o `DbOMz_RgGdj`)*
-- ⚠️ **CONFLITO DE IDENTIFICAÇÃO — conferir antes de usar como fonte independente.**
-  O conteúdo é a **aula de carrossel**, a mesma de `Db9aIvrgAMY` (12/08/2026): mesma frase de
-  abertura, mesmos 4 formatos, mesmo CICE, mesma dupla capa. O Gemini identificou como
-  `Db9aIvrgAMY`, com confiança alta.
-  A lista original descrevia `DbOMz_RgGdj` como *"construindo um roteiro viral: a técnica que
-  ela usa pra escrever roteiros"* — que **não é** o que está aqui.
-  Hipótese mais provável: o arquivo baixado nesse slot é o vídeo da aula de carrossel, e esta é
-  simplesmente uma transcrição melhor dela (79 min, com timestamps).
-  **Enquanto não for conferido, isto não conta como segunda fonte independente.**
+- **Fonte:** mesma aula de `Db9aIvrgAMY` (12/08/2026) — versão longa
+- ✅ **Identificação resolvida.** Este arquivo foi entregue com o nome `DbOMz_RgGdj`, mas o
+  conteúdo é a aula de carrossel. O `DbOMz_RgGdj` verdadeiro chegou depois e é a live de
+  roteirização (ver `DbOMz_RgGdj-roteirizacao.md`). Renomeado para não confundir a contagem
+  de fontes: **não é fonte independente** — é a mesma aula de `Db9aIvrgAMY`, melhor transcrita.
 - **Transcrito em:** 20/08/2026 (Gemini gemini-3.7-flash)
 
 ---

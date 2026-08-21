@@ -203,6 +203,13 @@ escolha. Fechar pedindo comentário *e* compartilhamento "para garantir" não ga
 | tema que divide opinião legítima | **comentário** | pergunta respondível em até 4 palavras |
 | história pessoal, bastidor | **nenhum** | a virada já faz o trabalho |
 
+✅ **Corroborado.** Na live ela percorre o mapa ao vivo e acrescenta a ressalva: *"não é uma
+regra universal, é entender o comportamento humano que combina com cada coisa"*. E é explícita
+sobre o que **não** fazer: em vídeo de análise ou notícia, *"salvamento eu não faria"*.
+
+**Nunca peça curtida** (`CUR-043`): curtida não move resultado, e pedir queima a chance de
+direcionar para uma ação que importa.
+
 `DADO` confirma a primeira linha: os Reels aspiracionais de carreira (analíticos, com opinião) são
 os que mais geram compartilhamento orgânico. E a terceira: o utilitário tipo guia é o de maior taxa
 de salvamento da conta.
@@ -228,6 +235,40 @@ salvamento). O do fim continua sendo o do objetivo primário.
 - Esfera Legal citada nominalmente, em qualquer hipótese.
 - Em conteúdo com viés de recrutamento indireto: evitar "antecipação", "honorários" (sentido
   comercial), "longa espera", "geração de casos".
+
+---
+
+## 7-bis. O que sustenta este perfil no mercado de 2026
+
+`CUR-046` 🟡 — Edição robusta, carrossel interligado e mega produção **saturaram**. O que ficou é
+conhecimento real, e a condição para ele funcionar é **ser identificável**: especialista em algo
+específico, não genérico.
+
+> *"Deu de edição pesada, deu de carrossel fru-fru, deu de historinha pra contar aprendizado. O que
+> sempre vai ficar é o seu conhecimento."*
+
+É o princípio que mais favorece este perfil: a vantagem competitiva do Isaac é conhecimento
+jurídico real — exatamente o ativo que ela chama de atemporal. Ela usa advogado como exemplo.
+
+### Storytelling: a exceção que o dado da casa impõe
+
+`CUR-047` ⚠️ — Ela diz que **storytelling está caindo por terra**: abrir vídeo com história pessoal
+desconectada do assunto virou clichê, e o público reconhece a técnica.
+
+**O dado de 90 dias desta conta diz o contrário:** Reels com storytelling pessoal + indignação são
+a **melhor interação orgânica absoluta** do perfil. Pela regra de precedência, o `DADO` ganha.
+
+Mas o conflito é menor do que parece, e a distinção é o que vale:
+
+| Ela condena | O dado aprova |
+|---|---|
+| história **desconectada do nicho**, usada como isca | história **da própria atuação**, que *é* o assunto |
+| *"machuquei o joelho → por isso ensino nutrição"* | *"uma demissão discriminatória que eu acompanhei"* |
+| narrativa como técnica de retenção | narrativa como **a própria entrega de conhecimento** |
+
+**Regra da casa:** storytelling entra quando o caso **é** o conteúdo. Não entra como aquecimento
+antes do assunto de verdade. **Teste:** se a história pudesse ser trocada por outra sem mudar a
+lição, ela é isca — e sai.
 
 ---
 
@@ -299,7 +340,7 @@ Insights e ler o formato dela:
 | **despenca nos primeiros segundos** | ganchismo fraco | §3 |
 | **cai continuamente no meio** | conteúdo pouco útil ou aplicável | §5 |
 | **degrau brusco num ponto** | aquele trecho específico é ruim — ache o segundo | §5 |
-| **cai no final** | CTA mal posicionado ou mal executado | §7 |
+| **cai no final** | CTA mal posicionado — **ou você sinalizou que ia acabar** (`CUR-039`) | §7 |
 | **zera logo de cara** | a estrutura inteira está errada | §2 |
 
 > É isto que acaba com o *"o vídeo foi mal"*. Vira *"a queda foi no segundo 4, então o problema é o
@@ -391,11 +432,12 @@ documento deixa de ser hipótese organizada e vira método com lastro próprio.
 
 1. Escreva para **pares** — advogado e empresário, não trabalhador em apuros.
 2. Escolha **um objetivo** antes da primeira linha.
-3. **Quatro ganchos** nos primeiros 3 segundos. O escrito é obrigatório.
-4. Leve a pessoa até os **10 segundos** com promessa aberta, nunca com contexto.
-5. **Duas pontas soltas**, no mínimo, no meio do roteiro.
-6. **Uma virada** em antítese. Sem ela, não grava.
-7. **Um CTA**, escolhido pelo tipo do vídeo. Nunca genérico, nunca dois.
-8. Confira fonte, presunção de inocência e as regras de marca.
-9. Registre tom e expressão onde a entrega importa.
-10. Uma hora depois, leia a curva. Sete dias depois, feche a ficha.
+3. **Escreva o miolo primeiro.** O gancho vem depois, e leva metade do tempo do roteiro.
+4. **Quatro ganchos** nos primeiros 3 segundos. O escrito é obrigatório.
+5. Leve a pessoa até os **10 segundos** com promessa aberta, nunca com contexto.
+6. **Duas a três pontas soltas** no meio do roteiro.
+7. **Uma virada** em antítese. Sem ela, não grava.
+8. **Um CTA**, escolhido pelo tipo do vídeo. E **nunca anuncie que o vídeo vai acabar.**
+9. Confira fonte, presunção de inocência e as regras de marca.
+10. Registre tom e expressão onde a entrega importa.
+11. Uma hora depois, leia a curva. Sete dias depois, feche a ficha.
