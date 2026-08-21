@@ -5,3 +5,4 @@ caminhos.txt
 *.mp4
 *.info.json
 __pycache__/
+dist/

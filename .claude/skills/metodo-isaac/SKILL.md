@@ -1,6 +1,6 @@
 ---
 name: metodo-isaac
-description: Escreve, revisa ou diagnostica roteiros de vídeo curto (Reels, TikTok, Shorts) e carrosséis do perfil @isaacbertolini, seguindo o Método Isaac — a metodologia derivada do conteúdo da Luíza Cureau (@lucureau) e calibrada pelos números reais da conta. Use SEMPRE que o pedido envolver roteiro, gancho, CTA, retenção, pauta ou análise de desempenho de conteúdo do Isaac, mesmo quando a palavra "roteiro" não aparecer — inclui "transforma essa notícia em vídeo", "esse vídeo foi mal, o que aconteceu", "me dá ideias de conteúdo", "revisa esse texto pro Reels", "por que esse título?". Use também quando pedirem para justificar decisões de roteiro ou explicar por que um vídeo performou como performou. Substitui a fórmula GRAVA, que foi aposentada.
+description: Acha pauta, escreve, revisa ou diagnostica roteiros de vídeo curto (Reels, TikTok, Shorts) e carrosséis do perfil @isaacbertolini, seguindo o Método Isaac — a metodologia derivada do conteúdo da Luíza Cureau (@lucureau) e calibrada pelos números reais da conta. Use SEMPRE que o pedido envolver roteiro, gancho, CTA, retenção, pauta ou análise de desempenho de conteúdo do Isaac, mesmo quando a palavra "roteiro" não aparecer — inclui "o que eu posto essa semana", "acha um assunto em alta e faz o vídeo", "transforma essa notícia em vídeo", "esse vídeo foi mal, o que aconteceu", "me dá ideias de conteúdo", "revisa esse texto pro Reels", "por que esse título?". Inclui o modo pauta — pesquisar na internet o que está acontecendo dentro dos pilares do perfil e transformar em pauta com fonte, gancho e virada. Use também quando pedirem para justificar decisões de roteiro ou explicar por que um vídeo performou como performou. Substitui a fórmula GRAVA, que foi aposentada.
 ---
 
 # Método Isaac
@@ -28,6 +28,18 @@ para quem também atua no meio, não para quem está sofrendo o problema.
 
 `CUR-021` — Nos 3 primeiros segundos a pessoa precisa entender **do que você fala e com quem**.
 Teste: *um advogado rolando o feed sabe, em 3 segundos, que isso é para ele?*
+
+## Modo pauta — quando ainda não há tema
+
+Se o pedido for *"o que eu posto?"*, *"acha um assunto do momento"* ou *"pauta da semana"*, **leia
+`references/pautas.md` e faça a busca agora**. Nunca invente tendência de memória — o que estava
+quente no treino já esfriou.
+
+O motor, em uma pergunta: **"o que aconteceu essa semana que ele, como advogado, tem algo a dizer
+que ninguém mais vai dizer?"** Notícia sem análise própria é conteúdo de página de notícia.
+
+Entregue **3 a 5 pautas** com fato, data, fonte, lente, gancho e virada — e deixe escolher antes de
+desenvolver o roteiro. Depois siga o fluxo abaixo com a pauta escolhida.
 
 ## Fluxo
 
@@ -227,6 +239,8 @@ nunca prometeu. Métrica por formato em `references/diagnostico.md`.
 
 - `references/ganchos.md` — os 4 canais, biblioteca de ganchos, moldes por tipo
 - `references/cta.md` — decisão de CTA, mecânica, proibições do perfil
+- `references/pautas.md` — achar assunto do momento: onde buscar por lente, corte de recência,
+  o filtro de cinco perguntas, procedência e formato de entrega da pauta
 - `references/diagnostico.md` — curvas, métrica por formato, ranking real de entrega
 - No repositório: `metodo/01-o-metodo.md` (manual completo), `base-cureau/principios.md` (os 35
   princípios com fonte), `base-cureau/auditoria-das-fontes.md` (o que se sustenta e o que não),

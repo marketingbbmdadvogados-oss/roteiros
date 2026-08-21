@@ -440,6 +440,7 @@ acervo dela com ideia de terceiro.
 | CUR-045 | Gancho sonoro é opcional; música atrapalha | gravação | ⬜ |
 | CUR-046 | O mercado saiu da produção e entrou no conhecimento | posicionamento | 🟡 |
 | CUR-047 | Storytelling forçado perdeu validade | gancho | ⚠️ conflito |
+| CUR-048 | **Timing post: ser o primeiro a falar** | pauta | 🟡 |
 
 🔴 = fonte única · ⚠️ = ressalva registrada no princípio
 
@@ -641,6 +642,18 @@ aprendi sobre nutrição"* — virou clichê: o público reconhece a técnica e 
 > **Regra da casa:** storytelling entra quando o caso **é** o conteúdo — um caso real da prática
 > dele, que ensina algo. Não entra como aquecimento antes do assunto de verdade. Se a história
 > pudesse ser trocada por outra sem mudar a lição, ela é isca — e sai.
+
+### CUR-048 — Timing post: ser o primeiro a falar do que acabou de sair
+**Enunciado:** monitorar notícias, portais e estudos novos da própria área, e ser **o primeiro** a
+trazer a análise. Ela chama de **timing post**.
+**Racional dela:** *"Acabou de sair uma baita meta-análise… os nossos médicos precisam ser os
+primeiros a falar, e eles sempre são, porque a gente tá atento ao que tá acontecendo."*
+**Fonte:** `DbOMz_RgGdj` (25/07/2026), reforçado por `CUR-028` (`DOXJDffjASd`) e pelo passo 4 de
+`DTL_sqsAHbi` (benchmarking) · **Confiança:** 🟡
+**Tradução p/ o Isaac:** é o motor de pauta do perfil, e o tipo de vídeo que o mapa de CTA manda
+fechar com **compartilhamento**. Mas atenção ao filtro de `CUR-046`: timing sem análise própria é
+conteúdo de página de notícia. O valor está no cruzamento entre o fato recente e a leitura de
+especialista que só ele tem.
 
 ---
 
