@@ -28,7 +28,8 @@ auditado em `base-cureau/auditoria-das-fontes.md`.
 | Roteiro | |
 | Data | |
 | Formato | Reel curto · Reel longo · Corte de podcast · Carrossel |
-| Lente (pilar) | liderança · trabalho · negócios · IA e futuro · comportamento |
+| Porta de entrada | direito pouco conhecido · prática que vira passivo · decisão nova · bastidor de processo · carreira trabalhista |
+| **Ângulo do trabalhador** | *(qual é, em uma linha — `DEC-002`)* |
 | **Objetivo primário** *(escolha UMA)* | alcance de não-seguidor · salvamento · compartilhamento · comentário · seguidor novo |
 | **Métrica-dona** | a métrica que decide se este vídeo deu certo |
 

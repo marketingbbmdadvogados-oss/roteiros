@@ -31,6 +31,16 @@ ela pede comentário quando a própria regra manda pedir compartilhamento.
 
 Use como a melhor lógica disponível. Registre como hipótese, não como lei.
 
+## O CTA carrega o lado
+
+Em conteúdo trabalhista o compartilhamento direcionado tem duas mãos, e as duas funcionam:
+
+- **Para o trabalhador:** *"manda pra quem tá passando por isso e acha que é normal."*
+- **Para quem contrata:** *"manda pro sócio que ainda faz isso achando que economiza."*
+
+A segunda costuma render mais neste perfil, porque o público é de pares — e porque o espectador
+compartilha um recado que não quer dar na cara.
+
 ## Mecânica do compartilhamento
 
 É a alavanca mais forte deste perfil. Funciona porque **o espectador não compartilha o vídeo — ele

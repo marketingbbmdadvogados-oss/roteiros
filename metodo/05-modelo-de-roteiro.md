@@ -19,7 +19,8 @@ Formato padrão de entrega. Quem grava lê a coluna **Fala**; o resto é direç�
 | **Série** | *(se fizer parte de uma — manter figurino da série)* |
 | **Duração alvo** | 45–60s |
 | **Objetivo primário** *(um só)* | compartilhamento · salvamento · comentário · seguidor |
-| **Lente** | liderança · trabalho · negócios · IA e futuro · comportamento |
+| **Porta** | direito pouco conhecido · prática que vira passivo · decisão nova · bastidor · carreira |
+| **Ângulo do trabalhador** | *(qual é, em uma linha)* |
 | **Identidade da série** | manter a identidade visual reconhecível dos vídeos da mesma série *(`CUR-021`)* |
 
 > Padrão de figurino, enquadramento e iluminação é decisão de produção do time — está em
@@ -143,6 +144,7 @@ Formato padrão de entrega. Quem grava lê a coluna **Fala**; o resto é direç�
 - [ ] Nenhuma expressão que anuncia o fim do vídeo
 - [ ] Uma virada, em antítese
 - [ ] Um CTA só, alinhado ao objetivo primário. Nunca curtida
+- [ ] É trabalhista, o ângulo é o do trabalhador, e o tom com a empresa é de alerta
 - [ ] Toda afirmação factual com link guardado
 - [ ] Presunção de inocência onde houver investigação ou processo
 - [ ] Sem generalização absoluta · sem promessa de resultado · sem CTA genérico falado

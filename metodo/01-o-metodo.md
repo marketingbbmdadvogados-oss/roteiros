@@ -56,6 +56,80 @@ você fala**. Um gancho genial que não diz o assunto perde para um gancho simpl
 **Teste rápido:** leia seu gancho e pergunte *"um advogado — ou alguém no sétimo semestre — rolando
 o feed sabe, em 3 segundos, que isso é para ele?"* Se não, o gancho não está pronto.
 
+## 1-bis. O domínio e o lado
+
+## O domínio: direito do trabalho
+
+**Decisão editorial (21/08/2026) — `DEC-002`.** O perfil fala de **uma coisa só: processos e
+relações de trabalho.** Liderança, negócios genéricos, IA solta e comportamento saíram como lentes
+próprias. O que sobreviveu delas entra **sempre pela porta trabalhista** — IA que demite, gestão que
+gera passivo, comportamento que vira prova nos autos.
+
+Isto não é estreitamento arbitrário: `CUR-046` e `CUR-021` dizem que a era do genérico acabou e que
+o público segue quem é **identificável**. Ela usa advogado como exemplo textual.
+
+### As cinco portas de entrada
+
+Toda pauta entra por uma delas. A mesma notícia rende vídeos diferentes conforme a porta.
+
+| Porta | O ângulo | CTA típico |
+|---|---|---|
+| **1. Direito que o trabalhador não sabe que tem** | o que a lei garante e quase ninguém cobra | salvamento |
+| **2. Prática de empresa que vira passivo** | o custo real de uma rotina comum de RH | compartilhamento |
+| **3. Decisão, súmula ou mudança de lei** | timing post — ser o primeiro a explicar o que mudou | compartilhamento |
+| **4. Bastidor de processo real** | um caso da atuação dele, contado como caso | comentário ou nenhum |
+| **5. Carreira e mercado trabalhista** | como se advoga trabalhista de verdade — para pares e estudantes | compartilhamento |
+
+**A porta 4 é a de maior entrega orgânica da conta** (`DADO`: storytelling pessoal + indignação).
+**A porta 5 preserva o segundo melhor formato** — o aspiracional de carreira —, agora ancorado no
+domínio em vez de solto.
+
+---
+
+## O viés: pró-reclamante · `DEC-002`
+
+**Em qualquer conteúdo trabalhista, o ângulo é o do trabalhador.** Não é neutralidade com verniz de
+equilíbrio: é postura declarada.
+
+> **Regra:** quando o caso admite os dois lados, **fica com o trabalhador.** Postura previsível é o
+> que faz alguém decidir seguir (`CUR-021`); análise que muda de lado a cada vídeo não constrói
+> reconhecimento.
+
+### Mas o empresário continua no público — e é assim que ele fica
+
+O perfil fala com advogados, **empresários**, profissionais liberais e estudantes. Pró-reclamante
+não pode virar hostilidade a metade da audiência. A saída é o **formato de alerta**:
+
+> **Pró-reclamante no mérito, alerta no tom.**
+> *"Isso te custa caro"* em vez de *"empresário é vilão"*.
+
+| ❌ Não escreva | ✅ Escreva |
+|---|---|
+| "As empresas exploram e ninguém faz nada" | "Essa cláusula que parece inofensiva vira condenação" |
+| "Patrão safado que corta hora extra" | "Cortar hora extra economiza 300 por mês e custa 40 mil na sentença" |
+| "Trabalhador é sempre passado pra trás" | "O que a empresa faz por hábito é o que o juiz lê como intenção" |
+
+O empresário assiste até o fim porque **é informação útil para ele**. O trabalhador vê que o Isaac
+está do lado dele. Os dois ficam — e o vídeo continua sendo pró-reclamante no conteúdo.
+
+### O que o viés NÃO autoriza
+
+O viés é de **ângulo**, nunca de fato. Estas continuam valendo, sem exceção:
+
+- **Não afirmar que uma empresa específica cometeu ilegalidade** sem decisão ou fonte. Caso concreto
+  é sempre *"segundo a decisão"*, *"a reclamação alega"*.
+- **Não prometer resultado.** Nem "você tem direito a X", nem "isso dá ganho de causa". O certo é
+  *"isso costuma ser reconhecido quando…"*.
+- **Não generalizar.** Nada de "toda empresa faz isso". Troque por "é comum", "muita empresa".
+- **Não distorcer o que a lei diz** para favorecer o lado. Se a norma é desfavorável ao trabalhador,
+  o roteiro diz isso — e o ângulo vira *o que fazer diante disso*, não a negação da regra.
+- **Não sensacionalizar.** Indignação com fato conferido, não com número inflado.
+
+> **O teste:** um advogado do lado patronal assistiria ao vídeo e diria *"está errado"*? Se sim, o
+> problema não é o viés — é o fato. Corrija o fato e mantenha o ângulo.
+
+---
+
 ## 2. A estrutura padrão — 9 batidas
 
 `CUR-008` — Todo roteiro segue esta espinha. Não é sugestão de ordem; é a ordem.
@@ -476,7 +550,8 @@ documento deixa de ser hipótese organizada e vira método com lastro próprio.
 
 ## O Método Isaac em uma página
 
-1. Escreva para **pares** — advogado e empresário, não trabalhador em apuros.
+1. Escreva para **pares** — advogado, empresário e estudante de direito, não trabalhador em apuros.
+1-bis. **Só direito do trabalho.** E o ângulo é sempre **o do trabalhador**, em tom de alerta.
 2. Escolha **um objetivo** antes da primeira linha.
 3. **Escreva o miolo primeiro.** O gancho vem depois, e leva metade do tempo do roteiro.
 4. **Quatro ganchos** nos primeiros 3 segundos. O escrito é obrigatório.

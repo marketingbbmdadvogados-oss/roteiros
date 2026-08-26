@@ -1,6 +1,6 @@
 ---
 name: metodo-isaac
-description: Acha pauta, escreve, revisa ou diagnostica roteiros de vídeo curto (Reels, TikTok, Shorts) e carrosséis do perfil @isaacbertolini, seguindo o Método Isaac — a metodologia derivada do conteúdo da Luíza Cureau (@lucureau) e calibrada pelos números reais da conta. Use SEMPRE que o pedido envolver roteiro, gancho, CTA, retenção, pauta ou análise de desempenho de conteúdo do Isaac, mesmo quando a palavra "roteiro" não aparecer — inclui "o que eu posto essa semana", "acha um assunto em alta e faz o vídeo", "transforma essa notícia em vídeo", "esse vídeo foi mal, o que aconteceu", "me dá ideias de conteúdo", "revisa esse texto pro Reels", "por que esse título?". Inclui o modo pauta — pesquisar na internet o que está acontecendo dentro dos pilares do perfil e transformar em pauta com fonte, gancho e virada. Use também quando pedirem para justificar decisões de roteiro ou explicar por que um vídeo performou como performou. Substitui a fórmula GRAVA, que foi aposentada.
+description: Acha pauta, escreve, revisa ou diagnostica roteiros de vídeo curto (Reels, TikTok, Shorts) e carrosséis do perfil @isaacbertolini — perfil de direito do trabalho, com ângulo pró-reclamante — seguindo o Método Isaac, metodologia derivada do conteúdo da Luíza Cureau (@lucureau) e calibrada pelos números reais da conta. Use SEMPRE que o pedido envolver roteiro, gancho, CTA, retenção, pauta ou desempenho de conteúdo do Isaac, mesmo sem a palavra "roteiro" — inclui "o que eu posto essa semana", "acha um assunto em alta e faz o vídeo", "transforma essa notícia em vídeo", "esse vídeo foi mal, o que aconteceu", "revisa esse texto pro Reels", "por que esse título?". Inclui o modo pauta — pesquisar na internet decisões, súmulas e casos trabalhistas recentes e virar pauta com fonte, gancho e virada. Use também para justificar decisões de roteiro. Substitui a fórmula GRAVA, aposentada.
 ---
 
 # Método Isaac
@@ -26,8 +26,36 @@ Isaac um método próprio.
 **+ Decisão editorial (21/08/2026):** incluir também **estudantes de direito** — aposta do time,
 ainda não confirmada pelo dado.
 
-**Não é** trabalhador buscando defesa individual. Isso muda o tom de qualquer conteúdo trabalhista:
-fala-se para quem atua ou vai atuar no meio, não para quem está sofrendo o problema.
+**Não é** trabalhador buscando defesa individual. Fala-se para quem atua ou vai atuar no meio, não
+para quem está sofrendo o problema.
+
+## O domínio e o lado — leia antes de escrever
+
+**Este perfil fala de uma coisa só: direito do trabalho.** Processos e relações de trabalho. Se o
+tema não passa por aí, não vira roteiro — nem como gancho. IA, gestão e comportamento entram
+**sempre pela porta trabalhista**: IA que demite, gestão que gera passivo, comportamento que vira
+prova nos autos.
+
+**E o ângulo é sempre o do trabalhador.** Em conteúdo trabalhista, o perfil é **pró-reclamante**.
+Quando o caso admite os dois lados, fica com o trabalhador.
+
+**Mas o empresário está no público** — e a forma de manter os dois é o **tom de alerta**:
+
+> **Pró-reclamante no mérito, alerta no tom.** *"Isso te custa caro"*, nunca *"empresário é vilão"*.
+
+| ❌ | ✅ |
+|---|---|
+| "As empresas exploram e ninguém faz nada" | "Essa cláusula que parece inofensiva vira condenação" |
+| "Patrão safado que corta hora extra" | "Cortar hora extra economiza 300 por mês e custa 40 mil na sentença" |
+
+**O viés é de ângulo, nunca de fato.** Não afirmar ilegalidade de empresa específica sem decisão ou
+fonte · não prometer resultado · não generalizar · não distorcer a lei para favorecer o lado. Se a
+norma é desfavorável ao trabalhador, o roteiro diz isso — e o ângulo vira *o que fazer diante disso*.
+
+**Teste:** um advogado do lado patronal diria *"está errado"*? Se sim, o problema é o fato, não o
+viés. Corrija o fato e mantenha o ângulo.
+
+As cinco portas de entrada e as buscas por porta estão em `references/pautas.md`.
 
 **Ao escrever para os dois ao mesmo tempo:** termo técnico pode entrar, mas **abre em cinco palavras
 na primeira vez** — *"pejotização, que é contratar CLT disfarçado de PJ"*. O formado não se sente
@@ -239,6 +267,8 @@ nunca prometeu. Métrica por formato em `references/diagnostico.md`.
 - [ ] Uma virada, em antítese
 - [ ] Um CTA só, alinhado ao objetivo primário
 - [ ] Toda afirmação factual com fonte e link
+- [ ] É trabalhista, e o ângulo é o do trabalhador
+- [ ] Tom de alerta, não de acusação genérica ao empresário
 - [ ] Regras de marca conferidas
 - [ ] Previsão de curva registrada
 - [ ] Dá para gravar em 45–60s

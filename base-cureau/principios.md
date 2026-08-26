@@ -670,6 +670,26 @@ Registradas aqui para não se confundirem com o que saiu do acervo dela nem com 
 crescer, a decisão vira `DADO`. Se não crescer, ela sai — ou se assume que é aposta de longo prazo,
 por escrito.
 
+### DEC-002 — Domínio único e viés pró-reclamante · 21/08/2026
+**O que é:** duas decisões que andam juntas.
+1. **Domínio:** o perfil fala só de **direito do trabalho**. As outras lentes deixam de existir
+   como pilares próprios; IA, gestão e comportamento entram pela porta trabalhista.
+2. **Lado:** em conteúdo trabalhista o ângulo é **sempre o do trabalhador**. Caso ambíguo fica com
+   o reclamante.
+**Origem:** decisão do time. **O que a base apoia:** o estreitamento tem lastro forte — `CUR-046` e
+`CUR-021` dizem que a era do genérico acabou e que o público segue quem é identificável, e ela usa
+advogado como exemplo textual. **O viés em si é escolha editorial**, não sai do acervo dela.
+**Tom com o empresário:** alerta, não acusação — *"isso te custa caro"*. Ele é parte do público e
+assiste porque é informação útil para ele.
+**Limite:** o viés é de ângulo, nunca de fato. Não afirmar ilegalidade de empresa sem fonte, não
+prometer resultado, não generalizar, não distorcer a lei.
+**⚠️ Custo assumido:** o formato "Reel aspiracional de carreira" era o 2º de melhor entrega
+orgânica (`DADO`) e estava fora do trabalhista. Foi preservado como **porta 5** (carreira e mercado
+trabalhista), ancorado no domínio. **Se a entrega dessa porta cair**, é o primeiro sinal de que o
+estreitamento cobrou preço — e vale reavaliar.
+**Como verificar:** comparar alcance e compartilhamento das portas 4 e 5 com a mediana histórica
+desses formatos, depois de 6 a 8 publicações.
+
 ---
 
 ## Envelhecimento da base

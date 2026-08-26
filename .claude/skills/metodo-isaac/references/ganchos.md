@@ -26,21 +26,21 @@ entrega, registre **como falar**: `[pausa]`, `[mais baixo]`, `[acelera]`.
 
 ## Biblioteca — moldes para este nicho
 
+Todos com o ângulo do trabalhador, em tom de alerta para quem contrata.
+
 | Tipo | Molde | Exemplo |
 |---|---|---|
-| **Paradoxo** | quem deveria X fez o oposto de X | *"Ela tinha um perfil inteiro ensinando a não cair em golpe. Foi presa por aplicar golpe."* |
-| **Número que dói** | um valor concreto que ninguém imagina | *"Custa 40 mil errar uma vírgula num contrato de trabalho."* |
-| **Erro induzido** | faz o espectador chutar errado, depois corrige | *"Quantos países já proibiram isso? Você chutaria Alemanha, algum nórdico. Errou."* |
-| **Cena de tensão** | começa no meio do acontecimento | *"Sexta-feira a polícia bateu na porta dela. E não foi pra agradecer."* |
-| **Acusação** | aponta um comportamento comum e caro | *"Você contrata por indicação e demite por planilha."* |
-| **Contra-narrativa** | o mercado diz A; o dado diz B | *"Todo mundo fala em reter talento. Os números dizem outra coisa."* |
-| **Dilema** | duas opções, ambas ruins | *"Ou formaliza e paga caro, ou economiza e responde depois."* |
-| **Exclusividade** | informação que não virou manchete | *"Ninguém tá falando disso, mas o Brasil saiu na frente dos EUA."* |
+| **Custo que ninguém soma** | uma prática barata que sai cara | *"Cortar hora extra economiza 300 por mês e custa 40 mil na sentença."* |
+| **Paradoxo** | quem deveria X fez o oposto de X | *"O RH que criou o programa de bem-estar é o mesmo que respondeu por assédio."* |
+| **Erro induzido** | faz chutar errado, depois corrige | *"Quantos dias a empresa tem pra pagar a rescisão? Quem chutou 30 errou — e paga multa."* |
+| **Cena de tensão** | começa dentro do acontecimento | *"A audiência durou 12 minutos. O que derrubou a defesa foi um print."* |
+| **Acusação de hábito** | aponta a rotina comum e cara | *"Você registra ponto por WhatsApp e acha que isso é controle de jornada."* |
+| **Direito ignorado** | o que a lei garante e ninguém cobra | *"Tem um adicional que quase ninguém pede e a empresa não avisa."* |
+| **Contra-narrativa** | o mercado diz A; a decisão diz B | *"Todo mundo virou PJ achando que economizava. O TST tem outra leitura."* |
+| **Dilema do empresário** | duas saídas, as duas custam | *"Ou você formaliza e paga agora, ou economiza e responde depois — com juros."* |
 
-O **erro induzido** é especialmente forte: quem chutou errado fica com uma dívida cognitiva e
-assiste até fechar.
-
----
+O **custo que ninguém soma** é o mais forte do perfil: entrega o ângulo do trabalhador *e* a
+utilidade para o empresário na mesma frase. É o formato do "alerta" em estado puro.
 
 ## Estrutura de gancho que atravessa nicho · `CUR-007`
 
@@ -61,10 +61,13 @@ própria versão em cima dele."*
 fórmula fixa. O que vale é o **método**: identificar o padrão de um vídeo que performou e refazer
 com conteúdo próprio. Não tratar as fórmulas específicas dela como regra.
 
-## O público
+## O público e o lado
 
 Advogados, empresários, profissionais liberais **e estudantes de direito**. Termo técnico abre em
 cinco palavras na primeira vez.
+
+**O ângulo é sempre o do trabalhador**, em tom de alerta para quem contrata — nunca acusação
+genérica ao empresário, que é parte da audiência.
 
 ## Nunca
 
